@@ -1,40 +1,50 @@
 import React from "react";
-import './style.module.scss'
+import { HeroSection } from "..";
+import { AboutUs } from "..";
+import { Directions } from "..";
+import { Continents } from "..";
+import { Travels } from "..";
+import { Advantages } from "..";
+import { Impressions } from "..";
+import { Order } from "..";
+import s from './style.module.scss';
 
 export const Main = () => {
   return (
     <>
-      <section>
-        <Hero-section/>
-      </section>
+      <main className={s.content}>
+        <section className={s.main__section}>
+          <HeroSection/>
+        </section>
 
-      <section>
-        <AboutUs/>
-      </section>
+        <section className={s.main__section}>
+          <AboutUs/>
+        </section>
 
-      <section>
-        <Directions/>
-      </section>
+        <section className={s.main__section}>
+          <Directions/>
+        </section>
 
-      <section>
-        <Continents/>
-      </section>
+        <section className={s.main__section}>
+          <Continents/>
+        </section>
 
-      <section>
-        <Travels/>
-      </section>
+        <section className={s.main__section}>
+          <Travels/>
+        </section>
 
-      <section>
-        <Advantages/>
-      </section>
+        <section className={s.main__section}>
+          <Advantages/>
+        </section>
 
-      <section>
-        <Impressions/>
-      </section>
+        <section className={s.main__section}>
+          <Impressions/>
+        </section>
 
-      <section>
-        <Order/>
-      </section>
+        <section className={s.main__section}>
+          <Order/>
+        </section>
+      </main>
     </>
   )
 }

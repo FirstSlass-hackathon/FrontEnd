@@ -1,0 +1,28 @@
+//colors
+$colorWhite: #ffffff;
+
+//sizes
+$sizeContainerLarge: 1920px;
+$sizeContainer: 1372px;
+$sizeExtraLarge: 1200px;
+$sizeLarge: 950px;
+$sizeMedium: 650px;
+$sizeSmall: 576px;
+
+@mixin fontStyle($size: 16px, $weight: 400, $height: normal) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+}
+
+@mixin width-height($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin flex-grid($display, $direction, $justify, $align) {
+	display: $display;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
