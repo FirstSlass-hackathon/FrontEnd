@@ -1,12 +1,12 @@
 import React from "react";
-// import { HeroSection } from "..";
-// import { AboutUs } from "..";
-// import { Directions } from "..";
-// import { Continents } from "..";
-// import { Travels } from "..";
-// import { Advantages } from "..";
-// import { Impressions } from "..";
-// import { Order } from "..";
+// import { HeroSection } from "../ui/HeroSection";
+// import { AboutUs } from "../Main/AboutUs";
+// import { Directions } from "../Main/Directions";
+// import { Continents } from "../Main/Continents";
+// import { Travels } from "../Main/Travels";
+// import { Advantages } from "../Main/Advantages";
+import { Impressions } from '../Main/Impressions';
+// import { Order } from "../Main/Order";
 import s from './style.module.scss';
 
 export const Main = () => {
@@ -14,6 +14,9 @@ export const Main = () => {
     <>
       <main className={s.content}>
         <h1>Main</h1>
+        <section className={s.main__section}>
+          <Impressions/>
+        </section>
         {/* <section className={s.main__section}>
           <HeroSection/>
         </section>
