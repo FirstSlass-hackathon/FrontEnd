@@ -1,7 +1,7 @@
 import React from "react";
 import s from './style.module.scss';
 
-function Button({className, children, onClick, isDisabled, ...props}) {
+export const Button = ({className, children, onClick, isDisabled, ...props}) => {
 
 	return (
 		<button
@@ -12,6 +12,4 @@ function Button({className, children, onClick, isDisabled, ...props}) {
 			{children}
 		</button>
 	);
-};
-
-export default Button;
+}

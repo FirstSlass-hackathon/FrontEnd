@@ -1,14 +1,17 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { HomePage } from './components';
-import { ContinentAfrica } from './components';
-import './App.css';
+import HomePage from './pages/HomePage/HomePage';
+import ContinentAfrica from './pages/ContinentAfrica/ContinentAfrica';
+import s from './app.module.scss';
 
-function App() {
+const App = () => {
   return (
-    <Routes>
-      <Route path='/' element={<HomePage/>}/>
-      <Route path='/africa' element={<ContinentAfrica/>}/>
-    </Routes>
+    <div className={s.app}>
+      <HomePage/>
+      <Routes>
+            <Route path="/africa" component={ContinentAfrica} />
+      </Routes>
+    </div>
   );
 }
 

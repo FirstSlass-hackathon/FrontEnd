@@ -1,15 +1,16 @@
 import React from "react";
-import { Logo } from "..";
-import { Button } from "..";
-import { Navbar } from "..";
-import './style.module.scss';
+// import { Logo } from "..";
+// import { Button } from "..";
+// import { Navbar } from "..";
+import './styles.module.scss';
 
 export const Header = () => {
   return (
     <>
-      <Logo/>
+    <h1>Header</h1>
+      {/* <Logo/>
       <Navbar/>
-      <Button/>
+      <Button/> */}
     </>
   )
 }

@@ -1,10 +1,10 @@
 import React from "react";
-import { Header } from "../../components";
-import { Main } from "../../components";
-import { Footer } from "../../components";
+import { Header } from '../../components/Header';
+import { Main } from "../../components/Main";
+// import { Footer } from "../../components";
 import s from './style.module.scss';
 
-export const HomePage = () => {
+export default function HomePage() {
 
 	React.useEffect(() => {
 		window.scrollTo({top: 0, behavior: 'smooth'});
@@ -15,7 +15,7 @@ export const HomePage = () => {
       <main className={s.content}>
         <Header/>
         <Main/>
-        <Footer/>
+        {/* <Footer/> */}
       </main>
     </>
   );
