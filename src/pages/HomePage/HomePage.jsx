@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from '../../components/Header';
 import { Main } from "../../components/Main";
-// import { Footer } from "../../components";
+import { Footer } from "../../components/Footer";
 import s from './style.module.scss';
 
 export default function HomePage() {
@@ -11,12 +11,10 @@ export default function HomePage() {
 	}, []);
 
   return (
-    <>
       <main className={s.content}>
         <Header/>
         <Main/>
-        {/* <Footer/> */}
+        <Footer/>
       </main>
-    </>
   );
 }
