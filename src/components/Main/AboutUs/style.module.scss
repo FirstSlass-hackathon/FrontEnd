@@ -36,7 +36,7 @@
 }
 
 .image1, .image2 {
-  border: 1px solid black; /* тонкая черная граница */
+  // border: 1px solid black; /* тонкая черная граница */
   position: absolute;
   transition: transform 0.3s ease-in-out; /* плавное изменение масштаба */
   transform-origin: center center; /* центрируем точку масштабирования */

@@ -1,7 +1,7 @@
 import React from "react";
 import s from './style.module.scss';
-import kacheliImage from '../../../assets/images/качели.jpg'
-import twix from '../../../assets/images/сладкая парочка.jpg'
+import kacheliImage from '../../../assets/images/swing.jpg'
+import twix from '../../../assets/images/twix.jpg'
 
 export const AboutUs = () => {
   return (
