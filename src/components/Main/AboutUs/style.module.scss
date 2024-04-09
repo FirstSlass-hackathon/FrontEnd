@@ -1,29 +1,41 @@
 .aboutUs {
-  width: 100%; /* адаптивная ширина */
+  max-width: 100%; /* адаптивная ширина */
   min-height: 759px; /* минимальная высота для содержимого */
-  margin-top: 743px; /* отступ сверху */
-  border: 1px solid black; /* добавляем границу */
-  padding: 20px; /* добавляем отступ внутри блока */
-  position: relative; /* добавляем позиционирование для абсолютных элементов */
+  padding: 100px 79px;
+  // margin-top: 743px; /* отступ сверху */
+  // border: 1px solid black; /* добавляем границу */
+  // padding: 20px; /* добавляем отступ внутри блока */
+  // position: relative; /* добавляем позиционирование для абсолютных элементов */
+  box-sizing: border-box;
+  &__title {
+    width: 786px;
+    height: 126px;
+    margin-left: 496px;
+    box-sizing: border-box;
+  }
 }
 
 .title {
-  position: absolute;
-  top: 180px; /* отступ сверху от родительского блока */
-  left: 580px; /* отступ слева от родительского блока */
+  // position: absolute;
+  // top: 180px; /* отступ сверху от родительского блока */
+  // left: 580px; /* отступ слева от родительского блока */
+
   font-family: 'TitleFont', sans-serif;
+  box-sizing: border-box;
 }
 
 .name {
-  position: absolute;
-  top: 250px; /* отступ сверху от родительского блока */
-  left: 580px; /* отступ слева от родительского блока */
+  // position: absolute;
+  // top: 250px; /* отступ сверху от родительского блока */
+  // left: 580px; /* отступ слева от родительского блока */
   font-family: 'NameFont', sans-serif;
+  box-sizing: border-box;
 }
 
 .highlight {
   color: #ff4500; /* Цвет выделенного текста */
   // font-weight: bold; /* Жирный текст для выделения */
+  box-sizing: border-box;
 }
 
 .imageContainer {
@@ -33,6 +45,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .image1, .image2 {
@@ -40,6 +53,7 @@
   position: absolute;
   transition: transform 0.3s ease-in-out; /* плавное изменение масштаба */
   transform-origin: center center; /* центрируем точку масштабирования */
+  box-sizing: border-box;
 }
 
 .image1:hover, .image2:hover {
@@ -66,13 +80,14 @@
 }
 
 .description {
-  position: absolute;
-  top: 390px; /* отступ сверху от родительского блока */
-  left: 800px; /* отступ слева от родительского блока */
+  // position: absolute;
+  margin-top: 29px; /* отступ сверху от родительского блока */
+  margin-left: 763px; /* отступ слева от родительского блока */
   font-family: 'DescriptionFont', sans-serif;
   // white-space: pre-line !important; /* сохраняет переносы строк и пробелы */
   word-wrap: break-word; /* или overflow-wrap: break-word; */
   max-width: 50%; /* ограничиваем максимальную ширину блока */
+  box-sizing: border-box;
 }
 
 .applyButton {
@@ -82,11 +97,14 @@
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  position: absolute; /* абсолютное позиционирование */
-  right: 620px; /* отступ справа */
-  bottom: 120px; /* отступ снизу */
+  // position: absolute; /* абсолютное позиционирование */
+  // right: 620px; /* отступ справа */
+  // bottom: 120px; /* отступ снизу */
+  margin-left: 763px;
+  margin-top: 39px;
   font-family: 'ButtonFont', sans-serif;
   // margin-top: 120px;
+  box-sizing: border-box;
 }
 
 .applyButton:hover {

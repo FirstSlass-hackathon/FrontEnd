@@ -5,7 +5,7 @@ import { AboutUs } from "../Main/AboutUs";
 // import { Continents } from "../Main/Continents";
 // import { Travels } from "../Main/Travels";
 // import { Advantages } from "../Main/Advantages";
-// import { Impressions } from '../Main/Impressions';
+import { Impressions } from '../Main/Impressions';
 // import { Order } from "../Main/Order";
 import s from './style.module.scss';
 
@@ -13,7 +13,6 @@ export const Main = () => {
   return (
     <>
       <main className={s.content}>
-        <h1>Main</h1>
 {/*        <section className={s.main__section}>
           <Impressions/>
   </section>*/}
@@ -25,29 +24,29 @@ export const Main = () => {
           <AboutUs/>
         </section>
 
-{/*        <section className={s.main__section}>
+       {/* <section className={s.main__section}>
           <Directions/>
-        </section>
+        </section> */}
 
-        <section className={s.main__section}>
+        {/* <section className={s.main__section}>
           <Continents/>
-        </section>
+        </section> */}
 
-        <section className={s.main__section}>
+        {/* <section className={s.main__section}>
           <Travels/>
-        </section>
+        </section> */}
 
-        <section className={s.main__section}>
+        {/* <section className={s.main__section}>
           <Advantages/>
-        </section>
+        </section> */}
 
         <section className={s.main__section}>
           <Impressions/>
         </section>
 
-        <section className={s.main__section}>
+        {/* <section className={s.main__section}>
           <Order/>
-  </section>*/}
+        </section> */}
       </main>
     </>
   )
