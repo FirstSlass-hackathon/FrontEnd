@@ -1,14 +1,13 @@
 .component {
   // position: relative;
-  transition: transform 0.3s ease-in-out; /* плавное изменение масштаба */
-  transform-origin: center center; /* центрируем точку масштабирования */
   border: 1px solid black;
+  box-sizing: border-box;
+  transition: transform 0.4s ease-in-out; // плавное изменение масштаба и переворачивания
   width: 326px;
   height: 510px;
   cursor: pointer;
   &:hover {
-      transform: scale(1.2); /* увеличиваем масштаб при наведении */
-      z-index: 2; /* увеличиваем z-index для поднятия изображения над другими элементами */
+    transform: scale(1.2) rotateX(360deg); // добавляем переворот по оси Y при наведении
   }
 }
 
