@@ -48,6 +48,7 @@
   display: flex;
   // justify-content: space-between;
   box-sizing: border-box;
+  gap: 28px;
 }
 
 .card1, .card2, .card3 {
@@ -58,9 +59,14 @@
   box-sizing: border-box;
 }
 
-.card1:hover, .card2:hover, .card3:hover {
-  transform: scale(1.2); /* увеличиваем масштаб при наведении */
-  z-index: 2; /* увеличиваем z-index для поднятия изображения над другими элементами */
+.card1, .card2, .card3 {
+  border: 1px solid black;
+  box-sizing: border-box;
+  transition: transform 0.4s ease-in-out; // плавное изменение масштаба и переворачивания
+
+  &:hover {
+    transform: scale(1.2) rotateX(180deg); // добавляем переворот по оси Y при наведении
+  }
 }
 
 .card1 {
@@ -97,13 +103,24 @@
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  margin-left: 123px;
+  margin-left: 323px;
   margin-top: 39px;
   font-family: 'ButtonFont', sans-serif;
   box-sizing: border-box;
+  border-radius: 50%; // делаем кнопку круглой
+  width: 40px; // задаем фиксированную ширину
+  height: 40px; // задаем фиксированную высоту
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .applyButton:hover {
   background-color: grey;
   color: white;
+}
+
+.applyButton::before {
+  content: "←"; // символ стрелки влево
+  font-size: 24px;
 }
