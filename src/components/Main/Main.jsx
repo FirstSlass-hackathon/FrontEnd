@@ -1,7 +1,7 @@
 import React from "react";
 // import { HeroSection } from "../ui/HeroSection";
 import { AboutUs } from "../Main/AboutUs";
-// import { Directions } from "../Main/Directions";
+import { Directions } from "../Main/Directions";
 // import { Continents } from "../Main/Continents";
 // import { Travels } from "../Main/Travels";
 // import { Advantages } from "../Main/Advantages";
@@ -19,14 +19,14 @@ export const Main = () => {
 {/*        <section className={s.main__section}>
           <HeroSection/>
   </section>*/}
-  
+
         <section className={s.main__section}>
           <AboutUs/>
         </section>
 
-       {/* <section className={s.main__section}>
+       <section className={s.main__section}>
           <Directions/>
-        </section> */}
+        </section>
 
         {/* <section className={s.main__section}>
           <Continents/>
