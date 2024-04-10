@@ -128,3 +128,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+.idea
+.env
+venv
+db.sqlite3
+**/__pycache__/
