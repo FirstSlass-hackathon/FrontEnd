@@ -3,7 +3,7 @@ import React from "react";
 import { AboutUs } from "../Main/AboutUs";
 import { Directions } from "../Main/Directions";
 // import { Continents } from "../Main/Continents";
-// import { Travels } from "../Main/Travels";
+import { Travels } from "../Main/Travels";
 import { Advantages } from "../Main/Advantages";
 import { Impressions } from '../Main/Impressions';
 import { Order } from '../Main/Order';
@@ -32,9 +32,9 @@ export const Main = () => {
           <Continents/>
         </section> */}
 
-        {/* <section className={s.main__section}>
+        <section className={s.main__section}>
           <Travels/>
-        </section> */}
+        </section>
 
         <section className={s.main__section}>
           <Advantages/>
