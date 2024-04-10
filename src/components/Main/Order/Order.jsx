@@ -1,7 +1,7 @@
 import React from "react";
 import cn from 'classnames';
 import s from './style.module.scss';
-// import { Checkbox } from '../../ui/Checkboxes/Checkbox';
+import { Checkbox } from '../../ui/Checkboxes/Checkbox';
 // import { Button } from '../../ui/Button/Button';
 
 
@@ -33,7 +33,7 @@ export const Order = () => {
         </div>
 
         <div className={s.checkbox}>
-          {/* <Checkbox/> */}
+          <Checkbox/>
         </div>
 
         {/* <Button/> */}
