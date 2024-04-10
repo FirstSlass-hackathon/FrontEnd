@@ -15,11 +15,12 @@ export const Directions = () => {
           <span className={s.highlight}>ВПЕЧАТЛЕНИЯ</span>
         </h2>
         <p className={s.description}>
-      Подари своим желания полную свободу. Вы ограничены только собственной фантазией.
+          Подари своим желания полную свободу. Вы ограничены только собственной фантазией.
           <br/>
           <br/>
-      Наша компания имеет безграничные возможности!
+          Наша компания имеет безграничные возможности!
         </p>
+        <button className={s.applyButton}></button>
         <button className={s.applyButton}>Оставить заявку</button>
       </div>
       <div className={s.Cards}>
