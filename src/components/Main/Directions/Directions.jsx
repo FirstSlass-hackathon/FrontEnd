@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './style.module.scss';
-import { Card } from '../../ui/Cards/Card';
+// import { Card } from '../../ui/Cards/Card';
 import cardDirections from '../../ui/Cards/CardDirection';
 
 export const Directions = () => {
@@ -8,12 +8,12 @@ export const Directions = () => {
   return (
     <div className={s.directions}>
       <div className={s.text}>
-        <h1 className={s.title}>направления</h1>
-        <h2 className={s.name}>
+        <h2 className={s.title}>направления</h2>
+        <h1 className={s.name}>
           <span>ЛОВИТЕ</span>
           <br/>
           <span className={s.highlight}>ВПЕЧАТЛЕНИЯ</span>
-        </h2>
+        </h1>
         <p className={s.description}>
           Подари своим желания полную свободу. Вы ограничены только собственной фантазией.
           <br/>
