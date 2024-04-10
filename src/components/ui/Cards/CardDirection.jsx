@@ -2,18 +2,6 @@ import React from "react";
 import cn from 'classnames';
 import s from './style.module.scss';
 
-// export const Card = () => {
-//   return (
-//     <div
-//       style={{
-//         width: '326px',
-//         height: '510px',
-//         cursor: 'pointer'
-//     }}>
-//     </div>
-//   )
-// }
-
 export const CardDirection = ({title, date, direction, ...props}) => {
   return (
     <>
