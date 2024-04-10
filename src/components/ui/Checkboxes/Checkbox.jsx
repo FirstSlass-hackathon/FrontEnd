@@ -11,7 +11,6 @@ export const Checkbox = () => {
   };
 
   return (
-		<>
     <div
       style={{
         display: 'flex',
@@ -32,6 +31,5 @@ export const Checkbox = () => {
       />
       <span>Я соглашаюсь на обработку информации о персональных данных</span>
     </div>
-		</>
   );
 };
