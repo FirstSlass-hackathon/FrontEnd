@@ -1,0 +1,28 @@
+.component {
+  position: absolute;
+  z-index: 0;
+}
+
+.info {
+  position: relative;
+  z-index: 10;
+  &__title {
+    text-align: start;
+    margin-bottom: 40px;
+    &_imp {
+      
+    }
+  }
+  &__offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  &__date {
+
+  }
+  &__direction {
+
+  }
+}

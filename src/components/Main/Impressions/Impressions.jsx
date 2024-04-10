@@ -2,6 +2,7 @@ import React from 'react';
 // import { Card } from '../../ui/Card';
 import s from './style.module.scss';
 
+
 export const Impressions = () => {
 
   return (
@@ -13,7 +14,6 @@ export const Impressions = () => {
         <span>которые вдохновляют</span>
       </h2>
       <div className={s.cardsList}>
-        Cards
         {/* <Card/>
         <Card/>
         <Card/> */}
