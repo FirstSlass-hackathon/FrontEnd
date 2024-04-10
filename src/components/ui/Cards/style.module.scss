@@ -2,13 +2,20 @@
   // position: relative;
   border: 1px solid black;
   box-sizing: border-box;
-  transition: transform 0.4s ease-in-out; // плавное изменение масштаба и переворачивания
   width: 326px;
   height: 510px;
   cursor: pointer;
+}
+
+.dir {
+  transition: transform 0.4s ease-in-out; // плавное изменение масштаба и переворачивания
   &:hover {
     transform: scale(1.2) rotateX(360deg); // добавляем переворот по оси Y при наведении
   }
+}
+
+.imp {
+  // здесь будет анимация
 }
 
 .info {

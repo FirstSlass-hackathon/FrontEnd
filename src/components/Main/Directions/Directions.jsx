@@ -6,7 +6,7 @@ import cardDirections from '../../ui/Cards/CardDirection';
 export const Directions = () => {
 
   return (
-    <div className={s.Directions}>
+    <div className={s.directions}>
       <div className={s.text}>
         <h1 className={s.title}>направления</h1>
         <h2 className={s.name}>

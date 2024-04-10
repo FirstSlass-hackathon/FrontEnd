@@ -1,24 +1,23 @@
 import React from "react";
-// import { Card } from './Card';
+import cn from 'classnames';
 import s from './style.module.scss';
 
-export const Card = () => {
-  return (
-    <div
-      style={{
-        // border: '1px solid',
-        width: '326px',
-        height: '510px',
-        cursor: 'pointer'
-    }}>
-    </div>
-  )
-}
+// export const Card = () => {
+//   return (
+//     <div
+//       style={{
+//         width: '326px',
+//         height: '510px',
+//         cursor: 'pointer'
+//     }}>
+//     </div>
+//   )
+// }
 
 export const CardDirection = ({title, date, direction, ...props}) => {
   return (
     <>
-      <div className={s.component}>
+      <div className={cn(s.component, s.dir)}>
           <div className={s.info}>
             <div className={s.info__title}>{title}</div>
             <div className={s.info__offer}>
@@ -42,26 +41,3 @@ const cardDirections = titles.map((item, index) => (
 ));
 
 export default cardDirections;
-
-
-// import React from "react";
-// // import { Card } from './Card';
-// import s from './style.module.scss';
-
-// export const CardDirection = ({title, date, direction, cardComponent: Card, ...props}) => {
-//   return (
-//     <>
-//       <div className={s.component}>
-//         <Card {...props} />
-//       </div>
-
-//       <div className={s.info}>
-//         <div className={s.info__title}>{title}</div>
-//         <div className={s.info__offer}>
-//           <div className={s.info__date}>{date}</div>
-//           <div className={s.info__direction}>{direction}</div>
-//         </div>
-//       </div>   
-//     </>
-//   )
-// }
