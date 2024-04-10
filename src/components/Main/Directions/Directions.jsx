@@ -1,8 +1,10 @@
 import React from 'react';
-// import { Card } from '../../ui/Card';
 import s from './style.module.scss';
+import { Card } from '../../ui/Cards/Card';
+import cardDirections from '../../ui/Cards/CardDirection';
 
 export const Directions = () => {
+
   return (
     <div className={s.Directions}>
       <div className={s.text}>
@@ -18,13 +20,57 @@ export const Directions = () => {
           <br/>
       Наша компания имеет безграничные возможности!
         </p>
+        <button className={s.applyButton}>Оставить заявку</button>
       </div>
       <div className={s.Cards}>
-        <img className={s.card1} src='{..}' alt="Глен-каньон" />
-        <img className={s.card2} src='{..}' alt="Выходные на Бали" />
-        <img className={s.card3} src='{..}' alt="о. Борнео" />
+        {cardDirections}
       </div>
-        <button className={s.applyButton}>Оставить заявку</button>
     </div>
   );
 }
+
+// import React from 'react';
+// import s from './style.module.scss';
+// import { Card } from '../../ui/Cards/Card';
+// import { CardDirection } from '../../ui/Cards/CardDirection';
+
+// export const Directions = () => {
+
+//   const titles = [
+//           {title: 'Америка', date: '3-5 дней', direction: 'some direction 1', cardComponent: Card},
+//           {title: 'Индонезия', date: '2-3 дня', direction: 'some direction 2', cardComponent: Card},
+//           {title: 'Малайзия', date: '7-12 дней', direction: 'some direction 3', cardComponent: Card}
+//   ];
+
+//   const cardDirections = [];
+
+//   for (let i = 0; i < titles.length; i++) {
+//     const { title, date, direction, cardComponent } = titles[i]; // Деструктурируем объект из массива titles
+//     cardDirections.push( // Добавляем компонент CardDirection в массив
+//       <CardDirection key={i} title={title} date={date} direction={direction} cardComponent={cardComponent}/>
+//     );
+//   }
+
+//   return (
+//     <div className={s.Directions}>
+//       <div className={s.text}>
+//         <h1 className={s.title}>направления</h1>
+//         <h2 className={s.name}>
+//           <span>ЛОВИТЕ</span>
+//           <br/>
+//           <span className={s.highlight}>ВПЕЧАТЛЕНИЯ</span>
+//         </h2>
+//         <p className={s.description}>
+//       Подари своим желания полную свободу. Вы ограничены только собственной фантазией.
+//           <br/>
+//           <br/>
+//       Наша компания имеет безграничные возможности!
+//         </p>
+//         <button className={s.applyButton}>Оставить заявку</button>
+//       </div>
+//       <div className={s.Cards}>
+//         {cardDirections} {/* Отображаем массив компонентов CardDirection */}
+//       </div>
+//     </div>
+//   );
+// }
