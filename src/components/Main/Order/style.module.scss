@@ -1,0 +1,28 @@
+.order {
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 53px;
+    margin-top: 504px;
+    gap: 12px;
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 53px;
+    &_row {
+      display: flex;
+      gap: 24px;
+    }
+  }
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  &:focus {
+    outline: none;
+  }
+}

@@ -6,7 +6,7 @@ import { AboutUs } from "../Main/AboutUs";
 // import { Travels } from "../Main/Travels";
 // import { Advantages } from "../Main/Advantages";
 import { Impressions } from '../Main/Impressions';
-// import { Order } from "../Main/Order";
+import { Order } from '../Main/Order';
 import s from './style.module.scss';
 
 export const Main = () => {
@@ -44,9 +44,9 @@ export const Main = () => {
           <Impressions/>
         </section>
 
-        {/* <section className={s.main__section}>
+        <section className={s.main__section}>
           <Order/>
-        </section> */}
+        </section>
       </main>
     </>
   )
