@@ -7,7 +7,7 @@ export const Impressions = () => {
 
   return (
     <div className={s.impression}>
-      <div classNmae={s.block}>
+      <div className={s.block}>
         <div className={s.text}>
           <h2 className={s.title}>впечатления</h2>
           <h1 className={s.name}>

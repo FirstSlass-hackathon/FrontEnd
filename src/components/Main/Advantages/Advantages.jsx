@@ -7,7 +7,7 @@ export const Advantages = () => {
 
   return (
     <div className={s.advantages}>
-      <div classNmae={s.block}>
+      <div className={s.block}>
         <div className={s.text}>
           <h2 className={s.title}>преимущества</h2>
           <h1 className={s.name}>

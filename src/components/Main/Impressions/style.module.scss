@@ -1,7 +1,7 @@
 .impressions {
   max-width: 100%; /* адаптивная ширина */
   min-height: 893px; /* минимальная высота для содержимого */
-  padding: 100px 0px 100px 189px;
+  // padding: 100px 0px 100px 189px;
   box-sizing: border-box;
   // background-color: #FAF7F3;
   display: flex;
@@ -17,8 +17,8 @@
 .text {
   width: 525px;
   height: 123px;
-  margin-left: 189px;
-  margin-top: 100px;
+  //margin-left: 189px;
+  //margin-top: 100px;
   box-sizing: border-box;
 }
 
@@ -53,7 +53,7 @@
   //justify-content: center; /* Располагаем элементы в начале контейнера */
   //align-items: flex-start; /* Выравниваем элементы по центру по вертикали */
   // padding: 100px 0 100px 100px;
-  margin-left: 189px;
+  //margin-left: 189px;
   margin-top: 60px;
   width: 1098px;
   height: 510px;

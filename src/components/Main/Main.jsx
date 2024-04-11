@@ -2,7 +2,7 @@ import React from "react";
 // import { HeroSection } from "../ui/HeroSection";
 import { AboutUs } from "../Main/AboutUs";
 import { Directions } from "../Main/Directions";
-// import { Continents } from "../Main/Continents";
+import { Continents } from "../Main/Continents";
 import { Travels } from "../Main/Travels";
 import { Advantages } from "../Main/Advantages";
 import { Impressions } from '../Main/Impressions';
@@ -28,9 +28,9 @@ export const Main = () => {
           <Directions/>
         </section>
 
-        {/* <section className={s.main__section}>
+        <section className={s.main__section}>
           <Continents/>
-        </section> */}
+        </section>
 
         <section className={s.main__section}>
           <Travels/>
