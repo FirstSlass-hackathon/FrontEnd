@@ -34,16 +34,23 @@ export const Footer = () => {
           <div className={s.footer__column}>
             <h3>Направления</h3>
             <div className={s.footer__column_links}>
-              <Link className={s.link} to='/'>африка</Link>
-              <Link className={s.link} to='/'>азия</Link>
-              <Link className={s.link} to='/'>австралия</Link>
-              <Link className={s.link} to='/'>европа</Link>
-              <Link className={s.link} to='/'>америка</Link>
+              <Link className={cn(s.link, s.upper)} to='/'>африка</Link>
+              <Link className={cn(s.link, s.upper)} to='/'>азия</Link>
+              <Link className={cn(s.link, s.upper)} to='/'>австралия</Link>
+              <Link className={cn(s.link, s.upper)} to='/'>европа</Link>
+              <Link className={cn(s.link, s.upper)} to='/'>америка</Link>
             </div>
           </div>
 
           <div className={s.footer__column}>
             <h3>Виды отдыха</h3>
+            <div className={s.footer__column_links}>
+              <Link className={cn(s.link, s.travel)} to='/'>Пляжный отдых</Link>
+              <Link className={cn(s.link, s.travel)} to='/'>Кайтсерфинг</Link>
+              <Link className={cn(s.link, s.travel)} to='/'>Дайвинг</Link>
+              <Link className={cn(s.link, s.travel)} to='/'>Яхтинг</Link>
+              <Link className={cn(s.link, s.travel)} to='/'>Горные лыжи</Link>
+            </div>
           </div>
 
           <div className={s.footer__column}>

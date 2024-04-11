@@ -1,10 +1,18 @@
 .component {
-  // position: relative;
   border: 1px solid black;
   box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.size {
   width: 326px;
   height: 510px;
-  cursor: pointer;
+}
+.small {
+  width: 299px;
+  height: 360px;
 }
 
 .dir {
@@ -23,8 +31,9 @@
 }
 
 .info {
-  // position: relative;
-  // z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 15%;
   &__title {
     text-align: start;
     margin-bottom: 40px;
@@ -50,4 +59,14 @@
   &__moto {
     
   }
+}
+
+.img {
+
+}
+
+.info {
+  position: absolute;
+  top: 50%;
+  left: 15%;
 }

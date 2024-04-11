@@ -10,9 +10,12 @@ export default function HomePage() {
 		window.scrollTo({top: 0, behavior: 'smooth'});
 	}, []);
 
+
   return (
       <main className={s.content}>
-        <Header/>
+        <div id="absolute" className={s.absolute}>
+          <Header/>
+        </div>
         <Main/>
         <Footer/>
       </main>

@@ -1,11 +1,13 @@
 import React from "react";
 import cn from 'classnames';
 import s from './style.module.scss';
+import img1 from '../../../assets/images/card.svg';
 
-export const CardDirection = ({title, date, direction, ...props}) => {
+export const CardDirection = ({title, date, direction, img, ...props}) => {
   return (
     <>
-      <div className={cn(s.component, s.dir)}>
+      <div className={cn(s.component, s.size, s.dir)}>
+          <img src={img} className={s.img} alt={"img"}></img>
           <div className={s.info}>
             <div className={s.info__title}>{title}</div>
             <div className={s.info__offer}>
@@ -19,9 +21,9 @@ export const CardDirection = ({title, date, direction, ...props}) => {
 }
 
 const titles = [
-  {title: 'Америка', date: '3-5 дней', direction: 'Озеро Пауэлл Глен-Каньон'},
-  {title: 'Индонезия', date: '2-3 дня', direction: 'выходные на бали'},
-  {title: 'Малайзия', date: '7-12 дней', direction: 'куала-лумпур о. борнео'}
+  {title: 'Америка', date: '3-5 дней', direction: 'Озеро Пауэлл Глен-Каньон', img: img1},
+  {title: 'Индонезия', date: '2-3 дня', direction: 'выходные на бали', img: img1},
+  {title: 'Малайзия', date: '7-12 дней', direction: 'куала-лумпур о. борнео', img: img1}
 ];
 
 const cardDirections = titles.map((item, index) => (

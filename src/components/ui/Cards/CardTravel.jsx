@@ -1,13 +1,17 @@
 import React from "react";
 import cn from 'classnames';
 import s from './style.module.scss';
+import img1 from '../../../assets/images/card.svg';
+import img2 from '../../../assets/images/card.svg';
+import img3 from '../../../assets/images/card.svg';
 
-export const CardTravel = ({title, travel, moto, ...props}) => {
+export const CardTravel = ({title, travel, moto, img, ...props}) => {
   return (
     <>
-      <div className={cn(s.component, s.tr)}>
+      <div className={cn(s.component, s.size, s.tr)}>
+          <img src={img} className={s.img} alt ={"img"}></img>
           <div className={s.info}>
-          <div className={s.info__block}>
+            <div className={s.info__block}>
               <div className={s.info__title}>{title}</div>
               <div className={s.info__travel}>{travel}</div>
             </div>
@@ -19,9 +23,9 @@ export const CardTravel = ({title, travel, moto, ...props}) => {
 }
 
 const titles = [
-  {title: 'направление', date: 'Кайтсерфинг', direction: 'ощутите свободу с кайтсерфингом!'},
-  {title: 'направление', date: 'Горные лыжи', direction: 'покоряйте вершины с нами!'},
-  {title: 'виды отдыха', date: 'Уединение на острове', direction: 'тропический рай'}
+  {title: 'виды отдыха', travel: 'Кайтсерфинг', moto: 'ощутите свободу с кайтсерфингом!', img: img1},
+  {title: 'виды отдыха', travel: 'Горные лыжи', moto: 'покоряйте вершины с нами!', img: img2},
+  {title: 'виды отдыха', travel: 'Уединение на острове', moto: 'тропический рай', img: img3}
 ];
 
 const cardTravels = titles.map((item, index) => (

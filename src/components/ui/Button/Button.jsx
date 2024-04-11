@@ -1,7 +1,7 @@
 import React from "react";
 import s from './style.module.scss';
 
-export const Button = ({className, children, onClick, isDisabled, ...props}) => {
+export const Button = ({className, text, onClick, isDisabled, ...props}) => {
 
 	return (
 		<button
@@ -9,7 +9,9 @@ export const Button = ({className, children, onClick, isDisabled, ...props}) => 
 			onClick={onClick}
 			disabled={isDisabled}
 			{...props}>
-			{children}
+			{text}
 		</button>
 	);
 }
+
+export default Button

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './style.module.scss';
 // import { Card } from '../../ui/Cards/Card';
-import cardDirections from '../../ui/Cards/CardDirection';
+import cardAdvantages from '../../ui/Cards/CardAdv';
 
 export const Advantages = () => {
 
@@ -31,7 +31,7 @@ export const Advantages = () => {
           <button className={s.applyButton}>Оставить заявку</button>
         </div>
         <div className={s.Cards}>
-          {cardDirections}
+          {cardAdvantages}
         </div>
       </div>
     </div>

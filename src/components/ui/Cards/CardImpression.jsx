@@ -5,7 +5,7 @@ import s from './style.module.scss';
 export const CardImpression = ({title, text, ...props}) => {
   return (
     <>
-      <div className={cn(s.component, s.imp)}>
+      <div className={cn(s.component, s.size, s.imp)}>
           <div className={s.info}>
             <div className={s.info__title_imp}>{title}</div>
             <div className={s.info__text}>{text}</div>
