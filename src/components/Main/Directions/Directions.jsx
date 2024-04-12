@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './style.module.scss';
-// import { Card } from '../../ui/Cards/Card';
+import Button from '../../ui/Button/Button';
 import cardDirections from '../../ui/Cards/CardDirection';
 
 export const Directions = () => {
@@ -21,7 +21,7 @@ export const Directions = () => {
           Наша компания имеет безграничные возможности!
         </p>
         <button className={s.applyButton}></button>
-        <button className={s.applyButton}>Оставить заявку</button>
+        <Button className={s.applyButton} text={'Оставить заявку'}/>
       </div>
       <div className={s.Cards}>
         {cardDirections}

@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "../ui/Button/Button";
 import { NavBar } from '../ui/Navbar/navbar';
 import s from './styles.module.scss';
-import scrollToOrder from '../Main/Main';
+import {scrollToOrder} from '../Main/Main';
 
 export const Header = () => {
   return (

@@ -14,6 +14,10 @@ const scrollToOrder = () => {
   orderSection.scrollIntoView({ behavior: "smooth" });
 };
 
+const goToLink = () => {
+
+}
+
 export const Main = () => {
   return (
     <>
@@ -57,4 +61,5 @@ export const Main = () => {
   )
 }
 
-export default scrollToOrder;
+export {scrollToOrder};
+export {goToLink};
