@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import axios from "axios";
-import cn from 'classnames';
+// import cn from 'classnames';
 import s from './style.module.scss';
 import { Checkbox } from '../../ui/Checkboxes/Checkbox';
 
 export const Order = () => {
-  const [formData, setFormData] = useState({
+  const initialState = {
     name: "",
     fam: "",
     email: "",
     phone: ""
-  });
+  };
+
+  const [formData, setFormData] = useState(initialState);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,6 +23,7 @@ export const Order = () => {
     try {
       const response = await axios.post("http://127.0.0.1:8000/submitData/", formData);
       console.log(response.data);
+      setFormData(initialState); // Очистка данных после успешной отправки
     } catch (error) {
       console.error(error);
     }
@@ -32,11 +35,11 @@ export const Order = () => {
         <h3>мир в шаге от тебя</h3>
         <div className={s.order__upCase}>
           <h1>
-          начните путешествие
-          <br/>
-          на высочайшем уровне
-          <br/>
-          с first class
+            начните путешествие
+            <br/>
+            на высочайшем уровне
+            <br/>
+            с first class
           </h1>
         </div>
       </div>

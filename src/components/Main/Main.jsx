@@ -9,6 +9,11 @@ import { Impressions } from '../Main/Impressions';
 import { Order } from '../Main/Order';
 import s from './style.module.scss';
 
+const scrollToOrder = () => {
+  const orderSection = document.getElementById("orderSection");
+  orderSection.scrollIntoView({ behavior: "smooth" });
+};
+
 export const Main = () => {
   return (
     <>
@@ -44,10 +49,12 @@ export const Main = () => {
           <Impressions/>
         </section>
 
-        <section className={s.main__section}>
+        <section className={s.main__section} id="orderSection">
           <Order/>
         </section>
       </main>
     </>
   )
 }
+
+export default scrollToOrder;

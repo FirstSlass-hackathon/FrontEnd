@@ -2,6 +2,7 @@ import React from "react";
 import s from './style.module.scss';
 import kacheliImage from '../../../assets/images/swing.jpg';
 import twix from '../../../assets/images/twix.jpg';
+import scrollToOrder from '../Main';
 
 export const AboutUs = () => {
   return (
@@ -32,7 +33,7 @@ export const AboutUs = () => {
             <img className={s.image1} src={kacheliImage} alt="Качели" />
             <img className={s.image2} src={twix} alt="Сладкая парочка" />
           </div>
-          <button className={s.applyButton}>Оставить заявку</button>
+          <button className={s.applyButton} onClick={scrollToOrder}>Оставить заявку</button>
         </div>
       </div>
   );
