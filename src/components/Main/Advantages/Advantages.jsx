@@ -2,7 +2,7 @@ import React from 'react';
 import s from './style.module.scss';
 // import { Card } from '../../ui/Cards/Card';
 import cardAdvantages from '../../ui/Cards/CardAdv';
-import scrollToOrder from '../Main';
+import {scrollToOrder} from '../Main';
 
 export const Advantages = () => {
 
