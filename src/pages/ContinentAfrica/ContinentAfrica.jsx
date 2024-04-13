@@ -1,5 +1,6 @@
 import React from "react";
 import s from './style.module.scss';
+import { ImpressionsList } from "../../components/Africa/ImpressionsList";
 
 export default function ContinentAfrica() {
 
@@ -10,7 +11,7 @@ export default function ContinentAfrica() {
   return (
     <>
       <main className={s.content}>
-        <h1>Africa</h1>
+        <ImpressionsList/>
       </main>
     </>
   );

@@ -1,0 +1,38 @@
+@import '../../../assets/styles/variables.scss';
+
+.ImpressionsList {
+    display: inline-flex;
+}
+
+.image {
+    width: 50.5%;
+    height: auto;
+    margin-left: 134px;
+    margin-top: 172px;
+}
+
+.text {
+    margin-left: 53px;
+    margin-top: 172px;
+}
+
+.symbol {
+    @include fontAGTms;
+    font-size: 118px;
+	font-weight: 400;
+	line-height: 118px;
+    letter-spacing: 2%;
+}
+
+.impression {
+    @include fontH2;
+    width: 436px;
+    height: 176px;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
+
+.signature {
+    text-transform: uppercase;
+    margin-top: 40px;
+}
