@@ -18,7 +18,7 @@
 }
 
 .title {
-  @include fontH2;
+  @include fontDescription;
   box-sizing: border-box;
 }
 
@@ -28,20 +28,16 @@
 }
 
 .highlight {
-  color: #ff4500; /* Цвет выделенного текста */
+  color: $colorBold;
   box-sizing: border-box;
 }
 
 .description {
-  // margin-top: 29px; /* отступ сверху от родительского блока */
-  // margin-left: 763px; /* отступ слева от родительского блока */
-  // word-wrap: break-word; /* или overflow-wrap: break-word; */
-  // max-width: 50%; /* ограничиваем максимальную ширину блока */
-  @include fontDescription;
+  @include fontText;
   box-sizing: border-box;
 }
 
-.Cards {
+.cards {
   display: flex; /* Устанавливаем flex-контейнер */
   flex-wrap: nowrap; /* Запрещаем перенос элементов на новую строку */
   justify-content: flex-start; /* Располагаем элементы в начале контейнера */
@@ -54,31 +50,31 @@
   gap: 28px;
 }
 
-.applyButton {
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  margin-left: 323px;
-  margin-top: 39px;
-  font-family: 'ButtonFont', sans-serif;
-  box-sizing: border-box;
-  border-radius: 50%; // делаем кнопку круглой
-  width: 40px; // задаем фиксированную ширину
-  height: 40px; // задаем фиксированную высоту
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+// .applyButton {
+//   background-color: transparent;
+//   color: black;
+//   border: 1px solid black;
+//   padding: 10px 20px;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease, color 0.3s ease;
+//   margin-left: 323px;
+//   margin-top: 39px;
+//   font-family: 'ButtonFont', sans-serif;
+//   box-sizing: border-box;
+//   border-radius: 50%; // делаем кнопку круглой
+//   width: 40px; // задаем фиксированную ширину
+//   height: 40px; // задаем фиксированную высоту
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
 
-.applyButton:hover {
-  background-color: grey;
-  color: white;
-}
+// .applyButton:hover {
+//   background-color: grey;
+//   color: white;
+// }
 
-.applyButton::before {
-  content: "←"; // символ стрелки влево
-  font-size: 24px;
-}
+// .applyButton::before {
+//   content: "←"; // символ стрелки влево
+//   font-size: 24px;
+// }

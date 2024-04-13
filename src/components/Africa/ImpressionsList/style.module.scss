@@ -1,26 +1,30 @@
 @import '../../../assets/styles/variables.scss';
 
-.ImpressionsList {
-    display: inline-flex;
+.impressionsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    background-color: $colorLight;
+    padding: 172px 0;
 }
 
 .image {
     width: 50.5%;
     height: auto;
-    margin-left: 134px;
-    margin-top: 172px;
+    // margin-left: 134px;
+    // margin-top: 172px;
 }
 
 .text {
-    margin-left: 53px;
-    margin-top: 172px;
+    // margin-left: 53px;
+    // margin-top: 172px;
 }
 
 .symbol {
     @include fontAGTms;
-    font-size: 118px;
-	font-weight: 400;
-	line-height: 118px;
+    @include fontStyle(118px, 400, 118px);
     letter-spacing: 2%;
 }
 
@@ -29,10 +33,11 @@
     width: 436px;
     height: 176px;
     text-transform: uppercase;
-    margin-top: 80px;
+
 }
 
 .signature {
+    @include fontH3;
     text-transform: uppercase;
     margin-top: 40px;
 }

@@ -16,7 +16,7 @@ export const Impressions = () => {
             <span>КОТОРЫЕ</span> <span className={s.highlight}>ВДОХНОВЛЯЮТ</span>
           </h1>
         </div>
-        <div className={s.Cards}>
+        <div className={s.cards}>
           {cardDirections}
         </div>
       </div>

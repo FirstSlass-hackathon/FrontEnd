@@ -4,8 +4,15 @@
 .navbar {
   display: flex;
   justify-content: space-around;
+  gap: 5px;
+  &__block {
+    display: flex;
+    gap: 5px;
+  }
 }
 
 .link__nav {
   @include fontText;
+  text-decoration: none;
+  color: $colorWhite;
 }

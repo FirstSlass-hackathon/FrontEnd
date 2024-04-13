@@ -1,0 +1,43 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.countriesInfo {
+  max-width: 100%; /* адаптивная ширина */
+  min-height: 719px; /* минимальная высота для содержимого */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px 79px;
+}
+
+.text {
+  width: 388px;
+  // height: 283px;
+  box-sizing: border-box;
+}
+
+.title {
+  @include fontDescription;
+  box-sizing: border-box;
+}
+
+.name {
+  @include fontH2;
+  box-sizing: border-box;
+}
+
+.highlight {
+  @include fontH2;
+  color: $colorBold;
+  box-sizing: border-box;
+}
+
+.description {
+  @include fontText;
+  box-sizing: border-box;
+}
+
+.countriesInfo__img_small {
+  margin-top: 75px;
+}

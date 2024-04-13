@@ -4,9 +4,9 @@
 .impressions {
   max-width: 100%; /* адаптивная ширина */
   min-height: 893px; /* минимальная высота для содержимого */
-  // padding: 100px 0px 100px 189px;
+  padding: 100px 0px 100px 189px;
   box-sizing: border-box;
-  // background-color: #FAF7F3;
+  // background-color: $colorLight;
   display: flex;
 }
 
@@ -16,18 +16,19 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: 60px;
 }
 
 .text {
-  width: 525px;
-  height: 123px;
+  width: 560px;
+  height: 124px;
   //margin-left: 189px;
   //margin-top: 100px;
   box-sizing: border-box;
 }
 
 .title {
-  @include fontH2;
+  @include fontDescription;
   box-sizing: border-box;
 }
 
@@ -37,18 +38,12 @@
 }
 
 .highlight {
-  color: #ff4500; /* Цвет выделенного текста */
+  color: $colorBold;
   box-sizing: border-box;
 }
 
-.Cards {
+.cards {
   display: flex; /* Устанавливаем flex-контейнер */
-  //flex-wrap: nowrap; /* Запрещаем перенос элементов на новую строку */
-  //flex-direction: row;
-  //justify-content: center; /* Располагаем элементы в начале контейнера */
-  //align-items: flex-start; /* Выравниваем элементы по центру по вертикали */
-  // padding: 100px 0 100px 100px;
-  //margin-left: 189px;
   margin-top: 60px;
   width: 1098px;
   height: 510px;
@@ -56,24 +51,24 @@
   gap: 60px;
 }
 
-.applyButton {
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  // position: absolute; /* абсолютное позиционирование */
-  // right: 620px; /* отступ справа */
-  // bottom: 120px; /* отступ снизу */
-  margin-left: 763px;
-  margin-top: 39px;
-  font-family: 'ButtonFont', sans-serif;
-  // margin-top: 120px;
-  box-sizing: border-box;
-}
+// .applyButton {
+//   background-color: transparent;
+//   color: black;
+//   border: 1px solid black;
+//   padding: 10px 20px;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease, color 0.3s ease;
+//   // position: absolute; /* абсолютное позиционирование */
+//   // right: 620px; /* отступ справа */
+//   // bottom: 120px; /* отступ снизу */
+//   margin-left: 763px;
+//   margin-top: 39px;
+//   font-family: 'ButtonFont', sans-serif;
+//   // margin-top: 120px;
+//   box-sizing: border-box;
+// }
 
-.applyButton:hover {
-  background-color: grey;
-  color: white;
-}
+// .applyButton:hover {
+//   background-color: grey;
+//   color: white;
+// }

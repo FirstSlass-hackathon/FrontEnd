@@ -30,10 +30,10 @@ export const Advantages = () => {
 и&nbsp;уникальности.
           </p>
         </div>
-        <Button className={s.button} onClick={scrollToOrder} text={'Оставить заявку'}/>
+        <Button className={s.button} onClick={scrollToOrder} text={'Оставить заявку'} colorScheme={'black'}/>
       </div>
       
-      <div className={s.Cards}>
+      <div className={s.cards}>
           {cardAdvantages}
       </div>
     </div>

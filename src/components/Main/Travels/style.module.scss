@@ -19,7 +19,7 @@
 }
 
 .title {
-  @include fontH2;
+  @include fontDescription;
   box-sizing: border-box;
 }
 
@@ -29,11 +29,11 @@
 }
 
 .highlight {
-  color: #BA7F49; /* Цвет выделенного текста */
+  color: $colorBold;
   box-sizing: border-box;
 }
 
-.Cards {
+.cards {
   display: flex; /* Устанавливаем flex-контейнер */
   flex-wrap: nowrap; /* Запрещаем перенос элементов на новую строку */
   justify-content: flex-start; /* Располагаем элементы в начале контейнера */

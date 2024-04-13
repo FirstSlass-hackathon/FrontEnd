@@ -20,12 +20,10 @@
     }
     &__title {
       @include fontH2;
-      font-size: 28px;
       text-transform: uppercase;
     }
     &__name {
       @include fontDescription;
-      font-size: 20px;
     }
     &_contacts {
       display: flex;
@@ -44,7 +42,9 @@
     color: $colorLight;
   }
   &__logo {
-    color: aliceblue;
+    color: $colorWhite;
+    width: 48px;
+    height: 54px;
   }
   &__down {
     display: flex;
