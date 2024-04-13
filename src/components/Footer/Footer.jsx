@@ -34,7 +34,7 @@ export const Footer = () => {
           <div className={s.footer__column}>
             <h3>Направления</h3>
             <div className={s.footer__column_links}>
-              <Link className={cn(s.link, s.upper)} to='/'>африка</Link>
+              <Link className={cn(s.link, s.upper)} to='/africa'>африка</Link>
               <Link className={cn(s.link, s.upper)} to='/'>азия</Link>
               <Link className={cn(s.link, s.upper)} to='/'>австралия</Link>
               <Link className={cn(s.link, s.upper)} to='/'>европа</Link>

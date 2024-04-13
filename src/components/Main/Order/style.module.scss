@@ -12,10 +12,14 @@
   }
   &__title {
     @include fontDescription;
+    font-size: 20px;
+    color: $colorLight;
   }
   &__name {
     @include fontH2;
+    font-size: 28px;
     text-transform: uppercase;
+    color: $colorLight;
   }
   &__inputs {
     display: flex;
