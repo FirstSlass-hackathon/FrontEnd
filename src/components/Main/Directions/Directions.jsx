@@ -2,6 +2,7 @@ import React from 'react';
 import s from './style.module.scss';
 import Button from '../../ui/Button/Button';
 import cardDirections from '../../ui/Cards/CardDirection';
+import {scrollToOrder} from '../Main';
 
 export const Directions = () => {
 
@@ -15,13 +16,13 @@ export const Directions = () => {
           <span className={s.highlight}>ВПЕЧАТЛЕНИЯ</span>
         </h1>
         <p className={s.description}>
-          Подари своим желания полную свободу. Вы ограничены только собственной фантазией.
+          Подари своим желаниям полную свободу. Вы ограничены только собственной фантазией.
           <br/>
           <br/>
           Наша компания имеет безграничные возможности!
         </p>
         <button className={s.applyButton}></button>
-        <Button className={s.applyButton} text={'Оставить заявку'}/>
+        <Button className={s.applyButton} onClick={scrollToOrder} text={'Оставить заявку'}/>
       </div>
       <div className={s.Cards}>
         {cardDirections}
