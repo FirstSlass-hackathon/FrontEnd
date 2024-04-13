@@ -1,9 +1,9 @@
 import React from "react";
-import Button from "../../ui/Button/Button";
+// import Button from "../../ui/Button/Button";
 import s from './style.module.scss';
 import kacheliImage from '../../../assets/images/swing.jpg';
 import twix from '../../../assets/images/twix.jpg';
-import {goToLink} from '../Main';
+// import {goToLink} from '../Main';
 
 export const AboutUs = () => {
   return (
@@ -31,7 +31,7 @@ export const AboutUs = () => {
     и&nbsp;встреч со&nbsp;знаменитостями, а&nbsp;также оказание персональной помощи
     во&nbsp;время путешествия.
           </p>
-          <Button onClick={goToLink} text={'О нас'}/>
+          {/* <Button onClick={goToLink} text={'О нас'}/> */}
         </div>
 
         <div className={s.aboutUs__block}>

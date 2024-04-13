@@ -14,14 +14,6 @@ export const Travels = () => {
           <br/>
           <span>ПУТЕШЕСТВИЕ</span> <span className={s.highlight}>ПО ВКУСУ</span>
         </h1>
-       {/* <p className={s.description}>
-          Подари своим желания полную свободу. Вы ограничены только собственной фантазией.
-          <br/>
-          <br/>
-          Наша компания имеет безграничные возможности!
-  </p> */}
-        {/*<button className={s.applyButton}></button>
-        <button className={s.applyButton}>Оставить заявку</button>*/}
       </div>
       <div className={s.Cards}>
         {cardTravels}

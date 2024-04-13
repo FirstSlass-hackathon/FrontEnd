@@ -1,3 +1,6 @@
+@use '../../assets/styles/styles.scss' as *;
+@import '../../assets/styles/variables.scss';
+
 .footer {
   max-width: 100%;
   &__up {
@@ -6,13 +9,23 @@
     align-items: center;
     box-sizing: border-box;
     padding: 100px 160px;
-    border-top: 2px solid rgb(255, 255, 255);
-    background: rgb(178, 156, 137);
+    border-top: 2px solid $colorLight;
+    background: $colorMedium;
     &_textBlock {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+      color: $colorLight;
+    }
+    &__title {
+      @include fontH2;
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+    &__name {
+      @include fontDescription;
+      font-size: 20px;
     }
     &_contacts {
       display: flex;
@@ -24,6 +37,11 @@
       height: 48px;
       margin-bottom: 43px;
     }
+  }
+  &__link {
+    @include fontAGTms;
+    text-decoration: none;
+    color: $colorLight;
   }
   &__logo {
     color: aliceblue;

@@ -1,3 +1,6 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
 .travels {
   max-width: 100%; /* адаптивная ширина */
   min-height: 1076px; /* минимальная высота для содержимого */
@@ -16,12 +19,12 @@
 }
 
 .title {
-  font-family: 'TitleFont', sans-serif;
+  @include fontH2;
   box-sizing: border-box;
 }
 
 .name {
-  font-family: 'NameFont', sans-serif;
+  @include fontH1;
   box-sizing: border-box;
 }
 
@@ -29,11 +32,6 @@
   color: #BA7F49; /* Цвет выделенного текста */
   box-sizing: border-box;
 }
-
-// .description {
-//   font-family: 'DescriptionFont', sans-serif;
-//   box-sizing: border-box;
-// }
 
 .Cards {
   display: flex; /* Устанавливаем flex-контейнер */

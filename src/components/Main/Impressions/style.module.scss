@@ -1,3 +1,6 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
 .impressions {
   max-width: 100%; /* адаптивная ширина */
   min-height: 893px; /* минимальная высота для содержимого */
@@ -12,6 +15,7 @@
   margin-top: 100px;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
 }
 
 .text {
@@ -23,26 +27,17 @@
 }
 
 .title {
-  font-family: 'TitleFont', sans-serif;
+  @include fontH2;
   box-sizing: border-box;
 }
 
 .name {
-  font-family: 'NameFont', sans-serif;
+  @include fontH1;
   box-sizing: border-box;
 }
 
 .highlight {
   color: #ff4500; /* Цвет выделенного текста */
-  box-sizing: border-box;
-}
-
-.description {
-  // margin-top: 29px; /* отступ сверху от родительского блока */
-  // margin-left: 763px; /* отступ слева от родительского блока */
-  font-family: 'DescriptionFont', sans-serif;
-  // word-wrap: break-word; /* или overflow-wrap: break-word; */
-  // max-width: 50%; /* ограничиваем максимальную ширину блока */
   box-sizing: border-box;
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './style.module.scss';
-// import { Card } from '../../ui/Cards/Card';
+import Button from '../../ui/Button/Button';
 import cardAdvantages from '../../ui/Cards/CardAdv';
 import {scrollToOrder} from '../Main';
 
@@ -29,11 +29,12 @@ export const Advantages = () => {
 пространство для вашей индивидуальности
 и&nbsp;уникальности.
           </p>
-          <button className={s.applyButton} onClick={scrollToOrder}>Оставить заявку</button>
         </div>
-        <div className={s.Cards}>
+        <Button className={s.button} onClick={scrollToOrder} text={'Оставить заявку'}/>
+      </div>
+      
+      <div className={s.Cards}>
           {cardAdvantages}
-        </div>
       </div>
     </div>
   );

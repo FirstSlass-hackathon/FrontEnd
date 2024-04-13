@@ -11,20 +11,20 @@ export const Footer = () => {
     <div className={s.footer}>
       <section className={s.footer__up}>
         <div className={s.footer__up_textBlock}>
-          <h1>Наши
+          <div className={s.footer__up__title}>Наши
             <br/>
-            контакты</h1>
-          <h3>Мы на связи 24 часа</h3>
+            контакты</div>
+          <div className={s.footer__up__name}>Мы на связи 24 часа</div>
         </div>
         
         <div className={s.footer__up_contacts}>
           <img className={s.footer__up_img} src={phone} alt={phone}/>
-          <Link className={s.link} to='/'>+7 (999) 555 66 77</Link>
+          <Link className={s.footer__link} to='/'>+7 (999) 555 66 77</Link>
         </div>
 
         <div className={s.footer__up_contacts}>
           <img className={s.footer__up_img} src={mail} alt={mail}/>
-          <Link className={s.link} to='/'>info@firstclass.com</Link>
+          <Link className={s.footer__link} to='/'>info@firstclass.com</Link>
         </div>
       </section>
 

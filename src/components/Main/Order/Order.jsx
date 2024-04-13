@@ -31,16 +31,14 @@ export const Order = () => {
 
   return (
     <div className={s.order}>
-      <div className={s.order__text}>
-        <h3>мир в шаге от тебя</h3>
-        <div className={s.order__upCase}>
-          <h1>
+      <div className={s.order__block}>
+        <div className={s.order__title}>мир в шаге от тебя</div>
+        <div className={s.order__name}>
             начните путешествие
             <br/>
             на высочайшем уровне
             <br/>
             с first class
-          </h1>
         </div>
       </div>
 

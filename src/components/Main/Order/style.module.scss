@@ -1,11 +1,21 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
 .order {
 
-  &__text {
+  &__block {
     display: flex;
     flex-direction: column;
     margin-left: 53px;
     margin-top: 504px;
     gap: 12px;
+  }
+  &__title {
+    @include fontDescription;
+  }
+  &__name {
+    @include fontH2;
+    text-transform: uppercase;
   }
   &__inputs {
     display: flex;

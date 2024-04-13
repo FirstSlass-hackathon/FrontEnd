@@ -7,19 +7,19 @@ export const NavBar = () => {
   return (
     <div className={s.navbar}>
       <div>
-        <Link className={s.link} to='/'>Направления</Link>
+        <Link className={s.link__nav} to='/'>Направления</Link>
         <img src={arrowDown} alt={"arrow_down"}/>
       </div>
       <div>
-        <Link className={s.link} to='/'>Виды путешествий</Link>
+        <Link className={s.link__nav} to='/'>Виды путешествий</Link>
         <img src={arrowDown} alt={"arrow_down"}/>
       </div>
       <div>
-        <Link className={s.link} to='/'>О нас</Link>
+        <Link className={s.link__nav} to='/'>О нас</Link>
         <img src={arrowDown} alt={"arrow_down"}/>
       </div>
       <div>
-        <Link className={s.link} to='/'>Истории</Link>
+        <Link className={s.link__nav} to='/'>Истории</Link>
         <img src={arrowDown} alt={"arrow_down"}/>
       </div>
     </div>
