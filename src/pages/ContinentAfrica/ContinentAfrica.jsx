@@ -1,4 +1,7 @@
 import React from "react";
+import { Header } from '../../components/Header';
+import { Africa } from "../../components/Africa";
+import { Footer } from "../../components/Footer";
 import s from './style.module.scss';
 
 export default function ContinentAfrica() {
@@ -10,7 +13,12 @@ export default function ContinentAfrica() {
   return (
     <>
       <main className={s.content}>
+        <div id="absolute" className={s.absolute}>
+          <Header/>
+        </div>
         <h1>Africa</h1>
+        <Africa/>
+        <Footer/>
       </main>
     </>
   );
