@@ -53,6 +53,13 @@
     padding: 80px 100px;
     border-top: 2px solid rgb(255, 255, 255);
     background: rgb(70, 78, 77);
+    gap: 40px;
+    &__title {
+      @include fontMontserrat;
+      @include fontStyle($size: 20px, $weight: 500, $height: 25px);
+      color: $colorWhite;
+      margin-bottom: 40px;
+    }
   }
   &__columns {
     display: flex;
@@ -64,6 +71,7 @@
     flex-direction: column;
     text-decoration: none;
     justify-content: space-between;
+    gap: 40px;
     &_socialMedia {
       margin-bottom: 95px;
     }
@@ -78,7 +86,17 @@
 
 .link {
   text-decoration: none;
-  color: aliceblue;
+  color: $colorWhite;
+  &__main {
+    @include fontAGTms;
+    @include fontStyle($size: 24px, $weight: 400, $height: 29px);
+    letter-spacing: 2%;
+  }
+  &__politics {
+    @include fontMontserrat;
+    @include fontStyle($size: 16px, $weight: 500, $height: 20px);
+    letter-spacing: 2%;
+  }
 }
 
 .upper {
@@ -91,4 +109,9 @@
 
 .docs {
   gap: 12px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 17px;
 }

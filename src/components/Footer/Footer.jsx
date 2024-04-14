@@ -5,6 +5,11 @@ import s from './styles.module.scss';
 import phone from '../../assets/images/phone-line.svg';
 import mail from '../../assets/images/mail-line.svg';
 import logo from '../../assets/images/logo-3 1.svg';
+import tg from '../../assets/images/social/телеграм.svg';
+import youtube from '../../assets/images/social/ютуб.svg';
+import vk from '../../assets/images/social/вк.svg';
+import whatsapp from '../../assets/images/social/whatsapp.svg';
+import inst from '../../assets/images/social/инст.svg';
 
 
 
@@ -34,36 +39,42 @@ export const Footer = () => {
         <img className={s.footer__logo} src={logo} alt={'logo'}/>
         <div className={s.footer__columns}>
           <div className={s.footer__column}>
-            <h3>Направления</h3>
+            <div className={s.footer__down__title}>Направления</div>
             <div className={s.footer__column_links}>
-              <Link className={cn(s.link, s.upper)} to='/africa'>африка</Link>
-              <Link className={cn(s.link, s.upper)} to='/'>азия</Link>
-              <Link className={cn(s.link, s.upper)} to='/'>австралия</Link>
-              <Link className={cn(s.link, s.upper)} to='/'>европа</Link>
-              <Link className={cn(s.link, s.upper)} to='/'>америка</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/africa'>африка</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/'>азия</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/'>австралия</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/'>европа</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/'>америка</Link>
             </div>
           </div>
 
           <div className={s.footer__column}>
-            <h3>Виды отдыха</h3>
+            <div className={s.footer__down__title}>Виды отдыха</div>
             <div className={s.footer__column_links}>
-              <Link className={cn(s.link, s.travel)} to='/'>Пляжный отдых</Link>
-              <Link className={cn(s.link, s.travel)} to='/'>Кайтсерфинг</Link>
-              <Link className={cn(s.link, s.travel)} to='/'>Дайвинг</Link>
-              <Link className={cn(s.link, s.travel)} to='/'>Яхтинг</Link>
-              <Link className={cn(s.link, s.travel)} to='/'>Горные лыжи</Link>
+              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Пляжный отдых</Link>
+              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Кайтсерфинг</Link>
+              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Дайвинг</Link>
+              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Яхтинг</Link>
+              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Горные лыжи</Link>
             </div>
           </div>
 
           <div className={s.footer__column}>
             <div className={s.footer__column_socialMedia}>
-              <h3>Мы в социальных сетях</h3>
-              <div>icons</div>
+              <div className={s.footer__down__title}>Мы в социальных сетях</div>
+              <div className={s.socialMedia}>
+                <img src={inst} alt={'instagram'}/>
+                <img src={youtube} alt={'youtube'}/>
+                <img src={vk} alt={'vk'}/>
+                <img src={whatsapp} alt={'whatsApp'}/>
+                <img src={tg} alt={'telegram'}/>
+              </div>
             </div>
             <div className={cn(s.footer__column, s.docs)}>
-              <Link className={s.link} to='/'>Политика конфиденциальности</Link>
-              <Link className={s.link} to='/'>Политика обработки персональных данных</Link>
-              <Link className={s.link} to='/'>Договор оферта</Link>
+              <Link className={cn(s.link, s.link__politics)} to='/'>Политика конфиденциальности</Link>
+              <Link className={cn(s.link, s.link__politics)} to='/'>Политика обработки персональных данных</Link>
+              <Link className={cn(s.link, s.link__politics)} to='/'>Договор оферта</Link>
             </div>
           </div>
         </div>
