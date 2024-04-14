@@ -15,7 +15,7 @@ export const Travels = () => {
           <span>ПУТЕШЕСТВИЕ</span> <span className={s.highlight}>ПО ВКУСУ</span>
         </h1>
       </div>
-      <div className={s.Cards}>
+      <div className={s.cards}>
         {cardTravels}
       </div>
     </div>

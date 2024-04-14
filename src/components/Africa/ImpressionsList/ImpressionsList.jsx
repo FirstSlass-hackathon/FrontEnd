@@ -4,7 +4,7 @@ import lion from '../../../assets/images/lion.jpeg';
 
 export const ImpressionsList = () => {
     return (
-        <div className={s.ImpressionsList}>
+        <div className={s.impressionsList}>
             <img className={s.image} src={lion} alt="lion" />
             <div className={s.text}>
                 <div className={s.symbol}>“</div>

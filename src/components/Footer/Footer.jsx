@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import cn from 'classnames';
 import s from './styles.module.scss';
-import phone from '../../assets/images/phone-line.png';
-import mail from '../../assets/images/mail-line.png';
-import { Link } from "react-router-dom";
+import phone from '../../assets/images/phone-line.svg';
+import mail from '../../assets/images/mail-line.svg';
+import logo from '../../assets/images/logo-3 1.svg';
+
 
 
 export const Footer = () => {
@@ -29,7 +31,7 @@ export const Footer = () => {
       </section>
 
       <section className={s.footer__down}>
-        <div className={s.footer__logo}>logo</div>
+        <img className={s.footer__logo} src={logo} alt={'logo'}/>
         <div className={s.footer__columns}>
           <div className={s.footer__column}>
             <h3>Направления</h3>

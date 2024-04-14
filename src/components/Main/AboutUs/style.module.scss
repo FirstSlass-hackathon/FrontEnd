@@ -10,8 +10,8 @@
   flex-direction: column;
   box-sizing: border-box;
   &__title {
-    width: 786px;
-    height: 126px;
+    width: 800px;
+    height: 166px;
     margin-left: 496px;
   }
   &__main {
@@ -23,18 +23,17 @@
 }
 
 .title {
-  @include fontH1;
+  @include fontDescription;
   box-sizing: border-box;
 }
 
 .name {
-  @include fontH2;
+  @include fontH1;
   box-sizing: border-box;
 }
 
 .highlight {
-  color: #ff4500; /* Цвет выделенного текста */
-  // font-weight: bold; /* Жирный текст для выделения */
+  color: $colorBold;
   box-sizing: border-box;
 }
 
@@ -44,7 +43,7 @@
   left: 0; /* начало отсчета по горизонтали */
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 120px;
   box-sizing: border-box;
 }
 
@@ -77,7 +76,7 @@
 }
 
 .description {
-  @include fontDescription;
+  @include fontText;
   margin-top: 29px; /* отступ сверху от родительского блока */
   margin-left: 763px; /* отступ слева от родительского блока */
   word-wrap: break-word; /* или overflow-wrap: break-word; */

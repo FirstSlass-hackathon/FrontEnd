@@ -25,7 +25,7 @@
 }
 
 .title {
-  @include fontH2;
+  @include fontDescription;
   box-sizing: border-box;
 }
 
@@ -35,20 +35,16 @@
 }
 
 .highlight {
-  color: #ff4500; /* Цвет выделенного текста */
+  color: $colorBold;
   box-sizing: border-box;
 }
 
 .description {
-  // margin-top: 29px; /* отступ сверху от родительского блока */
-  // margin-left: 763px; /* отступ слева от родительского блока */
-  @include fontDescription;
-  // word-wrap: break-word; /* или overflow-wrap: break-word; */
-  // max-width: 50%; /* ограничиваем максимальную ширину блока */
+  @include fontText;
   box-sizing: border-box;
 }
 
-.Cards {
+.cards {
   display: flex; /* Устанавливаем flex-контейнер */
   flex-wrap: wrap;
   flex-direction: column;
@@ -57,10 +53,6 @@
   box-sizing: border-box;
   gap: 28px;
   transform: translateY(0); /* Начальное положение - элемент не двигается */
-}
-
-.button {
-
 }
 
 // .applyButton {
@@ -85,12 +77,12 @@
 //   color: white;
 // }
 
-.Cards > div:nth-child(odd):hover {
+.cards > div:nth-child(odd):hover {
   animation: moveFromTop 3s ease forwards; /* Анимация для четных элементов */
   transform: translateY(100%); 
 }
 
-.Cards > div:nth-child(even):hover {
+.cards > div:nth-child(even):hover {
   animation: moveFromBottom 3s ease forwards; /* Анимация для нечетных элементов */
   transform: translateY(100%); 
 }

@@ -1,19 +1,24 @@
 import React from "react";
 import cn from 'classnames';
 import s from './style.module.scss';
-import img1 from '../../../assets/images/card.svg';
+import img1 from '../../../assets/images/africa_countries/ghana.jpg';
+import img2 from '../../../assets/images/africa_countries/namibia.jpg';
+import img3 from '../../../assets/images/africa_countries/botsvana.jpg';
+import img4 from '../../../assets/images/africa_countries/uganda.jpg';
+import img5 from '../../../assets/images/africa_countries/kenia.jpg';
+import img6 from '../../../assets/images/africa_countries/kabo_verde.jpg';
+import img7 from '../../../assets/images/africa_countries/tanzania.jpg';
+import img8 from '../../../assets/images/africa_countries/madagascar.jpg';
+import img9 from '../../../assets/images/africa_countries/zimbabve.jpg';
 
-export const CardCountriesList = ({title, date, direction, img, ...props}) => {
+export const CardCountriesList = ({text_h1, text_h3, direction, img, ...props}) => {
   return (
     <>
       <div className={cn(s.component, s.size, s.dir)}>
           <img src={img} className={s.img} alt={"img"}></img>
-          <div className={s.info}>
-            <div className={s.info__title}>{title}</div>
-            <div className={s.info__offer}>
-              <div className={s.info__date}>{date}</div>
-              <div className={s.info__direction}>{direction}</div>
-            </div>
+          <div className={cn(s.info, s.info__countriesList)}>
+            <div className={s.info__text_h3}>{text_h3}</div>
+            <div className={s.info__text_h1}>{text_h1}</div>
           </div>
       </div>
     </>
@@ -21,15 +26,15 @@ export const CardCountriesList = ({title, date, direction, img, ...props}) => {
 }
 
 const titles = [
-  { title: 'Гана', date: '', direction: '', img: img1 },
-  { title: 'Намибия', date: '', direction: '', img: img1 },
-  { title: 'Ботсвана', date: '', direction: '', img: img1 },
-  { title: 'Уганда', date: '', direction: '', img: img1 },
-  { title: 'Кения', date: '', direction: '', img: img1 },
-  { title: 'Кабо-Верде', date: '', direction: '', img: img1 },
-  { title: 'Танзания', date: '', direction: '', img: img1 },
-  { title: 'Мадагаскар', date: '', direction: '', img: img1 },
-  { title: 'Зимбабве', date: '', direction: '', img: img1 }
+  { text_h1: 'Гана', text_h3: 'страна', direction: '', img: img1 },
+  { text_h1: 'Намибия', text_h3: 'страна', direction: '', img: img2 },
+  { text_h1: 'Ботсвана', text_h3: 'страна', direction: '', img: img3 },
+  { text_h1: 'Уганда', text_h3: 'страна', direction: '', img: img4 },
+  { text_h1: 'Кения', text_h3: 'страна', direction: '', img: img5 },
+  { text_h1: 'Кабо-Верде', text_h3: 'страна', direction: '', img: img6 },
+  { text_h1: 'Танзания', text_h3: 'страна', direction: '', img: img7 },
+  { text_h1: 'Мадагаскар', text_h3: 'страна', direction: '', img: img8 },
+  { text_h1: 'Зимбабве', text_h3: 'страна', direction: '', img: img9 }
 ];
 
 const cardCountriesList = titles.map((item, index) => (
@@ -37,17 +42,3 @@ const cardCountriesList = titles.map((item, index) => (
 ));
 
 export default cardCountriesList;
-
-// const cardCountriesList = [];
-// for (let i = 0; i < titles.length; i += 3) {
-//   const block = titles.slice(i, i + 3).map((item, index) => (
-//     <CardCountriesList key={i + index} {...item} />
-//   ));
-//   cardCountriesList.push(
-//     <div key={i / 3} className={s.block}>
-//       {block}
-//     </div>
-//   );
-// }
-
-// export default cardCountriesList;

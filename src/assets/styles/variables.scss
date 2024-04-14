@@ -31,49 +31,49 @@ $sizeSmall: 576px;
 
 @mixin fontH1() {
 	@include fontAGTms();
-	@include fontStyle(40, 400, 104%);
+	@include fontStyle(40px, 400, 104%);
 	letter-spacing: 2%;
 }
 
 @mixin fontH2() {
 	@include fontAGTms();
-	@include fontStyle(28, 400, 104%);
+	@include fontStyle(28px, 400, 104%);
 	letter-spacing: 2%;
 }
 
 @mixin fontH3() {
 	@include fontAGTms();
-	@include fontStyle(16, 400, 120%);
+	@include fontStyle(16px, 400, 120%);
 	letter-spacing: 2%;
 }
 
 @mixin fontH4() {
 	@include fontMontserrat();
-	@include fontStyle(20, 500, 120%);
+	@include fontStyle(20px, 500, 120%);
 	letter-spacing: -0.02em;
 }
 
 @mixin fontPrice() {
 	@include fontMontserrat();
-	@include fontStyle(28, 500, 130%);
+	@include fontStyle(28px, 500, 130%);
 	letter-spacing: 2%;
 }
 
 @mixin fontText() {
 	@include fontMontserrat();
-	@include fontStyle(16, 400, 130%);
+	@include fontStyle(16px, 400, 130%);
 	letter-spacing: 0%;
 }
 
 @mixin fontDescription() {
 	@include fontMontserrat();
-	@include fontStyle(20, 400, 120%);
+	@include fontStyle(20px, 400, 120%);
 	letter-spacing: -0.02em;
 }
 
 @mixin fontInput() {
 	@include fontMontserrat();
-	@include fontStyle(20, 300, 130%);
+	@include fontStyle(20px, 300, 130%);
 	letter-spacing: -0.03em;
 }
 

@@ -6,4 +6,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: aquamarine;
+}
+
+.colorBlack {
+  color: black;
+  border: 1px solid black;
+  &:hover {
+    background-color: grey;
+    color: white;
+  }
 }
