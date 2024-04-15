@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import s from './style.module.scss';
-import africa from '../../../assets/images/africa.jpg';
+import africa from '../../../assets/images/continents/africa.jpg';
+import europe from '../../../assets/images/continents/europe.jpg';
+import asia from '../../../assets/images/continents/asia.jpg';
+import america from '../../../assets/images/continents/america.jpg';
+import australia from '../../../assets/images/continents/australia.jpg';
 
 const continents = [
-  { name: 'Европа', image: '/path/to/europe.jpg' },
-  { name: 'Азия', image: '/path/to/asia.jpg' },
-  { name: 'Африка', image: africa, link: '/africa' }, // Использование импортированного изображения
-  { name: 'Америка', image: '/path/to/america.jpg' },
-  { name: 'Австралия', image: '/path/to/australia.jpg' },
+  { name: 'ЕВРОПА', image: europe,link: '/europe' },
+  { name: 'АЗИЯ', image: asia,link: 'asia' },
+  { name: 'АФРИКА', image: africa, link: '/africa' }, // Использование импортированного изображения
+  { name: 'АМЕРИКА', image: america,link: '/america' },
+  { name: 'АВСТРАЛИЯ', image: australia,link: '/australia' },
 ];
 
 export const Continents = () => {
