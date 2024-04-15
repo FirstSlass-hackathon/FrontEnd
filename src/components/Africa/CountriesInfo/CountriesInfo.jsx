@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './style.module.scss';
-import img1 from '../../../assets/images/africa_countries_photo_1.svg';
-import img2 from '../../../assets/images/africa_coutries_photo_2.png';
+import img1 from '../../../assets/images/africa_countries/africa_countries_photo_1.svg';
+import img2 from '../../../assets/images/africa_countries/africa_coutries_photo_2.png';
 
 export const CountriesInfo = () => {
   return (

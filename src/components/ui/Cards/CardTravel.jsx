@@ -1,9 +1,9 @@
 import React from "react";
 import cn from 'classnames';
 import s from './style.module.scss';
-import img1 from '../../../assets/images/card.svg';
-import img2 from '../../../assets/images/card.svg';
-import img3 from '../../../assets/images/card.svg';
+import img1 from '../../../assets/images/homePage_cards/travels_card1.jpg';
+import img2 from '../../../assets/images/homePage_cards/travels_card2.jpg';
+import img3 from '../../../assets/images/homePage_cards/travels_card3.jpg';
 
 export const CardTravel = ({title, travel, moto, img, ...props}) => {
   return (
@@ -12,10 +12,10 @@ export const CardTravel = ({title, travel, moto, img, ...props}) => {
           <img src={img} className={s.img} alt ={"img"}></img>
           <div className={s.info}>
             <div className={s.info__block}>
-              <div className={s.info__title}>{title}</div>
-              <div className={s.info__travel}>{travel}</div>
+              <div className={s.info__title_tr}>{title}</div>
+              <div className={s.info__travel_tr}>{travel}</div>
             </div>
-            <div className={s.info__moto}>{moto}</div>
+            {/* <div className={s.info__moto}>{moto}</div> */}
           </div>
       </div>
     </>
