@@ -6,6 +6,7 @@ $colorLight: #FAF7F3;
 $colorMedium: #B29C89;
 $colorBold: #BA7F49;
 $colorGrey: #464E4D;
+$colorDark: #0A0A0A;
 
 //sizes
 $sizeContainerLarge: 1920px;
@@ -38,6 +39,12 @@ $sizeSmall: 576px;
 @mixin fontH2() {
 	@include fontAGTms();
 	@include fontStyle(28px, 400, 104%);
+	letter-spacing: 2%;
+}
+
+@mixin fontH22() {
+	@include fontAGTms();
+	@include fontStyle(36px, 400, 37px);
 	letter-spacing: 2%;
 }
 

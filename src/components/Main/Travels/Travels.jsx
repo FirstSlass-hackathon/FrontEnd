@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './style.module.scss';
-// import { Card } from '../../ui/Cards/Card';
 import cardTravels from '../../ui/Cards/CardTravel';
 
 export const Travels = () => {

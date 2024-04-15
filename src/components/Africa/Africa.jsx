@@ -8,6 +8,8 @@ import { ImpressionsList } from "../Africa/ImpressionsList";
 import { Advantages } from "../Main/Advantages";
 import { Order } from "../Main/Order";
 import s from './style.module.scss';
+import { Amazing } from "./AmazingAfrica/Amazing";
+import { ToDo } from "./ToDo/ToDo";
 
 export const Africa = () => {
   return (
@@ -38,6 +40,13 @@ export const Africa = () => {
           <TravelsList/>
         </section>
          */}
+        <section className={s.main__section}>
+          <Amazing/>
+        </section> 
+
+        <section className={s.main__section}>
+          <ToDo/>
+        </section> 
 
         <section className={s.main__section}>
           <Advantages/>

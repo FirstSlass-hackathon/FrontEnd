@@ -15,7 +15,6 @@ export const CardTravel = ({title, travel, moto, img, ...props}) => {
               <div className={s.info__title_tr}>{title}</div>
               <div className={s.info__travel_tr}>{travel}</div>
             </div>
-            {/* <div className={s.info__moto}>{moto}</div> */}
           </div>
       </div>
     </>
@@ -23,9 +22,9 @@ export const CardTravel = ({title, travel, moto, img, ...props}) => {
 }
 
 const titles = [
-  {title: 'виды отдыха', travel: 'Кайтсерфинг', moto: 'ощутите свободу с кайтсерфингом!', img: img1},
-  {title: 'виды отдыха', travel: 'Горные лыжи', moto: 'покоряйте вершины с нами!', img: img2},
-  {title: 'виды отдыха', travel: 'Уединение на острове', moto: 'тропический рай', img: img3}
+  {title: 'виды отдыха', travel: 'Кайтсерфинг', img: img1},
+  {title: 'виды отдыха', travel: 'Горные лыжи', img: img2},
+  {title: 'виды отдыха', travel: 'Уединение на острове', img: img3}
 ];
 
 const cardTravels = titles.map((item, index) => (
