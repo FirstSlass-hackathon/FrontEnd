@@ -8,10 +8,14 @@
   box-sizing: border-box;
   background-color: #FAF7F3;
   display: flex;
- // flex-direction: row;
+  flex-direction: row;
   gap: 58px;
+  justify-content: center;
 }
 
+.aboutAfrica * {
+  width: 388px;
+}
 
 .pyramidImage {
   padding: 120px 0px 56px 0px;
