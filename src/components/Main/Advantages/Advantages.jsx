@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './style.module.scss';
 import Button from '../../ui/Button/Button';
-import cardAdvantages from '../../ui/Cards/CardAdv';
+import cardAdvantages, { CardAdvantages } from '../../ui/Cards/CardAdv';
 import {scrollToOrder} from '../Main';
 
 export const Advantages = () => {
@@ -35,7 +35,11 @@ export const Advantages = () => {
         </div>
         
         <div className={s.cards}>
-            {cardAdvantages}
+          {cardAdvantages.map((card, index) => (
+              <div key={index} className={s.card}>
+                {card}
+              </div>
+            ))}
         </div>
       </div>
     </div>
