@@ -1,5 +1,5 @@
 import React from "react";
-// import { AboutAfrica } from "../Africa/AboutAfrica";
+import { AboutAfrica } from "../Africa/AboutAfrica";
 import { CountriesList } from "../Africa/CountriesList";
 import { CountriesInfo } from "../Africa/CountriesInfo";
 import { ImpressionsList } from "../Africa/ImpressionsList";
@@ -14,9 +14,9 @@ export const Africa = () => {
     <>
       <main className={s.content}>
 
-        {/* <section className={s.main__section}>
+        <section className={s.main__section}>
           <AboutAfrica/>
-        </section> */}
+        </section>
 
         <section className={s.main__section}>
           <CountriesInfo/>
@@ -41,7 +41,7 @@ export const Africa = () => {
 
         <section className={s.main__section}>
           <Advantages/>
-        </section> 
+        </section>
 
         <section className={s.main__section}>
           <Order/>

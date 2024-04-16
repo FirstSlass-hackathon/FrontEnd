@@ -1,13 +1,15 @@
 @import '../../../assets/styles/variables.scss';
 
 .impressionsList {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    background-color: $colorLight;
-    padding: 172px 0;
+  position: relative; /* Добавляем позиционирование */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  background-color: $colorLight;
+  padding: 172px 0;
+  overflow: hidden; /* Добавляем скрытие переполнения, чтобы кнопки не выходили за пределы блока */
 }
 
 .image {
@@ -42,4 +44,45 @@
     @include fontH3;
     text-transform: uppercase;
     margin-top: 80px;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px; /* Помещаем блок контролов внизу */
+  width: calc(100% - 40px); /* Уменьшаем ширину блока, чтобы кнопки не прилипали к краям */
+  left: 50%; /* Позиционируем блок по центру горизонтально */
+  transform: translateX(-50%); /* Сдвигаем блок влево на половину своей ширины, чтобы он оказался по центру */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; /* Добавляем внутренние отступы */
+  box-sizing: border-box;
+}
+
+.controlButton {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff; /* Добавляем белую обводку */
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .impressionsList {
+    height: auto;
+  }
 }
