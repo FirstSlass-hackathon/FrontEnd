@@ -15,7 +15,11 @@ export const ToDo = () => {
           </h1>
         </div>
         <div className={s.cards}>
-          {cardToDos}
+          {cardToDos.map((card, index) => (
+              <div key={index} className={s.card}>
+                {card}
+              </div>
+            ))}
         </div>
       </div>
     </div>

@@ -25,7 +25,11 @@ export const Directions = () => {
         {/* <Button className={s.applyButton} onClick={scrollToOrder} text={'Оставить заявку'}/> */}
       </div>
       <div className={s.cards}>
-        {cardDirections}
+        {cardDirections.map((card, index) => (
+            <div key={index} className={s.card}>
+              {card}
+            </div>
+          ))}
       </div>
     </div>
   );
