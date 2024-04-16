@@ -1,0 +1,33 @@
+.cursor1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  opacity: 1;
+  visibility: inherit;
+  border-color: rgba(255,255,255,0.5);
+  position: absolute;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+}
+
+.cursor2 {
+  width: 60px;
+  height: 60px;
+  border: 2px dotted;
+  border-radius: 50%;
+  border-color: rgba(255,255,255,0.5);
+  position: absolute;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
