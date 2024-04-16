@@ -1,14 +1,20 @@
 @use '../../../assets/styles/styles.scss' as *;
 @import '../../../assets/styles/variables.scss';
 
+.container {
+  padding: 161px 100px;
+  display: flex;
+  justify-content: center;
+  background-color: $colorLight;
+}
+
 .advantages {
   max-width: 100%; /* адаптивная ширина */
   min-height: 1098px; /* минимальная высота для содержимого */
-  padding: 161px 100px;
   box-sizing: border-box;
-  background-color: #FAF7F3;
   display: flex;
   flex-direction: row;
+  gap: 128px;
 }
 
 .block{
@@ -20,7 +26,6 @@
 
 .text {
   max-width: 408px;
-  // max-height: 123px;
   box-sizing: border-box;
 }
 
@@ -54,28 +59,6 @@
   gap: 28px;
   transform: translateY(0); /* Начальное положение - элемент не двигается */
 }
-
-// .applyButton {
-//   background-color: transparent;
-//   color: black;
-//   border: 1px solid black;
-//   padding: 10px 20px;
-//   cursor: pointer;
-//   transition: background-color 0.3s ease, color 0.3s ease;
-//   // position: absolute; /* абсолютное позиционирование */
-//   // right: 620px; /* отступ справа */
-//   // bottom: 120px; /* отступ снизу */
-//   margin-left: 0px;
-//   margin-top: 20px;
-//   font-family: 'ButtonFont', sans-serif;
-//   // margin-top: 120px;
-//   box-sizing: border-box;
-// }
-
-// .applyButton:hover {
-//   background-color: grey;
-//   color: white;
-// }
 
 .cards > div:nth-child(odd):hover {
   animation: moveFromTop 3s ease forwards; /* Анимация для четных элементов */

@@ -2,7 +2,10 @@
 @import '../../../assets/styles/variables.scss';
 
 .order {
-
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background-color: aqua;
   &__block {
     display: flex;
     flex-direction: column;
@@ -24,19 +27,26 @@
   &__inputs {
     display: flex;
     flex-direction: column;
-    gap: 32px;
     margin-left: 53px;
     &_row {
       display: flex;
       gap: 24px;
     }
   }
+  &__btn {
+    margin-bottom: 55px;
+  }
 }
 
 input {
   border: none;
   border-bottom: 1px solid black;
+  margin-bottom: 32px;
   &:focus {
     outline: none;
   }
+}
+
+.checkbox {
+  margin-bottom: 12px;
 }

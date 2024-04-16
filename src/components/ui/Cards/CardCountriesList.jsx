@@ -14,7 +14,7 @@ import img9 from '../../../assets/images/africa_countries/zimbabve.jpg';
 export const CardCountriesList = ({text_h1, text_h3, direction, img, ...props}) => {
   return (
     <>
-      <div className={cn(s.component, s.size, s.dir)}>
+      <div className={cn(s.component, s.size__countries, s.dir)}>
           <img src={img} className={s.img} alt={"img"}></img>
           <div className={cn(s.info, s.info__countriesList)}>
             <div className={s.info__text_h3}>{text_h3}</div>

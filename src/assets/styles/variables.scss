@@ -23,11 +23,11 @@ $sizeSmall: 576px;
 }
 
 @mixin fontAGTms() {
-	font-family: 'AGTmsCyrillic', 'HubotExpanded', 'Hubot', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'PlayfairDisplay', sans-serif;
 }
 
 @mixin fontMontserrat() {
-	font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 @mixin fontH1() {

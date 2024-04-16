@@ -3,6 +3,7 @@ import axios from "axios";
 // import cn from 'classnames';
 import s from './style.module.scss';
 import { Checkbox } from '../../ui/Checkboxes/Checkbox';
+import { Button } from '../../ui/Button/Button';
 
 export const Order = () => {
   const initialState = {
@@ -82,7 +83,7 @@ export const Order = () => {
             <Checkbox />
           </div>
 
-          <button type="submit">Оставить заявку</button>
+          <Button className={s.order__btn} type="submit" text={'Оставить заявку'} colorScheme={'black'}>Оставить заявку</Button>
         </form>
       </div>      
     </div>

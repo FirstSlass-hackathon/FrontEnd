@@ -7,7 +7,11 @@ export const CountriesList = () => {
   return (
     <div className={s.countrieslist}>
       <div className={s.cards}>
-        {cardCountriesList}
+        {cardCountriesList.map((card, index) => (
+            <div key={index} className={s.card}>
+              {card}
+            </div>
+          ))}
       </div>
     </div>
   );

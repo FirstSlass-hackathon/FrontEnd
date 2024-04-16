@@ -1,6 +1,13 @@
 @font-face {
-  font-family: 'AGTmsCyrillic';
-  src: local('AGTmsCyrillic') url('../fonts/ofont.ru_AGTmsCyrillic.ttf');
+  font-family: 'PlayfairDisplay';
+  src: local('PlayfairDisplay') url('../fonts/PlayfairDisplay-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: local('PlayfairDisplay') url('../fonts/PlayfairDisplay-Medium.ttf');
+  font-weight: 500;
 }
 
 @font-face {

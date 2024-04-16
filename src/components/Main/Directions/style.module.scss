@@ -5,8 +5,9 @@
   max-width: 100%; /* адаптивная ширина */
   min-height: 719px; /* минимальная высота для содержимого */
   box-sizing: border-box;
-  background-color: #FAF7F3;
+  background-color: $colorLight;
   display: flex;
+  justify-content: center;
 }
 
 .text {

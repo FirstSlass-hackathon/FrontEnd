@@ -1,10 +1,16 @@
 @use '../../../assets/styles/styles.scss' as *;
 @import '../../../assets/styles/variables.scss';
 
+.container {
+  padding: 100px 128px;
+  display: flex;
+  justify-content: center;
+}
+
 .travels {
   max-width: 100%; /* адаптивная ширина */
-  min-height: 1076px; /* минимальная высота для содержимого */
-  padding: 100px 128px;
+  // min-height: 1076px; /* минимальная высота для содержимого */
+  // padding: 100px 128px;
   box-sizing: border-box;
   // background-color: #FAF7F3;
   display: flex;

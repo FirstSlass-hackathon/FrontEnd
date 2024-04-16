@@ -1,11 +1,17 @@
 @use '../../../assets/styles/styles.scss' as *;
 @import '../../../assets/styles/variables.scss';
 
+.container {
+  max-width: 1440px;
+  padding: 100px 79px;
+  // display: flex;
+  // justify-content: center;
+}
+
 .aboutUs {
   @include fontDescription;
-  max-width: 100%; /* адаптивная ширина */
-  min-height: 759px; /* минимальная высота для содержимого */
-  padding: 100px 79px;
+  // max-width: 100%; /* адаптивная ширина */
+  min-height: 540px; /* минимальная высота для содержимого */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;

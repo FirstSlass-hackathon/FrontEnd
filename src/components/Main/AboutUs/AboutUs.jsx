@@ -7,6 +7,7 @@ import twix from '../../../assets/images/twix.jpg';
 
 export const AboutUs = () => {
   return (
+    <div className={s.container}>
       <div className={s.aboutUs}>
         <div className={s.aboutUs__title}> 
           <h1 className={s.title}>о компании</h1>
@@ -41,5 +42,6 @@ export const AboutUs = () => {
           </div>
         </div>
       </div>
+    </div>
   );
 }
