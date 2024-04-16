@@ -52,7 +52,7 @@ export const Africa = () => {
           <Advantages/>
         </section>
 
-        <section className={s.main__section}>
+        <section className={s.main__section} id="orderSection">
           <Order/>
         </section>
       </main>
