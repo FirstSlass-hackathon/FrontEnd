@@ -1,15 +1,14 @@
 import React from "react";
-import { Header } from '../../components/Header';
+import { Header } from '../../components/HeroSection/HeroSection';
 import { Africa } from "../../components/Africa";
 import { Footer } from "../../components/Footer";
 import s from './style.module.scss';
 
 export default function ContinentAfrica() {
 
-	React.useEffect(() => {
-		window.scrollTo({top: 0, behavior: 'smooth'});
-	}, []);
-
+  React.useEffect(() => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }, []);
   return (
     <>
       <main className={s.content}>

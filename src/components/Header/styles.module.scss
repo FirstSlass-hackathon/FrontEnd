@@ -1,19 +1,23 @@
-@use '../../assets/styles/styles.scss' as *;
-@import '../../assets/styles/variables.scss';
-
 .header {
+  position: relative;
+  height: 800px;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure the video is behind other content */
+}
+
+.headerContent {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the video */
   padding: 56px 82px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aquamarine;
-}
-
-.colorBlack {
-  color: black;
-  border: 1px solid black;
-  &:hover {
-    background-color: grey;
-    color: white;
-  }
 }
