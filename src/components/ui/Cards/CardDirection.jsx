@@ -1,7 +1,9 @@
 import React from "react";
 import cn from 'classnames';
 import s from './style.module.scss';
-import img1 from '../../../assets/images/card.svg';
+import img1 from '../../../assets/images/homePage_cards/directions_card1.jpg';
+import img2 from '../../../assets/images/homePage_cards/directions_card2.jpg';
+import img3 from '../../../assets/images/homePage_cards/directions_card3.jpg';
 
 export const CardDirection = ({title, date, direction, img, ...props}) => {
   return (
@@ -22,8 +24,8 @@ export const CardDirection = ({title, date, direction, img, ...props}) => {
 
 const titles = [
   {title: 'Америка', date: '3-5 дней', direction: 'Озеро Пауэлл Глен-Каньон', img: img1},
-  {title: 'Индонезия', date: '2-3 дня', direction: 'выходные на бали', img: img1},
-  {title: 'Малайзия', date: '7-12 дней', direction: 'куала-лумпур о. борнео', img: img1}
+  {title: 'Индонезия', date: '2-3 дня', direction: 'выходные на бали', img: img2},
+  {title: 'Малайзия', date: '7-12 дней', direction: 'куала-лумпур о. борнео', img: img3}
 ];
 
 const cardDirections = titles.map((item, index) => (

@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './style.module.scss';
-// import { Card } from '../../ui/Cards/Card';
-import cardDirections from '../../ui/Cards/CardDirection';
+import cardImpressions from '../../ui/Cards/CardImpression';
 
 export const Impressions = () => {
 
@@ -17,7 +16,7 @@ export const Impressions = () => {
           </h1>
         </div>
         <div className={s.cards}>
-          {cardDirections}
+          {cardImpressions}
         </div>
       </div>
     </div>

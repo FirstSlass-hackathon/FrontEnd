@@ -1,0 +1,44 @@
+@use '../../../assets/styles/styles.scss' as *;
+@import '../../../assets/styles/variables.scss';
+
+.container {
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.amazing {
+  &__title {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    @include fontDescription;
+    color: $colorDark;
+    padding-bottom: 16px;
+  }
+  &__name {
+    @include fontH22;
+    color: $colorDark;
+  }
+  &__photo {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+  }
+  &__poster {
+
+  }
+  &__block {
+    width: 634px;
+    height: 556px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & img {
+      width: calc(50% - 18px);
+      margin-bottom: 36px;
+    }
+  }
+}

@@ -38,9 +38,26 @@
   left: 1%;
   &__title {
     text-align: start;
+    padding: 20px 0 60px 20px;
     margin-bottom: 40px;
+    @include fontDescription;
+    color: $colorWhite;
+    &_tr {
+      @include fontText;
+      color: $colorWhite;
+      padding: 20px 0 5px 15px;
+    }
     &_imp {
-
+      @include fontH3;
+      color: $colorWhite;
+      padding: 20px 0 0 20px;
+      text-transform: uppercase;
+    }
+    &_text {
+      @include fontH3;
+      color: $colorWhite;
+      padding-left: 20px;
+      text-transform: uppercase;
     }
   }
   &__offer {
@@ -48,15 +65,27 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 10px;
+    padding: 0 0 0 20px;
   }
   &__date {
-
+    @include fontText;
+    color: $colorWhite;
   }
   &__direction {
-
+    @include fontH2;
+    color: $colorWhite;
+    text-transform: uppercase;
   }
   &__travel {
-
+    &_tr {
+      @include fontH4;
+      color: $colorWhite;
+      padding-left: 15px;
+    }
+  }
+  &__imp {
+    max-width: 220px;
   }
   &__moto {
     
@@ -77,8 +106,14 @@
     margin-top: 30px;
     margin-left: 30px;
   }
+  &__adv {
+    padding: 250px 0 0 20px;
+    @include fontH3;
+    color: $colorWhite;
+    text-transform: uppercase;
+  }
 }
 
-.img {
-
-}
+// .imp {
+//   width: 220px;
+// }
