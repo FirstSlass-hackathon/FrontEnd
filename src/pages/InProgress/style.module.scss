@@ -15,8 +15,9 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  background:#f4f4f4;
+  background:$colorLight;
   font-family: 'Delius', cursive;
+  box-sizing:border-box;
 }
 
 .inprogress{
