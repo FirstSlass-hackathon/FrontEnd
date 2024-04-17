@@ -1,69 +1,91 @@
+//@use '../../../assets/styles/styles.scss' as *;
 @import '../../../assets/styles/variables.scss';
 
-.impressionsList {
-  position: relative; /* Добавляем позиционирование */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 50px;
+.container1 {
+  max-width: 100%;
+  min-height: 640px;
   background-color: $colorLight;
-  padding: 172px 0;
-  overflow: hidden; /* Добавляем скрытие переполнения, чтобы кнопки не выходили за пределы блока */
+  //padding: 80px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+  gap: 50px;
+  //pointer-events: none;
+}
+
+.container2 {
+  //padding: 80px;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  justify-content: space-between; /* Выравниваем элементы по верхнему и нижнему краям */
+  margin: 100px 80px; /* Отступы от верхнего и нижнего края блока 1 */
+}
+
+.block3 {
+  width: 727px;
+  height: 440px;
+}
+
+.block4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: calc(100% - 727px - 50px); /* Ширина блока 4 не должна превышать доступное пространство */
 }
 
 .image {
-    width: 50.5%; /* 50.5% */
-    height: auto;
-    // margin-left: 134px;
-    // margin-top: 172px;
+  height: auto;
 }
 
 .text {
-    // margin-left: 53px;
-    // margin-top: 172px;
+  flex-grow: 1; /* Расширяем блок с текстом, чтобы он занимал доступное пространство */
+
 }
 
 .symbol {
-    @include fontAGTms;
-    @include fontStyle(118px, 400, 118px);
-    letter-spacing: 2%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  //@include fontAGTms;
+  //@include fontStyle(118px, 400, 118px);
+  //letter-spacing: 2%;
 }
 
 .impression {
-    @include fontH2;
-    width: 436px;
-    height: 176px;
-    font-size: 30px;
-    color: #464E4D;
-    text-transform: uppercase;
-
+  @include fontInput;
+  //width: 436px;
+  //height: 176px;
+  //font-size: 30px;
+  color: #464E4D;
+  text-transform: uppercase;
 }
 
 .signature {
-    @include fontH3;
-    text-transform: uppercase;
-    margin-top: 80px;
+  @include fontH3;
+  text-transform: uppercase;
+  margin-top: 50px;
 }
 
 .controls {
-  position: absolute;
-  bottom: 80px; /* Выберите желаемое расстояние от нижнего края */
-  right: 100px; /* Выберите желаемое расстояние от правого края */
+  margin-top: 30px;
+  text-align: center;
 }
 
 .controlButton {
   background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid #fff; /* Добавляем белую обводку */
-  font-size: 60px;
-  width: 100px;
-  height: 100px;
+  border: 2px solid #fff;
+  font-size: 50px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  cursor: pointer;
+  cursor: pointer; /* Включаем курсор */
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: auto; /* Размещаем кнопку внизу блока */
+  z-index: 13;
 }
 
 .right {
@@ -72,7 +94,7 @@
 
 /* Адаптивные стили */
 @media (max-width: 768px) {
-  .impressionsList {
+  .container1 {
     height: auto;
   }
 }
