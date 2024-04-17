@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.impressions {
+.impression {
   max-width: 100%; /* адаптивная ширина */
   // min-height: 893px; /* минимальная высота для содержимого */
   padding: 100px 0px 100px 100px;
@@ -56,25 +56,3 @@
   box-sizing: border-box;
   gap: 60px;
 }
-
-// .applyButton {
-//   background-color: transparent;
-//   color: black;
-//   border: 1px solid black;
-//   padding: 10px 20px;
-//   cursor: pointer;
-//   transition: background-color 0.3s ease, color 0.3s ease;
-//   // position: absolute; /* абсолютное позиционирование */
-//   // right: 620px; /* отступ справа */
-//   // bottom: 120px; /* отступ снизу */
-//   margin-left: 763px;
-//   margin-top: 39px;
-//   font-family: 'ButtonFont', sans-serif;
-//   // margin-top: 120px;
-//   box-sizing: border-box;
-// }
-
-// .applyButton:hover {
-//   background-color: grey;
-//   color: white;
-// }

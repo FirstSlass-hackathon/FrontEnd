@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import s from './style.module.scss';
 import lion from '../../../assets/images/lion.jpeg';
+import icon from '../../../assets/images/“.png';
 //import { CSSTransition } from 'react-transition-group';
 
 const review1 = 'First Class - это просто находка для туриста, которого уже сложно удивить. Компания организует такие туры, которые невозможно даже себе представить.'

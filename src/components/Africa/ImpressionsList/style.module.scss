@@ -25,17 +25,15 @@
 }
 
 .symbol {
-    @include fontAGTms;
-    @include fontStyle(118px, 400, 118px);
+    @include fontH1;
     letter-spacing: 2%;
 }
 
 .impression {
-    @include fontH2;
+    @include fontInput;
     width: 436px;
     height: 176px;
-    font-size: 30px;
-    color: #464E4D;
+    color: $colorDark;
     text-transform: uppercase;
 
 }

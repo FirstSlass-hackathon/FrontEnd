@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import s from './style.module.scss';
-import arrowDown from '../../../assets/images/arrow-down.png';
+import arrowDown from '../../../assets/images/Line 10.svg';
 
 export const NavBar = () => {
   return (
@@ -20,7 +20,7 @@ export const NavBar = () => {
       </div>
       <div className={s.navbar__block}>
         <Link className={s.link__nav} to='/'>Истории</Link>
-        <img src={arrowDown} alt={"arrow_down"}/>
+        {/* <img src={arrowDown} alt={"arrow_down"}/> */}
       </div>
     </div>
   )

@@ -3,10 +3,12 @@
 //colors
 $colorWhite: #ffffff;
 $colorLight: #FAF7F3;
+$colorLink: #C7B4A5;
 $colorMedium: #B29C89;
 $colorBold: #BA7F49;
 $colorGrey: #464E4D;
 $colorDark: #0A0A0A;
+
 
 //sizes
 $sizeContainerLarge: 1920px;
@@ -15,74 +17,6 @@ $sizeExtraLarge: 1200px;
 $sizeLarge: 950px;
 $sizeMedium: 650px;
 $sizeSmall: 576px;
-
-@mixin fontStyle($size: 16px, $weight: 400, $height: normal) {
-	font-size: $size;
-	font-weight: $weight;
-	line-height: $height;
-}
-
-@mixin fontAGTms() {
-	font-family: 'PlayfairDisplay', sans-serif;
-}
-
-@mixin fontMontserrat() {
-	font-family: 'Montserrat', sans-serif;
-}
-
-@mixin fontH1() {
-	@include fontAGTms();
-	@include fontStyle(40px, 400, 104%);
-	letter-spacing: 2%;
-}
-
-@mixin fontH2() {
-	@include fontAGTms();
-	@include fontStyle(28px, 400, 104%);
-	letter-spacing: 2%;
-}
-
-@mixin fontH22() {
-	@include fontAGTms();
-	@include fontStyle(36px, 400, 37px);
-	letter-spacing: 2%;
-}
-
-@mixin fontH3() {
-	@include fontAGTms();
-	@include fontStyle(16px, 400, 120%);
-	letter-spacing: 2%;
-}
-
-@mixin fontH4() {
-	@include fontMontserrat();
-	@include fontStyle(20px, 500, 120%);
-	letter-spacing: -0.02em;
-}
-
-@mixin fontPrice() {
-	@include fontMontserrat();
-	@include fontStyle(28px, 500, 130%);
-	letter-spacing: 2%;
-}
-
-@mixin fontText() {
-	@include fontMontserrat();
-	@include fontStyle(16px, 400, 130%);
-	letter-spacing: 0%;
-}
-
-@mixin fontDescription() {
-	@include fontMontserrat();
-	@include fontStyle(20px, 400, 120%);
-	letter-spacing: -0.02em;
-}
-
-@mixin fontInput() {
-	@include fontMontserrat();
-	@include fontStyle(20px, 300, 130%);
-	letter-spacing: -0.03em;
-}
 
 @mixin width-height($width, $height: $width) {
 	width: $width;

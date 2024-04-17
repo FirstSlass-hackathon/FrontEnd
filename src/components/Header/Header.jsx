@@ -16,7 +16,7 @@ export const Header = () => {
       <div className={s.headerContent}>
         <img src={logo} alt={'logo'}/>
         <NavBar />
-        <Button text={'Оставить заявку'} onClick={scrollToOrder} colorScheme={'white'}/>
+        <Button text={'Оставить заявку'} onClick={scrollToOrder} colorScheme={'black'}/>
       </div>
     </div>
   )

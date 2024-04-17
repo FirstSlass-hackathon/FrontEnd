@@ -12,8 +12,7 @@ export default function ContinentAfrica() {
   return (
     <>
       <main className={s.content}>
-        
-        <div id="absolute" className={s.absolute}>
+        <div className={s.header}>
           <Header/>
         </div>
         <Africa/>

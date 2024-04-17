@@ -1,5 +1,7 @@
 @use '../../../assets/styles/styles.scss' as *;
 @import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/fonts.scss';
+@import '../../../index.scss';
 
 .aboutAfrica {
   max-width: 100%; /* адаптивная ширина */
@@ -49,6 +51,7 @@
 
 .name {
   @include fontH1;
+  // font-family: 'PlayfairDisplay Regular';
   box-sizing: border-box;
 }
 

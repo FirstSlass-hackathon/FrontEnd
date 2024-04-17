@@ -31,7 +31,7 @@ export const Footer = () => {
 
         <div className={s.footer__up_contacts}>
           <img className={s.footer__up_img} src={mail} alt={mail}/>
-          <Link className={s.footer__link} to='/'>info@firstclass.com</Link>
+          <Link className={s.footer__link_mod} to='/'>info@firstclass.com</Link>
         </div>
       </section>
 
@@ -52,11 +52,11 @@ export const Footer = () => {
           <div className={s.footer__column}>
             <div className={s.footer__down__title}>Виды отдыха</div>
             <div className={s.footer__column_links}>
-              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Пляжный отдых</Link>
-              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Кайтсерфинг</Link>
-              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Дайвинг</Link>
-              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Яхтинг</Link>
-              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Горные лыжи</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/'>Пляжный отдых</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/'>Кайтсерфинг</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/'>Дайвинг</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/'>Яхтинг</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/'>Горные лыжи</Link>
             </div>
           </div>
 

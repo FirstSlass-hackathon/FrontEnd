@@ -19,8 +19,9 @@
       color: $colorLight;
     }
     &__title {
-      @include fontH2;
+      @include fontH3;
       text-transform: uppercase;
+      margin-bottom: 5px;
     }
     &__name {
       @include fontDescription;
@@ -37,9 +38,14 @@
     }
   }
   &__link {
-    @include fontAGTms;
+    @include fontPrice;
     text-decoration: none;
     color: $colorLight;
+    &_mod {
+      @include fontH3;
+      text-decoration: none;
+      color: $colorLight;
+    }
   }
   &__logo {
     color: $colorWhite;
@@ -53,12 +59,11 @@
     padding: 80px 100px;
     border-top: 2px solid rgb(255, 255, 255);
     background: rgb(70, 78, 77);
-    gap: 40px;
+    gap: 20px;
     &__title {
-      @include fontMontserrat;
-      @include fontStyle($size: 20px, $weight: 500, $height: 25px);
-      color: $colorWhite;
-      margin-bottom: 40px;
+      @include fontH4;
+      color: $colorLink;
+      // margin-bottom: 40px;
     }
   }
   &__columns {
@@ -73,7 +78,7 @@
     justify-content: space-between;
     gap: 40px;
     &_socialMedia {
-      margin-bottom: 95px;
+      margin-bottom: 40px;
     }
     &_links {
       display: flex;
@@ -88,23 +93,20 @@
   text-decoration: none;
   color: $colorWhite;
   &__main {
-    @include fontAGTms;
-    @include fontStyle($size: 24px, $weight: 400, $height: 29px);
-    letter-spacing: 2%;
+    @include fontH6;
   }
   &__politics {
-    @include fontMontserrat;
-    @include fontStyle($size: 16px, $weight: 500, $height: 20px);
+    @include fontText;
     letter-spacing: 2%;
+  }
+  &__tr {
+    @include fontText;
+    text-transform: none;
   }
 }
 
 .upper {
   text-transform: uppercase;
-}
-
-.travel {
-  text-transform: none;
 }
 
 .docs {
@@ -114,4 +116,5 @@
 .socialMedia {
   display: flex;
   gap: 17px;
+  margin-top: 40px;
 }
