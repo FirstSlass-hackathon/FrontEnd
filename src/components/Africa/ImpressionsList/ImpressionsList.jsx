@@ -12,9 +12,9 @@ const author2 = 'АЛЕКСАНДР, САНКТ-ПЕТЕРБУРГ'
 const author3 = 'КИРИЛЛ, НИЖНИЙ НОВГОРОД'
 
 const impressionsList = [
-  { name: 'imp1', image: lion, text: review1, author: author1 },
-  { name: 'imp2', image: lion, text: review2, author: author2 },
-  { name: 'imp3', image: lion, text: review3, author: author3 }, // Использование импортированного изображения
+  { name: 'imp1', icon: icon, image: lion, text: review1, author: author1 },
+  { name: 'imp2', icon: icon, image: lion, text: review2, author: author2 },
+  { name: 'imp3', icon: icon, image: lion, text: review3, author: author3 }, // Использование импортированного изображения
 ];
 
 export const ImpressionsList = () => {
@@ -33,7 +33,7 @@ export const ImpressionsList = () => {
     <div className={s.impressionsList}>
       <img src={impressionsList[current].image} className={`${s.image} ${fadeOut ? s.fadeOut : ''}`} alt={impressionsList[current].name} />
       <div className={s.text}>
-        <div className={s.symbol}>"</div>
+        <img src={impressionsList[current].icon} className={`${s.symbol} ${fadeOut ? s.fadeOut : ''}`} alt={impressionsList[current].name}/>
         <p className={`${s.impression} ${fadeOut ? s.fadeOut : ''}`}>{impressionsList[current].text}</p>
         <div className={`${s.signature} ${fadeOut ? s.fadeOut : ''}`}>{impressionsList[current].author}</div>
       </div>
