@@ -1,8 +1,6 @@
 import React from 'react';
 import s from './style.module.scss';
-// import Button from '../../ui/Button/Button';
 import cardDirections from '../../ui/Cards/CardDirection';
-// import {scrollToOrder} from '../Main';
 
 export const Directions = () => {
 
@@ -16,7 +14,7 @@ export const Directions = () => {
           <span className={s.highlight}>ВПЕЧАТЛЕНИЯ</span>
         </h1>
         <p className={s.description}>
-          Подари своим желаниям полную свободу. Вы ограничены только собственной фантазией.
+        Ваши желания ничем не&nbsp;ограничены. Вы&nbsp;ограничены только собственной фантазией.
           <br/>
           <br/>
           Наша компания имеет безграничные возможности!

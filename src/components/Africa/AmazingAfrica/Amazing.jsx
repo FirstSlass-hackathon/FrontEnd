@@ -18,7 +18,11 @@ export const Amazing = () => {
       <div className={s.amazing}>
         <div className={s.amazing__title}>
           <span className={s.amazing__text}>такая удивительная Африка</span>
-          <span className={s.amazing__name}>Попробуйте Африку на вкус</span>
+          <h1 className={s.amazing__name}>
+            <span>Попробуйте</span>
+            <br/>
+            <span>Африку</span> <span className={s.highlight}>на вкус</span>
+          </h1>
         </div>
         <div className={s.amazing__photo}>
           <div className={s.amazing__poster}>

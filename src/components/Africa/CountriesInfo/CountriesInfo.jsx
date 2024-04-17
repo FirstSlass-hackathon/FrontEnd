@@ -7,7 +7,7 @@ export const CountriesInfo = () => {
   return (
     <div className={s.countriesInfo}>
       <div className={s.text}>
-        <h2 className={s.title}>Страны Африки</h2>
+        <h2 className={s.title}>страны Африки</h2>
         <h1 className={s.name}>
           <span>АФРИКА - </span>
           <span className={s.highlight}>МЕЧТА</span>

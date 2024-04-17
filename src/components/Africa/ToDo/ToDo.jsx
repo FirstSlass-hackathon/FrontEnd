@@ -9,9 +9,9 @@ export const ToDo = () => {
         <div className={s.text}>
           <h2 className={s.title}>чем заняться</h2>
           <h1 className={s.name}>
-            <span>НАЙДИТЕ СЕБЕ</span>
+            <span className={s.highlight}>Откройте</span> <span>для себя</span>
             <br/>
-            <span>РАЗВЛЕЧЕНИЕ</span> <span className={s.highlight}>ПО ВКУСУ</span>
+            <span>свою</span> <span className={s.highlight}>Африку</span>
           </h1>
         </div>
         <div className={s.cards}>

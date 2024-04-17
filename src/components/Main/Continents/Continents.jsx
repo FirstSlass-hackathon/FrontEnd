@@ -7,11 +7,11 @@ import america from '../../../assets/images/continents/america.jpg';
 import australia from '../../../assets/images/continents/australia.jpg';
 
 const continents = [
-  { name: 'ЕВРОПА', image: europe,link: '/europe' },
-  { name: 'АЗИЯ', image: asia,link: 'asia' },
-  { name: 'АФРИКА', image: africa, link: '/africa' }, // Использование импортированного изображения
-  { name: 'АМЕРИКА', image: america,link: '/america' },
-  { name: 'АВСТРАЛИЯ', image: australia,link: '/australia' },
+  { name: 'ЕВРОПА', image: europe ,link: '/inprogress' },
+  { name: 'АЗИЯ', image: asia, link: '/inprogress' },
+  { name: 'АФРИКА', image: africa, link: '/inprogress' }, // Использование импортированного изображения
+  { name: 'АМЕРИКА', image: america ,link: '/inprogress' },
+  { name: 'АВСТРАЛИЯ', image: australia ,link: '/inprogress' },
 ];
 
 export const Continents = () => {

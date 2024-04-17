@@ -50,32 +50,3 @@
   box-sizing: border-box;
   gap: 28px;
 }
-
-// .applyButton {
-//   background-color: transparent;
-//   color: black;
-//   border: 1px solid black;
-//   padding: 10px 20px;
-//   cursor: pointer;
-//   transition: background-color 0.3s ease, color 0.3s ease;
-//   margin-left: 323px;
-//   margin-top: 39px;
-//   font-family: 'ButtonFont', sans-serif;
-//   box-sizing: border-box;
-//   border-radius: 50%; // делаем кнопку круглой
-//   width: 40px; // задаем фиксированную ширину
-//   height: 40px; // задаем фиксированную высоту
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// .applyButton:hover {
-//   background-color: grey;
-//   color: white;
-// }
-
-// .applyButton::before {
-//   content: "←"; // символ стрелки влево
-//   font-size: 24px;
-// }

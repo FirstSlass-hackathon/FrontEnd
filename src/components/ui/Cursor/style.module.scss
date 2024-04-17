@@ -9,6 +9,7 @@
   position: absolute;
   transition-duration: 100ms;
   transition-timing-function: ease-out;
+  pointer-events: none; 
 }
 
 .cursor2 {
@@ -21,6 +22,7 @@
   transition-duration: 100ms;
   transition-timing-function: ease-out;
   animation: rotate 3s linear infinite;
+  pointer-events: none; 
 }
 
 @keyframes rotate {

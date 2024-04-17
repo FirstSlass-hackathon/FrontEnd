@@ -31,7 +31,7 @@ export const Footer = () => {
 
         <div className={s.footer__up_contacts}>
           <img className={s.footer__up_img} src={mail} alt={mail}/>
-          <Link className={s.footer__link} to='/'>info@firstclass.com</Link>
+          <Link className={s.footer__link_mod} to='/'>info@firstclass.com</Link>
         </div>
       </section>
 
@@ -42,21 +42,21 @@ export const Footer = () => {
             <div className={s.footer__down__title}>Направления</div>
             <div className={s.footer__column_links}>
               <Link className={cn(s.link, s.link__main, s.upper)} to='/africa'>африка</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/'>азия</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/'>австралия</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/'>европа</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/'>америка</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>азия</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>австралия</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>европа</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>америка</Link>
             </div>
           </div>
 
           <div className={s.footer__column}>
             <div className={s.footer__down__title}>Виды отдыха</div>
             <div className={s.footer__column_links}>
-              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Пляжный отдых</Link>
-              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Кайтсерфинг</Link>
-              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Дайвинг</Link>
-              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Яхтинг</Link>
-              <Link className={cn(s.link, s.link__main, s.travel)} to='/'>Горные лыжи</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>Пляжный отдых</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>Кайтсерфинг</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>Дайвинг</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>Яхтинг</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>Горные лыжи</Link>
             </div>
           </div>
 
@@ -72,9 +72,9 @@ export const Footer = () => {
               </div>
             </div>
             <div className={cn(s.footer__column, s.docs)}>
-              <Link className={cn(s.link, s.link__politics)} to='/'>Политика конфиденциальности</Link>
-              <Link className={cn(s.link, s.link__politics)} to='/'>Политика обработки персональных данных</Link>
-              <Link className={cn(s.link, s.link__politics)} to='/'>Договор оферта</Link>
+              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>Политика конфиденциальности</Link>
+              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>Политика обработки персональных данных</Link>
+              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>Договор оферта</Link>
             </div>
           </div>
         </div>

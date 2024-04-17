@@ -22,8 +22,9 @@
     padding-bottom: 16px;
   }
   &__name {
-    @include fontH22;
+    @include fontH1;
     color: $colorDark;
+    text-transform: uppercase;
   }
   &__photo {
     display: flex;
@@ -41,6 +42,13 @@
     gap: 36px;
     position: relative; /* Установим позицию для создания кругляшка */
   }
+}
+
+.highlight {
+  @include fontH1;
+  text-transform: uppercase;
+  color: $colorBold;
+  box-sizing: border-box;
 }
 
 .zoomContainer {

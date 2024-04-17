@@ -31,10 +31,13 @@
 
 .name {
   @include fontH1;
+  text-transform: uppercase;
   box-sizing: border-box;
 }
 
 .highlight {
+  @include fontH1;
+  text-transform: uppercase;
   color: $colorBold;
   box-sizing: border-box;
 }

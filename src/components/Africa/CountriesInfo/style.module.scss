@@ -24,12 +24,12 @@
 }
 
 .name {
-  @include fontH2;
+  @include fontH1;
   box-sizing: border-box;
 }
 
 .highlight {
-  @include fontH2;
+  @include fontH1;
   color: $colorBold;
   box-sizing: border-box;
 }
@@ -40,5 +40,5 @@
 }
 
 .countriesInfo__img_small {
-  margin-top: 75px;
+  margin-top: 10px;
 }
