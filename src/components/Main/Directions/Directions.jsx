@@ -1,8 +1,6 @@
 import React from 'react';
 import s from './style.module.scss';
-// import Button from '../../ui/Button/Button';
 import cardDirections from '../../ui/Cards/CardDirection';
-// import {scrollToOrder} from '../Main';
 
 export const Directions = () => {
 

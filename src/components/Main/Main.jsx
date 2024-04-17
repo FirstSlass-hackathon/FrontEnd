@@ -1,4 +1,5 @@
 import React from "react";
+import { Element } from 'react-scroll';
 // import { HeroSection } from "../ui/HeroSection";
 import { AboutUs } from "../Main/AboutUs";
 import { Directions } from "../Main/Directions";
@@ -34,29 +35,29 @@ export const Main = () => {
           <AboutUs/>
         </section>
 
-       <section className={s.main__section}>
+       <Element name={'directions'} className={s.main__section}>
           <Directions/>
-        </section>
+        </Element>
 
         <section className={s.main__section}>
           <Continents/>
         </section>
 
-        <section className={s.main__section}>
+        <Element name={'travels'} className={s.main__section}>
           <Travels/>
-        </section>
+        </Element>
 
 {/*        <section className={s.main__section}>
           <Founder/>
         </section>*/}
 
-        <section className={s.main__section}>
+        <Element name={'aboutus'} className={s.main__section}>
           <Advantages/>
-        </section>
+        </Element>
 
-        <section className={s.main__section}>
+        <Element name={'impressions'} className={s.main__section}>
           <Impressions/>
-        </section>
+        </Element>
 
         <section className={s.main__section} id="orderSection">
           <Order/>
