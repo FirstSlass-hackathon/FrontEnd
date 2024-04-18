@@ -14,5 +14,6 @@
 .link__nav {
   @include fontH4;
   text-decoration: none;
+  cursor: pointer;
   color: $colorDark;
 }
