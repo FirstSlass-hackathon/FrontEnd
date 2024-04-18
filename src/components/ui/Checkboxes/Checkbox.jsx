@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import s from './Checkbox.module.scss';
 
-//это пример, необходимо исправить под наши параметры
+// Это пример, необходимо исправить под наши параметры
 
 export const Checkbox = () => {
   const [checked, setChecked] = useState(false);
@@ -21,15 +21,15 @@ export const Checkbox = () => {
     >
       <div
         style={{
-          width: '12px',
-          height: '12px',
+          width: '24px', // Увеличиваем размер плейсхолдера в 2 раза
+          height: '24px', // Увеличиваем размер плейсхолдера в 2 раза
           borderRadius: '50%',
           border: '2px solid #ccc',
           backgroundColor: checked ? 'black' : 'transparent',
-          marginRight: '8px',
+          marginRight: '16px', // Увеличиваем отступ между плейсхолдером и текстом
         }}
       />
-      <span>Я соглашаюсь на обработку информации о персональных данных</span>
+      <span style={{ color: 'white', fontSize: '28px' }}>Я соглашаюсь на обработку информации о персональных данных</span>
     </div>
   );
 };
