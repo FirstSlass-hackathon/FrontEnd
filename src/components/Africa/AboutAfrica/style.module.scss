@@ -97,3 +97,26 @@
   background-color: grey;
   color: white;
 }
+
+.imageContainer,
+.secondColumn {
+  position: relative;
+}
+
+.imageContainer:hover img,
+.manImage:hover,
+.womanImage:hover {
+  transform: rotateX(var(--xTilt)) rotateY(var(--yTilt));
+}
+
+img,
+.manImage,
+.womanImage {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.1s ease;
+}
+
+img:hover {
+  cursor: pointer;
+}

@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './style.module.scss';
 import img1 from '../../../assets/images/africa_countries/africa_countries_photo_1.svg';
 import img2 from '../../../assets/images/africa_countries/africa_coutries_photo_2.png';
 
 export const CountriesInfo = () => {
+  const [zoomStyle, setZoomStyle] = useState({});
+
+  const handleMouseMove = (e) => {
+    const { left, top, width, height } = e.target.getBoundingClientRect();
+    const offsetX = (e.clientX - left) / width * 100;
+    const offsetY = (e.clientY - top) / height * 100;
+
+    setZoomStyle({
+      transformOrigin: `${offsetX}% ${offsetY}%`
+    });
+  };
+  
   return (
     <div className={s.countriesInfo}>
       <div className={s.text}>
@@ -25,11 +37,18 @@ export const CountriesInfo = () => {
           Не упускайте возможность отправиться в увлекательное путешествие по 
           загадочной Африке и открыть для себя её уникальные красоты и тайны.
         </p>
-        <img className={s.countriesInfo__img_small} src={img1} alt={'desert'}/>
+        <div className={s.countriesInfo__img_small}>
+        <div className={s.imgContainer} onMouseMove={handleMouseMove}>
+          <img className={`${s.imgZoom} ${s.img}`} src={img1} alt={'desert'} style={zoomStyle}/>
+          </div>
+        </div>
+
       </div>
       
       <div className={s.countriesInfo__img}>
-        <img src={img2} alt={'beach'}/>
+        <div className={s.imgContainer} onMouseMove={handleMouseMove}>
+          <img className={`${s.imgZoom} ${s.img}`} src={img2} alt={'beach'} style={zoomStyle}/>
+        </div>
       </div>
     </div>
   )
