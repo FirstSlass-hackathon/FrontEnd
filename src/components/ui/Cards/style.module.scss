@@ -110,6 +110,10 @@
   opacity: 1;
 }
 
+.str:hover .info__price {
+  opacity: 1;
+}
+
 .info {
   position: absolute;
   top: 1%;
@@ -180,12 +184,12 @@
     //display: none; /* По умолчанию скрываем блок с текстом moto */
     @include fontH4;
     color: $colorLight;
-    margin-top: 350px;
+    margin-top: 200px;
     margin-left: 160px;
     margin-right: 30px;
     font-size: 1.0em;
     transition: opacity 0.6s ease-in-out; /* Плавное появление текста */
-    opacity: 1; /* Начальная прозрачность */
+    opacity: 0; /* Начальная прозрачность */
   }
   &__countriesList {
     display: flex;
