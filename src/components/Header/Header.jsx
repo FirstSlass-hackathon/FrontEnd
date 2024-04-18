@@ -36,7 +36,7 @@ export const Header = () => {
     <div className={s.header} style={{ background: backgroundColor }}>
       <div className={s.headerContent}>
         <img src={logo} alt={'logo'}/>
-        <NavBar colorLink={colorLink} line={line}/>
+        <NavBar colorLink={colorLink} line={line} currentPath={location.pathname}/>
         <Button text={'Оставить заявку'} onClick={scrollToOrder} colorScheme={colorScheme}/>
       </div>
     </div>

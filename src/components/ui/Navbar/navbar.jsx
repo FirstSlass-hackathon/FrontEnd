@@ -1,12 +1,14 @@
 import React from "react";
-import { Link } from "react-scroll";
-import { scroller } from 'react-scroll';
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink, scroller } from 'react-scroll';
+import { useLocation } from "react-router-dom";
 import s from './style.module.scss';
 import lineBlack from '../../../assets/images/Line 10.svg';
 import lineWhite from '../../../assets/images/Line_white.svg';
 
 export const NavBar = ({colorLink, line, ...props}) => {
 
+  const location = useLocation();
   const textColor = colorLink === 'white' ? 'white' : 'black'; // Цвет текста
   const lineColor = line === 'white' ? lineWhite : lineBlack ;
 
@@ -20,21 +22,31 @@ export const NavBar = ({colorLink, line, ...props}) => {
 
   return (
     <div className={s.navbar}>
-      <div className={s.navbar__block}>
-        <Link style={{ color: textColor }} className={s.link__nav} to={'directions'} smooth={true} onClick={() => scrollToComponent('directions')}>Направления</Link>
-        <img src={lineColor} alt={"line"}/>
-      </div>
-      <div className={s.navbar__block}>
-        <Link style={{ color: textColor }} className={s.link__nav} to={'travels'} smooth={true} onClick={() => scrollToComponent('travels')}>Виды путешествий</Link>
-        <img src={lineColor} alt={"line"}/>
-      </div>
-      <div className={s.navbar__block}>
-        <Link style={{ color: textColor }} className={s.link__nav} to={'aboutus'} smooth={true} onClick={() => scrollToComponent('aboutus')}>О нас</Link>
-        <img src={lineColor} alt={"line"}/>
-      </div>
-      <div className={s.navbar__block}>
-        <Link style={{ color: textColor }} className={s.link__nav} to={'impressions'} smooth={true} onClick={() => scrollToComponent('impressions')}>Истории</Link>
-      </div>
+      {location.pathname === '/' && (
+        <>
+          <div className={s.navbar__block}>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'directions'} smooth={true} onClick={() => scrollToComponent('directions')}>Направления</ScrollLink>
+            <img src={lineColor} alt={"line"}/>
+          </div>
+          <div className={s.navbar__block}>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'travels'} smooth={true} onClick={() => scrollToComponent('travels')}>Виды путешествий</ScrollLink>
+            <img src={lineColor} alt={"line"}/>
+          </div>
+          <div className={s.navbar__block}>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'aboutus'} smooth={true} onClick={() => scrollToComponent('aboutus')}>О нас</ScrollLink>
+            <img src={lineColor} alt={"line"}/>
+          </div>
+          <div className={s.navbar__block}>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'impressions'} smooth={true} onClick={() => scrollToComponent('impressions')}>Истории</ScrollLink>
+          </div>
+        </>
+      )}
+
+      {location.pathname === '/africa' && (
+        <div className={s.navbar__block}>
+          <RouterLink style={{ color: textColor }} className={s.link__nav} to={'/'}>Главная</RouterLink>
+        </div>
+      )}
     </div>
   )
 }
