@@ -8,17 +8,18 @@
   background-color: $colorLight;
   display: flex;
   justify-content: center;
+  gap: 100px;
 }
 
 .text {
   width: 327px;
   height: 283px;
-  margin-left: 80px;
+  // margin-left: 40px;
   margin-top: 100px;
   box-sizing: border-box;
 }
 
-.title {
+.title { 
   @include fontDescription;
   box-sizing: border-box;
 }
@@ -44,9 +45,6 @@
   justify-content: flex-start; /* Располагаем элементы в начале контейнера */
   align-items: center; /* Выравниваем элементы по центру по вертикали */
   padding: 100px 0 100px 100px;
-  // width: 924px;
-  // height: 510px;
-  gap: 28px;
+  gap: 48px;
   box-sizing: border-box;
-  gap: 28px;
 }

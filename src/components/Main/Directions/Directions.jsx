@@ -19,8 +19,6 @@ export const Directions = () => {
           <br/>
           Наша компания имеет безграничные возможности!
         </p>
-        {/* <button className={s.applyButton}></button> */}
-        {/* <Button className={s.applyButton} onClick={scrollToOrder} text={'Оставить заявку'}/> */}
       </div>
       <div className={s.cards}>
         {cardDirections.map((card, index) => (
