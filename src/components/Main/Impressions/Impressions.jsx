@@ -1,9 +1,8 @@
 import React from 'react';
 import s from './style.module.scss';
-import cardImpressions from '../../ui/Cards/CardImpression';
+import CardImpression from '../../ui/Cards/CardImpression'; // Исправленный импорт
 
 export const Impressions = () => {
-
   return (
     <div className={s.container}>
       <div className={s.impression}>
@@ -17,14 +16,13 @@ export const Impressions = () => {
             </h1>
           </div>
           <div className={s.cards}>
-            {cardImpressions.map((card, index) => (
-              <div key={index} className={s.card}>
-                {card}
-              </div>
-            ))}
+            {/* Используйте компонент CardImpression напрямую */}
+            <CardImpression />
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Impressions;
