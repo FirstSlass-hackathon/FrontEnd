@@ -8,7 +8,7 @@ export const Button = ({ className, text, onClick, colorScheme, ...props }) => {
   return (
     <button
       className={`${s.button} ${buttonClassName} ${className}`}
-      style={{ color: textColor, height: '100px', width: '400px', fontSize: '25px' }} // Изменяем размеры кнопки и текста
+      style={{ color: textColor }} // Применяем цвет текста
       onClick={onClick}
       {...props}
     >

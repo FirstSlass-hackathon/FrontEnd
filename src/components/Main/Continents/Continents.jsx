@@ -7,9 +7,9 @@ import america from '../../../assets/images/continents/america.jpg';
 import australia from '../../../assets/images/continents/australia.jpg';
 
 const continents = [
+  { name: 'АФРИКА', image: africa, link: '/africa' }, // Использование импортированного изображения
   { name: 'ЕВРОПА', image: europe ,link: '/inprogress' },
   { name: 'АЗИЯ', image: asia, link: '/inprogress' },
-  { name: 'АФРИКА', image: africa, link: '/africa' }, // Использование импортированного изображения
   { name: 'АМЕРИКА', image: america ,link: '/inprogress' },
   { name: 'АВСТРАЛИЯ', image: australia ,link: '/inprogress' },
 ];
