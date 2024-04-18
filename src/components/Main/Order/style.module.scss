@@ -18,7 +18,7 @@
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: transform 1s ease; // Добавляем transition для плавного движения
+    transition: transform 1s ease;
   }
 
   .layer1 {
@@ -37,7 +37,6 @@
     background-image: url('../../../assets/images/parallax/layer4.png');
   }
 
-  // Добавляем эффект параллакса для каждого слоя при наведении
   &:hover .layer2 {
     transform: translate(1%, 1%);
   }
@@ -54,58 +53,58 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 14px;
 
     &__block {
       display: flex;
       flex-direction: column;
-      margin-left: 153px;
-      margin-top: 504px;
-      gap: 12px;
+      margin-left: 76.5px;
+      margin-top: 252px;
+      gap: 6px;
     }
     &__title {
       @include fontDescription;
-      font-size: 50px; 
+      font-size: 25px;
       color: white;
     }
     &__name {
       @include fontH2;
-      font-size: 70px; 
+      font-size: 35px;
       text-transform: uppercase;
       color: white;
     }
     &__inputs {
       display: flex;
       flex-direction: column;
-      margin-left: 153px;
+      margin-left: 76.5px;
       &_row {
         display: flex;
-        gap: 24px;
+        gap: 12px;
       }
     }
     &__btn {
-      margin-bottom: 137.5px; 
-      font-size: 25px; // Изменяем размер шрифта кнопки
+      margin-bottom: 68.75px; 
+      font-size: 12.5px;
     }
   }
 
   button {
-    border: 2px solid white; // Устанавливаем белую окантовку толщиной 2px
-    border-radius: 5px; // Опционально: добавляем скругление углов кнопки
+    border: 1px solid white;
+    border-radius: 2.5px;
     background-color: transparent;
     color: white;
-    padding: 10px 20px; // Изменяем внутренний отступ кнопки
-    font-size: 25px; // Изменяем размер шрифта кнопки
-    transition: background-color 0.3s ease; // Добавляем плавный переход для эффекта
+    padding: 5px 10px;
+    font-size: 12.5px;
+    transition: background-color 0.3s ease;
     &:hover {
-      background-color: rgba(0, 0, 0, 0.5); // Устанавливаем полупрозрачный черный цвет при наведении
+      background-color: rgba(0, 0, 0, 0.5);
     }
   }
 
   input {
     border: none;
-    border-bottom: 1px solid white;
-    margin-bottom: 80px; 
+    border-bottom: 0.5px solid white;
+    margin-bottom: 40px; 
     background-color: transparent;
     color: white;
     &:focus {
@@ -113,11 +112,11 @@
     }
     &::placeholder {
       color: white;
-      font-size: 150%;
+      font-size: 75%;
     }
   }
 
   .checkbox {
-    margin-bottom: 30px; 
+    margin-bottom: 15px; 
   }
 }
