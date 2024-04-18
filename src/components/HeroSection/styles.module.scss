@@ -1,25 +1,26 @@
-.header {
-    position: relative;
-    height: 100vh;
+.hero {
+    // position: relative;
+    // height: 100vh;
+    max-width: 100vw;
   }
   
-  .backgroundImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Ensure the image is behind other content */
-}
+//   .backgroundImage {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: -1; /* Ensure the image is behind other content */
+// }
 
   
-  .headerContent {
-    position: relative;
-    z-index: 1; /* Ensure the content is above the image */
-    padding: 56px 82px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  // .headerContent {
+  //   position: relative;
+  //   z-index: 1; /* Ensure the content is above the image */
+  //   padding: 56px 82px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
   
   /* Add your other styles as needed */

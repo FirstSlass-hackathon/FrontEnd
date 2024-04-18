@@ -1,26 +1,7 @@
-.header {
-  // position: fixed;
-  // top: 0;
-  // width: 100%;
-  // z-index: 1000;
-}
-  
-.videoBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; /* Ensure the video is behind other content */
-}
-  
-.headerContent {
-  position: relative;
-  z-index: 1; /* Ensure the content is above the video */
-  padding: 56px 82px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.africa__header {
+  position: fixed; /* фиксированное позиционирование */
+  width: 100%; /* ширина по всей ширине экрана */
+  top: 0; /* располагаем вверху */
+  z-index: 1000; /* задаем z-index для управления слоями */
 }
   

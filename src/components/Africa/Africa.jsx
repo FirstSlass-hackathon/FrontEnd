@@ -10,11 +10,16 @@ import { Order } from "../Main/Order";
 import s from './style.module.scss';
 import { Amazing } from "./AmazingAfrica/Amazing";
 import { ToDo } from "./ToDo/ToDo";
+import { ImageSection } from './ImageSection';
 
 export const Africa = () => {
   return (
     <>
       <main className={s.content}>
+
+        <section className={s.main__section}>
+          <ImageSection/>
+        </section>
 
         <section className={s.main__section}>
           <AboutAfrica/>

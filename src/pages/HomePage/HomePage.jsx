@@ -13,7 +13,7 @@ export default function HomePage() {
 
   return (
       <main className={s.content}>
-        <div id="absolute" className={s.absolute}>
+        <div className={s.homepage__header}>
           <Header/>
         </div>
         <Main/>

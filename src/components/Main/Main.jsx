@@ -1,6 +1,6 @@
 import React from "react";
 import { Element } from 'react-scroll';
-// import { HeroSection } from "../ui/HeroSection";
+import { HeroSection } from "../HeroSection";
 import { AboutUs } from "../Main/AboutUs";
 import { Directions } from "../Main/Directions";
 import { Continents } from "../Main/Continents";
@@ -24,12 +24,9 @@ export const Main = () => {
   return (
     <>
       <main className={s.content}>
-{/*        <section className={s.main__section}>
-          <Impressions/>
-  </section>*/}
-{/*        <section className={s.main__section}>
+       <section className={s.main__section}>
           <HeroSection/>
-  </section>*/}
+        </section>
 
         <section className={s.main__section}>
           <AboutUs/>
@@ -68,4 +65,3 @@ export const Main = () => {
 }
 
 export {scrollToOrder};
-// export {goToLink};
