@@ -9,7 +9,7 @@ import lineWhite from '../../../assets/images/Line_white.svg';
 export const NavBar = ({colorLink, line, ...props}) => {
 
   const location = useLocation();
-  const textColor = colorLink === 'white' ? 'white' : 'black'; // Цвет текста
+  const textColor = colorLink === 'white' ? 'white' : '#464E4D'; // Цвет текста
   const lineColor = line === 'white' ? lineWhite : lineBlack ;
 
   const scrollToComponent = (elementName) => {
