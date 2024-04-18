@@ -3,7 +3,7 @@ import React from "react";
 import s from './style.module.scss';
 import kacheliImage from '../../../assets/images/swing.jpg';
 import twix from '../../../assets/images/twix.jpg';
-// import {goToLink} from '../Main';
+
 
 export const AboutUs = () => {
   return (

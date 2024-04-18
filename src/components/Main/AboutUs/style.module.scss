@@ -4,8 +4,8 @@
 .container {
   max-width: 1440px;
   padding: 100px 79px;
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutUs {
@@ -66,7 +66,7 @@
 }
 
 .image1 {
-  width: 436px; /* задаем ширину фото */
+  max-width: 436px; /* задаем ширину фото */
   height: 440px; /* задаем высоту фото */
   left: 80px; /* позиция по оси X */
   top: 157px; /* позиция по оси Y */
@@ -74,7 +74,7 @@
 }
 
 .image2 {
-  width: 480px; /* задаем ширину фото */
+  max-width: 480px; /* задаем ширину фото */
   height: 339px; /* задаем высоту фото */
   left: 298px; /* позиция по оси X */
   top: 377px; /* позиция по оси Y */
