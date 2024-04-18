@@ -21,15 +21,15 @@ export const Checkbox = () => {
     >
       <div
         style={{
-          width: '24px', // Увеличиваем размер плейсхолдера в 2 раза
-          height: '24px', // Увеличиваем размер плейсхолдера в 2 раза
+          width: '20px', // Увеличиваем размер плейсхолдера в 2 раза
+          height: '20px', // Увеличиваем размер плейсхолдера в 2 раза
           borderRadius: '50%',
           border: '2px solid #ccc',
-          backgroundColor: checked ? 'black' : 'transparent',
+          backgroundColor: checked ? '#C7B4A5' : 'transparent',
           marginRight: '16px', // Увеличиваем отступ между плейсхолдером и текстом
         }}
       />
-      <span style={{ color: 'white', fontSize: '28px' }}>Я соглашаюсь на обработку информации о персональных данных</span>
+      <span style={{ color: 'white', fontSize: '24px' }}>Я соглашаюсь на обработку информации о персональных данных</span>
     </div>
   );
 };

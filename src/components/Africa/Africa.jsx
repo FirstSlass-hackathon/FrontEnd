@@ -6,7 +6,7 @@ import { ImpressionsList } from "../Africa/ImpressionsList";
 // import { RewiewList } from "../Africa/RewiewList";
 // import { TravelsList } from "../Africa/TravelsList";
 import { Advantages } from "../Main/Advantages";
-import { Order } from "../Main/Order";
+import { OrderAfrica } from "../Africa/OrderAfrica";
 import s from './style.module.scss';
 import { Amazing } from "./AmazingAfrica/Amazing";
 import { ToDo } from "./ToDo/ToDo";
@@ -58,7 +58,7 @@ export const Africa = () => {
         </section>
 
         <section className={s.main__section} id="orderSection">
-          <Order/>
+          <OrderAfrica/>
         </section>
       </main>
     </>

@@ -3,8 +3,9 @@ import axios from "axios";
 import s from './style.module.scss';
 import { Checkbox } from '../../ui/Checkboxes/Checkbox';
 import { Button } from '../../ui/Button/Button';
+import order from '../../../assets/images/africa_countries/order_africa.jpg';
 
-export const Order = () => {
+export const OrderAfrica = () => {
   const initialState = {
     name: "",
     fam: "",
@@ -31,11 +32,7 @@ export const Order = () => {
 
   return (
     
-    <div className={s.parallax}>
-      <div className={s.layer1}></div>
-      <div className={s.layer2}></div>
-      <div className={s.layer3}></div>
-      <div className={s.layer4}></div>
+    <div className={s.container}>
       <div className={s.order}>
         <div className={s.order__block}>
           <div className={s.order__title}>мир в шаге от тебя</div>
