@@ -2,8 +2,8 @@ import React from "react";
 import s from './style.module.scss';
 
 export const Button = ({ className, text, onClick, colorScheme, ...props }) => {
-  const buttonClassName = colorScheme === 'white' ? s.buttonBlack : s.buttonWhite;
-  const textColor = colorScheme === 'white' ? 'white' : 'white'; // Цвет текста
+  const buttonClassName = colorScheme === 'white' ? s.buttonWhite : s.buttonBlack;
+  const textColor = colorScheme === 'white' ? 'white' : 'black'; // Цвет текста
 
   return (
     <button
