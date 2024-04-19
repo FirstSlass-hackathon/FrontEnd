@@ -15,6 +15,8 @@ export const CardDirection = ({title, date, direction, img, ...props}) => {
             <div className={s.info__offer}>
               <div className={s.info__date}>{date}</div>
               <div className={s.info__direction}>{direction}</div>
+
+              
             </div>
           </div>
       </div>

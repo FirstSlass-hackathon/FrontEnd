@@ -113,7 +113,6 @@
   &__title {
     text-align: start;
     padding: 20px 0 60px 20px;
-    margin-bottom: 40px;
     @include fontDescription;
     color: $colorWhite;
     &_tr {
@@ -147,7 +146,8 @@
     color: $colorWhite;
   }
   &__direction {
-    @include fontH2;
+    @include fontH3;
+    width: 240px;
     color: $colorWhite;
     text-transform: uppercase;
   }
