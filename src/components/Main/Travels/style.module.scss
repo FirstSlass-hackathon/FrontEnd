@@ -21,21 +21,27 @@
   // max-height: 123px;
   box-sizing: border-box;
   color: #464E4D;
-}
 
-.title {
-  @include fontDescription;
-  box-sizing: border-box;
-}
+  .title {
+    @include fontDescription;
+    box-sizing: border-box;
+  }
 
-.name {
-  @include fontH1;
-  box-sizing: border-box;
-}
+  .name {
+    @include fontH1;
+    box-sizing: border-box;
 
-.highlight {
-  color: $colorBold;
-  box-sizing: border-box;
+    .highlight {
+      @include fontH1;
+      color: $colorBold;
+      box-sizing: border-box;
+      transition: font-weight 0.5s ease; // добавляем анимацию для свойства font-weight
+    }
+
+    .highlight:hover {
+      font-weight: bold; // изменяем на жирный при наведении на него курсора мыши
+    }
+  }
 }
 
 .cards {

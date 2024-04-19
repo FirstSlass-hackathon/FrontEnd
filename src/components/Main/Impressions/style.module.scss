@@ -13,7 +13,6 @@
   box-sizing: border-box;
   // background-color: $colorLight;
   display: flex;
-
 }
 
 .block{
@@ -29,20 +28,26 @@
   //margin-left: 189px;
   //margin-top: 100px;
   box-sizing: border-box;
+
+  .name {
+    @include fontH1;
+    box-sizing: border-box;
+    
+    .highlight {
+      @include fontH1;
+      color: $colorBold;
+      box-sizing: border-box;
+      transition: font-weight 2s ease; // добавляем анимацию для свойства font-weight
+    }
+
+    .highlight:hover {
+      font-weight: bold; // изменяем шрифт на жирный при наведении на него курсора мыши
+    }
+  }
 }
 
 .title {
   @include fontDescription;
-  box-sizing: border-box;
-}
-
-.name {
-  @include fontH1;
-  box-sizing: border-box;
-}
-
-.highlight {
-  color: $colorBold;
   box-sizing: border-box;
 }
 
