@@ -21,7 +21,7 @@ export const CardDirection = ({ title, date, direction, img, description_dir, pr
           <div className={s.info__date}>{date}</div>
           <div className={s.info__direction}>{direction}</div>
           {isHovered && (
-            <div className={s.info__description}>
+            <div className={s.info__description_dir}>
               <div className={s.info__description_text}>{description_dir}</div>
               <div className={s.info__price}>{price}</div>
             </div>

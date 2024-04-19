@@ -63,7 +63,11 @@
   height: 100%; /* При наведении увеличиваем высоту до 100% */
 }
 
-.dir:hover .info__description {
+.dir:hover .info__description_dir {
+  opacity: 1; /* Показываем текст при наведении */
+}
+
+.dir:hover .info__price {
   opacity: 1; /* Показываем текст при наведении */
 }
 
@@ -182,12 +186,10 @@
   }
   &__price {
     //display: none; /* По умолчанию скрываем блок с текстом moto */
-    @include fontH4;
+    @include fontPrice;
     color: $colorLight;
-    margin-top: 150px;
-    margin-left: 160px;
-    margin-right: 30px;
-    font-size: 3.0em;
+    margin-top: 50px;
+    margin-left: 120px;
     transition: opacity 0.6s ease-in-out; /* Плавное появление текста */
     opacity: 0; /* Начальная прозрачность */
   }
@@ -228,6 +230,17 @@
     font-size: 1.0em;
     transition: opacity 0.4s ease-in-out; /* Плавное появление текста */
     opacity: 0; /* Начальная прозрачность */
+    &_dir {
+      color: $colorLight;
+      margin-top: 30px;
+      margin-right: 30px;
+      transition: opacity 0.4s ease-in-out; /* Плавное появление текста */
+      opacity: 0; /* Начальная прозрачность */
+    }
+    &_text {
+      @include fontH4;
+      font-size: 16px;
+    }
   }
   &__adv {
     padding: 250px 0 0 20px;
