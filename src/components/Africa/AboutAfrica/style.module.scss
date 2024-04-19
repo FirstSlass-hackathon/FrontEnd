@@ -39,8 +39,8 @@
 }
 
 .text {
-//  max-width: 388px;
-//  max-height: 650px;
+  // max-width: 388px;
+  // max-height: 650px;
   box-sizing: border-box;
 }
 
@@ -115,6 +115,14 @@ img,
   max-width: 100%;
   height: auto;
   transition: transform 0.1s ease;
+}
+
+.text {
+  transition: transform 3s ease; // Добавляем переход на 3 секунды при наведении
+}
+
+.text:hover {
+  transform: scale(1.2); // Увеличиваем текст в 1.2 раза при наведении
 }
 
 img:hover {
