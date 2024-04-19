@@ -71,8 +71,7 @@
   position: relative;
 }
 
-.str::before,
-.str::after {
+.str::before{
   content: "";
   position: absolute;
   top: 0;
@@ -86,16 +85,8 @@
   left: 0; /* Первая полоса от левой границы */
 }
 
-.str::after {
-  right: 0; /* Вторая полоса от правой границы */
-}
-
 .str:hover::before {
-  width: 50%; /* Увеличение ширины до 50% при наведении */
-}
-
-.str:hover::after {
-  width: 50%; /* Увеличение ширины до 50% при наведении */
+  width: 100%; /* Увеличение ширины до 50% при наведении */
 }
 
 .str:hover .info__moto {
@@ -106,6 +97,22 @@
   opacity: 1;
 }
 
+.tr {
+  transition: transform 0.8s ease; // добавляем плавное изменение размера при наведении
+}
+
+.tr:hover {
+  transform: scale(1.5); // увеличиваем размер карточки при наведении на 10%
+}
+
+.tr .info__motoD {
+  opacity: 0;
+  transition: opacity 0.8s ease; // плавное изменение прозрачности
+}
+
+.tr:hover .info__motoD {
+  opacity: 1; // показываем текст при наведении
+}
 
 .info {
   position: absolute;
@@ -177,11 +184,23 @@
     //display: none; /* По умолчанию скрываем блок с текстом moto */
     @include fontH4;
     color: $colorLight;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 160px;
     margin-right: 30px;
-    font-size: 1.0em;
+    font-size: 3.0em;
     transition: opacity 0.6s ease-in-out; /* Плавное появление текста */
+    opacity: 0; /* Начальная прозрачность */
+  }
+  &__motoD {
+    //display: none; /* По умолчанию скрываем блок с текстом moto */
+    @include fontH4;
+    color: $colorLight;
+    text-align: center;
+    margin-top: 280px;
+    //margin-left: 10px;
+    //margin-right: 10px;
+    font-size: 40px;
+    transition: opacity 0.9s ease-in-out; /* Плавное появление текста */
     opacity: 0; /* Начальная прозрачность */
   }
   &__countriesList {

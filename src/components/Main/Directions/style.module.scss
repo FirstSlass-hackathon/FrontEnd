@@ -15,26 +15,36 @@
   width: 327px;
   height: 283px;
   box-sizing: border-box;
-}
 
-.title { 
-  @include fontDescription;
-  box-sizing: border-box;
-}
+  .title {
+    @include fontDescription;
+    box-sizing: border-box;
+    
+    &:hover {
+      font-weight: bold; // изменяем шрифт на жирный при наведении на него курсора мыши
+    }
+  }
 
-.name {
-  @include fontH1;
-  box-sizing: border-box;
-}
+  .name {
+    @include fontH1;
+    box-sizing: border-box;
+    
+    .highlight {
+      @include fontH1;
+      color: $colorBold;
+      box-sizing: border-box;
+      transition: font-weight 2s ease; // добавляем анимацию для свойства font-weight
+    }
 
-.highlight {
-  color: $colorBold;
-  box-sizing: border-box;
-}
+    .highlight:hover {
+      font-weight: bold; // изменяем шрифт на жирный при наведении на него курсора мыши
+    }
+  }
 
-.description {
-  @include fontText;
-  box-sizing: border-box;
+  .description {
+    @include fontText;
+    box-sizing: border-box;
+  }
 }
 
 .cards {
