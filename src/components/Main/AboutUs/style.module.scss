@@ -3,6 +3,7 @@
 
 .container {
   max-width: 1440px;
+  height: 759px;
   padding: 100px 200px;
   display: flex;
   justify-content: center;
@@ -44,9 +45,9 @@
 }
 
 .imageContainer {
-  position: absolute; /* абсолютное позиционирование */
-  top: 930px; /* начало отсчета по вертикали */
-  left: 80px; /* начало отсчета по горизонтали */
+  // position: absolute; /* абсолютное позиционирование */
+  // top: 930px; /* начало отсчета по вертикали */
+  // left: 80px; /* начало отсчета по горизонтали */
   display: flex;
   justify-content: space-between;
   margin-top: 120px;
@@ -54,7 +55,7 @@
 }
 
 .image1, .image2 {
-  position: absolute;
+  position: relative;
   transition: transform 0.3s ease-in-out; /* плавное изменение масштаба */
   transform-origin: center center; /* центрируем точку масштабирования */
   box-sizing: border-box;
@@ -68,16 +69,19 @@
 .image1 {
   max-width: 436px; /* задаем ширину фото */
   height: 440px; /* задаем высоту фото */
-  left: 80px; /* позиция по оси X */
-  top: 157px; /* позиция по оси Y */
+  // left: 80px; /* позиция по оси X */
+  // top: 157px; /* позиция по оси Y */
+  top: -550px;
   z-index: 0; /* чтобы первая картинка находилась над второй */
 }
 
 .image2 {
   max-width: 480px; /* задаем ширину фото */
   height: 339px; /* задаем высоту фото */
-  left: 298px; /* позиция по оси X */
-  top: 377px; /* позиция по оси Y */
+  // left: 298px; /* позиция по оси X */
+  // top: 377px; /* позиция по оси Y */
+  top: -330px;
+  left: -580px;
   z-index: 1; /* чтобы вторая картинка находилась под первой */
 }
 
