@@ -55,7 +55,7 @@ export const AboutAfrica = () => {
             <br/>
             <span>ТУРЫ ПО</span>
             <br/>
-            <span>ДАЛЬНИМ</span>
+            <span>УДИВИТЕЛЬНЫМ</span>
             <br/>
             <span>УГОЛКАМ АФРИКИ</span>
           </h1>
