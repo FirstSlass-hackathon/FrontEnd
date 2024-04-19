@@ -11,3 +11,14 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.headerContent > :first-child {
+  margin-right: 230px;
+}
+
+
+
+.utilsContainer {
+  display: flex;
+  gap: 30px;
+}

@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import { Button } from "../ui/Button/Button";
 import { NavBar } from '../ui/Navbar/navbar';
 import { scrollToOrder } from '../Main/Main';
+import { LanguageSelector } from "../ui/LanguageSelector/LanguageSelector";
 import logo from '../../assets/images/logo-3 1.svg';
 import s from './styles.module.scss';
 
@@ -37,7 +38,10 @@ export const Header = () => {
       <div className={s.headerContent}>
         <img src={logo} alt={'logo'}/>
         <NavBar colorLink={colorLink} line={line} currentPath={location.pathname}/>
+        <div className={s.utilsContainer}>
+        <LanguageSelector/>
         <Button text={'Оставить заявку'} onClick={scrollToOrder} colorScheme={colorScheme}/>
+        </div>
       </div>
     </div>
   )
