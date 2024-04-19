@@ -21,32 +21,13 @@
   height: 360px;
 }
 
-.dir {
-  transition: transform 0.4s ease-in-out; // плавное изменение масштаба и переворачивания
-  &:hover {
-    transform: scale(1.2) rotateX(360deg); // добавляем переворот по оси Y при наведении
-  }
-}
-
 .shd {
   position: relative;
 }
 
-// .shd::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.7); /* Задаем цвет затемнения */
-//   opacity: 0; /* Начальная прозрачность */
-//   transition: opacity 0.4s ease-in-out; /* Плавное изменение прозрачности */
-// }
-
-// .shd:hover::before {
-//   opacity: 0.7; /* При наведении делаем псевдоэлемент полупрозрачным */
-// }
+.dir {
+  position: relative;
+}
 
 .shd::before {
   content: "";
@@ -67,12 +48,23 @@
   opacity: 1; /* Показываем текст при наведении */
 }
 
-.imp {
-  // здесь будет анимация
+.dir::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Позиционируем псевдоэлемент внизу родительского элемента */
+  width: 100%;
+  height: 0; /* Начальная высота 0 */
+  background-color: rgba(0, 0, 0, 0.6); /* Задаем цвет затемнения */
+  transition: height 0.4s ease-in-out; /* Плавное изменение высоты */
 }
 
-.tr {
-  // здесь будет анимация
+.dir:hover::before {
+  height: 100%; /* При наведении увеличиваем высоту до 100% */
+}
+
+.dir:hover .info__description {
+  opacity: 1; /* Показываем текст при наведении */
 }
 
 .str {
