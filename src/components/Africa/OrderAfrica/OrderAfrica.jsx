@@ -14,6 +14,7 @@ export const OrderAfrica = () => {
   };
   
   const [formData, setFormData] = useState(initialState);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -25,6 +26,7 @@ export const OrderAfrica = () => {
       const response = await axios.post("http://127.0.0.1:8000/submitData/", formData);
       console.log(response.data);
       setFormData(initialState); // Очистка данных после успешной отправки
+      setIsSubmitted(true);   
     } catch (error) {
       console.error(error);
     }
@@ -45,44 +47,48 @@ export const OrderAfrica = () => {
           </div>
         </div>
         <div className={s.order__inputs}>
-          <form onSubmit={handleSubmit}>
-            <div className={s.order__inputs_row}>
-              <input
-                type="text"
-                placeholder="Имя"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                placeholder="Фамилия"
-                name="fam"
-                value={formData.fam}
-                onChange={handleChange}
-              />
-            </div>
-            <div className={s.order__inputs_row}>
-              <input
-                type="email"
-                placeholder="E-mail"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              <input
-                type="tel"
-                placeholder="Телефон"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-              />
-            </div>
-            <div className={s.checkbox}>
-              <Checkbox />
-            </div>
-            <Button className={s.order__btn} type="submit" text={'Оставить заявку'} colorScheme={'white'}/>
-          </form>
+          {isSubmitted ? ( // Показываем надпись, если форма отправлена
+                <div className={s.submittedMessage}>Ваша заявка принята!</div>
+              ) : (
+                <form onSubmit={handleSubmit}>
+                  <div className={s.order__inputs_row}>
+                    <input
+                      type="text"
+                      placeholder="Имя"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+                    <input
+                      type="text"
+                      placeholder="Фамилия"
+                      name="fam"
+                      value={formData.fam}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className={s.order__inputs_row}>
+                    <input
+                      type="email"
+                      placeholder="E-mail"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                    <input
+                      type="tel"
+                      placeholder="Телефон"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className={s.checkbox}>
+                    <Checkbox />
+                  </div>
+                  <Button className={s.order__btn} type="submit" text={'Оставить заявку'} colorScheme={'white'}/>
+                </form>
+            )}
         </div>      
       </div>
     </div>
