@@ -1,6 +1,8 @@
 import React from "react";
 import cn from 'classnames';
 import s from './style.module.scss';
+
+// Пути к изображениям
 import img1 from '../../../assets/images/homePage_cards/advantages_card1.jpg';
 import img2 from '../../../assets/images/homePage_cards/advantages_card2.jpg';
 import img3 from '../../../assets/images/homePage_cards/advantages_card3.jpg';
@@ -18,10 +20,10 @@ export const CardAdvantages = ({advantages, img, ...props}) => {
 }
 
 const advantages = [
-  {advantages: 'направление', img: img1},
-  {advantages: 'направление', img: img2},
-  {advantages: 'виды отдыха', img: img3},
-  {advantages: 'виды отдыха', img: img4}
+  {advantages: '', img: img1},
+  {advantages: '', img: img2},
+  {advantages: '', img: img3},
+  {advantages: '', img: img4}
 ];
 
 const cardTravels = advantages.map((item, index) => (
