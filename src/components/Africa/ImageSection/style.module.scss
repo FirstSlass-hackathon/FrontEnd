@@ -10,9 +10,11 @@
 .cover {
   width: 100vw;
   &__title {
-    @include font-face-playfair-display(100px, 400, 84px);
+    @include font-face-playfair-display(60px, 400, 84px);
     color: $colorWhite;
     position: absolute;
-    top: 300px;
+    top: 420px;
+    right: 80px;
+    opacity: 0.85;
   }
 }

@@ -6,7 +6,7 @@ export const ImageSection = () => {
   return (
     <div className={s.imageSection}>
       <img className={s.cover} src={cover} alt={'cover'}/>
-      <div className={s.cover__title}>Африка</div>
+      <div className={s.cover__title}>АФРИКА</div>
     </div>
   )
 }
