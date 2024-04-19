@@ -8,14 +8,12 @@
   background-color: $colorLight;
   display: flex;
   justify-content: center;
-  gap: 100px;
+  padding: 100px 0 100px 80px;
 }
 
 .text {
   width: 327px;
   height: 283px;
-  // margin-left: 40px;
-  margin-top: 100px;
   box-sizing: border-box;
 }
 
