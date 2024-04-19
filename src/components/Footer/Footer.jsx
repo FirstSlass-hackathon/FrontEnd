@@ -31,7 +31,7 @@ export const Footer = () => {
 
         <div className={s.footer__up_contacts}>
           <img className={s.footer__up_img} src={mail} alt={mail}/>
-          <Link className={s.footer__link_mod} to='/'>info@firstclass.com</Link>
+          <Link className={s.footer__link} to='/'>info@firstclass.com</Link>
         </div>
       </section>
 
