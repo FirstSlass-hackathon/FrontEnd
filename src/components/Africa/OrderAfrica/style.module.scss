@@ -10,7 +10,9 @@
   flex-direction: column;
   height: 960px;
   background-image: url('../../../assets/images/africa_countries/order_africa.jpg');
-  background-size: cover ;
+  background-size: cover;
+  background-repeat: no-repeat; /* чтобы изображение не повторялось */
+  background-position: center; /* чтобы изображение было центрировано */
 
   .order {
     position: relative;
