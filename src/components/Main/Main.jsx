@@ -24,13 +24,13 @@ export const Main = () => {
   return (
     <>
       <main className={s.content}>
-       <section className={s.main__section}>
+        <Element name={'mainHero'} className={s.main__section}>
           <HeroSection/>
-        </section>
+        </Element>
 
-        <section className={s.main__section}>
+        <Element name={'aboutus'} className={s.main__section}>
           <AboutUs/>
-        </section>
+        </Element>
 
        <Element name={'directions'} className={s.main__section}>
           <Directions/>
@@ -47,10 +47,9 @@ export const Main = () => {
 {/*        <section className={s.main__section}>
           <Founder/>
         </section>*/}
-
-        <Element name={'aboutus'} className={s.main__section}>
+        <section className={s.main__section}>
           <Advantages/>
-        </Element>
+        </section>
 
         <Element name={'impressions'} className={s.main__section}>
           <Impressions/>

@@ -25,6 +25,10 @@ export const NavBar = ({colorLink, line, ...props}) => {
       {location.pathname === '/' && (
         <>
           <div className={s.navbar__block}>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'aboutus'} smooth={true} onClick={() => scrollToComponent('aboutus')}>О нас</ScrollLink>
+            <img src={lineColor} alt={"line"}/>
+          </div>
+          <div className={s.navbar__block}>
             <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'directions'} smooth={true} onClick={() => scrollToComponent('directions')}>Направления</ScrollLink>
             <img src={lineColor} alt={"line"}/>
           </div>
@@ -33,19 +37,25 @@ export const NavBar = ({colorLink, line, ...props}) => {
             <img src={lineColor} alt={"line"}/>
           </div>
           <div className={s.navbar__block}>
-            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'aboutus'} smooth={true} onClick={() => scrollToComponent('aboutus')}>О нас</ScrollLink>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'impressions'} smooth={true} onClick={() => scrollToComponent('impressions')}>Истории</ScrollLink>
             <img src={lineColor} alt={"line"}/>
           </div>
           <div className={s.navbar__block}>
-            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'impressions'} smooth={true} onClick={() => scrollToComponent('impressions')}>Истории</ScrollLink>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'mainHero'} smooth={true} onClick={() => scrollToComponent('mainHero')}>Наверх</ScrollLink>
           </div>
         </>
       )}
 
       {location.pathname === '/africa' && (
-        <div className={s.navbar__block}>
-          <RouterLink style={{ color: textColor }} className={s.link__nav} to={'/'}>Главная</RouterLink>
-        </div>
+        <>
+          <div className={s.navbar__block}>
+            <RouterLink style={{ color: textColor }} className={s.link__nav} to={'/'}>Главная</RouterLink>
+            <img src={lineColor} alt={"line"}/>
+          </div>
+          <div className={s.navbar__block}>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'mainHero'} smooth={true} onClick={() => scrollToComponent('mainHero')}>Наверх</ScrollLink>
+          </div>
+        </>
       )}
     </div>
   )

@@ -1,4 +1,5 @@
 import React from "react";
+import { Element } from 'react-scroll';
 import { AboutAfrica } from "../Africa/AboutAfrica";
 import { CountriesList } from "../Africa/CountriesList";
 import { CountriesInfo } from "../Africa/CountriesInfo";
@@ -17,9 +18,9 @@ export const Africa = () => {
     <>
       <main className={s.content}>
 
-        <section className={s.main__section}>
+        <Element name={'mainHero'} className={s.main__section}>
           <ImageSection/>
-        </section>
+        </Element>
 
         <section className={s.main__section}>
           <AboutAfrica/>
@@ -37,14 +38,6 @@ export const Africa = () => {
           <ImpressionsList/>
         </section>
 
-        {/* <section className={s.main__section}>
-          <RewiewList/>
-        </section> */}
-
-        {/* <section className={s.main__section}>
-          <TravelsList/>
-        </section>
-         */}
         <section className={s.main__section}>
           <Amazing/>
         </section> 
