@@ -71,8 +71,7 @@
   position: relative;
 }
 
-.str::before,
-.str::after {
+.str::before{
   content: "";
   position: absolute;
   top: 0;
@@ -86,16 +85,8 @@
   left: 0; /* Первая полоса от левой границы */
 }
 
-.str::after {
-  right: 0; /* Вторая полоса от правой границы */
-}
-
 .str:hover::before {
-  width: 50%; /* Увеличение ширины до 50% при наведении */
-}
-
-.str:hover::after {
-  width: 50%; /* Увеличение ширины до 50% при наведении */
+  width: 100%; /* Увеличение ширины до 50% при наведении */
 }
 
 .str:hover .info__moto {
@@ -177,10 +168,10 @@
     //display: none; /* По умолчанию скрываем блок с текстом moto */
     @include fontH4;
     color: $colorLight;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 160px;
     margin-right: 30px;
-    font-size: 1.0em;
+    font-size: 3.0em;
     transition: opacity 0.6s ease-in-out; /* Плавное появление текста */
     opacity: 0; /* Начальная прозрачность */
   }
