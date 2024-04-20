@@ -8,12 +8,12 @@ export const Impressions = () => {
       <div className={s.impression}>
         <div className={s.block}>
           <div className={s.text}>
-            <h2 className={s.title}>впечатления</h2>
-            <h1 className={s.name}>
+            <div className={s.title}>впечатления</div>
+            <div className={s.name}>
               <span>ИСТОРИИ,</span>
               <br/>
               <span>КОТОРЫЕ</span> <span className={s.highlight}>ВДОХНОВЛЯЮТ</span>
-            </h1>
+            </div>
           </div>
           <div className={s.cards}>
             {/* Используйте компонент CardImpression напрямую */}

@@ -24,12 +24,14 @@
       .title {
         @include fontDescription;
         box-sizing: border-box;
+        margin-bottom: 16px;
       }
 
       .name {
         @include fontH1;
         text-transform: uppercase;
         box-sizing: border-box;
+        margin-bottom: 40px;
 
         .highlight {
           @include fontH1;

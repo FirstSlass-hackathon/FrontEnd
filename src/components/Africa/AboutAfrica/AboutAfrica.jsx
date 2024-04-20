@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import s from './style.module.scss';
-// import Button from '../../ui/Button/Button';
-import image1 from '../../../assets/images/africa_countries/AboutAfrica_pyramid.jpg'
-import image2 from '../../../assets/images/africa_countries/AboutAfrica_man.jpg'
-import image3 from '../../../assets/images/africa_countries/AboutAfrica_looking_woman.jpg'
-import image4 from '../../../assets/images/africa_countries/AboutAfrica_trees.jpg'
-// import cardAdvantages from '../../ui/Cards/CardAdv';
-// import {scrollToOrder} from '../Main';
+import image1 from '../../../assets/images/africa_countries/AboutAfrica_pyramid.jpg';
+import image2 from '../../../assets/images/africa_countries/AboutAfrica_man.jpg';
+import image3 from '../../../assets/images/africa_countries/AboutAfrica_looking_woman.jpg';
+import image4 from '../../../assets/images/africa_countries/AboutAfrica_trees.jpg';
+
 
 export const AboutAfrica = () => {
   const [tiltStyle, setTiltStyle] = useState({});
@@ -40,8 +38,6 @@ export const AboutAfrica = () => {
           пляжей&nbsp;&mdash; здесь каждый найдет что-то по&nbsp;своему вкусу.
           </p>
         </div>
-
-          {/*<Button className={s.button} onClick={scrollToOrder} text={'Оставить заявку'} colorScheme={'black'}/>*/}
       </div>
       <div className={s.secondColumn} onMouseMove={handleMouseMove}> {/* Второй ряд */}
         <img className={s.manImage} src={image2} alt={'photo2'} style={tiltStyle} />
@@ -49,15 +45,15 @@ export const AboutAfrica = () => {
       </div>
       <div className={s.text}> {/* Третий ряд */}
         <div>
-          <h2 className={s.title}>Африка</h2>
-          <h1 className={s.name}>
+          <div className={s.title}>Африка</div>
+          <div className={s.name}>
             <span className={s.highlight}>УНИКАЛЬНЫЕ </span>
             <span>ТУРЫ</span>
             <br/>
             <span>ПО УДИВИТЕЛЬНЫМ</span>
             <br/>
             <span>УГОЛКАМ АФРИКИ</span>
-          </h1>
+          </div>
         </div>
         <div className={`${s.treesImage} ${s.imageContainer}`} onMouseMove={handleMouseMove}>
           <img src={image4} alt={'photo4'} style={tiltStyle} />

@@ -19,8 +19,8 @@ export const CountriesInfo = () => {
   return (
     <div className={s.countriesInfo}>
       <div className={s.text}>
-        <h2 className={s.title}>страны Африки</h2>
-        <h1 className={s.name}>
+        <div className={s.title}>страны Африки</div>
+        <div className={s.name}>
           <span>АФРИКА - </span>
           <span className={s.highlight}>МЕЧТА</span>
           <br/>
@@ -28,7 +28,7 @@ export const CountriesInfo = () => {
           <br/>
           <span className={s.highlight}>ИССЛЕДУЙТЕ </span>
           <span>ЕЁ БЕЗ ОГРАНИЧЕНИЙ!</span>
-        </h1>
+        </div>
         <p className={s.description}>
           Откройте для себя удивительное разнообразие Африки - 
           от экзотических пляжей до древних пирамид!

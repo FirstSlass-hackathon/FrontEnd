@@ -39,20 +39,19 @@
 }
 
 .text {
-  // max-width: 388px;
-  // max-height: 650px;
   box-sizing: border-box;
 }
 
 .title {
   @include fontDescription;
   box-sizing: border-box;
+  margin-bottom: 16px;
 }
 
 .name {
   @include fontH1;
-  // font-family: 'PlayfairDisplay Regular';
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 .highlight {

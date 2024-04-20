@@ -195,14 +195,12 @@
   }
   &__motoD {
     //display: none; /* По умолчанию скрываем блок с текстом moto */
-    @include fontH2;
+    @include fontH4;
     color: $colorLight;
     text-align: start;
-    padding: 20px 0 60px 20px;
-    margin-top: 280px;
-    //margin-left: 10px;
-    //margin-right: 10px;
-    font-size: 40px;
+    padding: 0 0 24px 24px;
+    margin-top: 320px;
+    font-size: 30px;
     transition: opacity 0.9s ease-in-out; /* Плавное появление текста */
     opacity: 0; /* Начальная прозрачность */
   }

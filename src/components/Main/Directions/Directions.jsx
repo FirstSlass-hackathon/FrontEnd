@@ -7,12 +7,12 @@ export const Directions = () => {
   return (
     <div className={s.directions}>
       <div className={s.text}>
-        <h2 className={s.title}>направления</h2>
-        <h1 className={s.name}>
+        <div className={s.title}>направления</div>
+        <div className={s.name}>
           <span>ЛОВИТЕ</span>
           <br/>
           <span className={s.highlight}>ВПЕЧАТЛЕНИЯ</span>
-        </h1>
+        </div>
         <p className={s.description}>
         Ваши желания ничем не&nbsp;ограничены. Вы&nbsp;ограничены только собственной фантазией.
           <br/>

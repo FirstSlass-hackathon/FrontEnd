@@ -29,8 +29,7 @@ export const Checkbox = () => {
           marginRight: '16px', // Увеличиваем отступ между плейсхолдером и текстом
         }}
       />
-      <span style={{ color: 'white', fontSize: '18px' }}>Я соглашаюсь на обработку информации 
-      <br/>
+      <span style={{ color: 'white', fontSize: '12px' }}>Я соглашаюсь на обработку информации 
       о персональных данных</span>
     </div>
   );

@@ -75,9 +75,10 @@
     flex-direction: column;
     text-decoration: none;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 32px;
     &_socialMedia {
-      margin-bottom: 40px;
+      margin-bottom: 10px;
     }
     &_links {
       display: flex;
@@ -115,5 +116,5 @@
 .socialMedia {
   display: flex;
   gap: 17px;
-  margin-top: 40px;
+  margin-top: 10px;
 }

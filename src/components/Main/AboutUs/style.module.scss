@@ -22,7 +22,7 @@
     margin-left: 496px;
   }
   &__main {
-    margin-top: 60px;
+
   }
   &__block {
 
@@ -32,6 +32,8 @@
 .title {
   @include fontDescription;
   box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 .name {
@@ -50,7 +52,7 @@
   // left: 80px; /* начало отсчета по горизонтали */
   display: flex;
   justify-content: space-between;
-  margin-top: 120px;
+  margin-top: 143px;
   box-sizing: border-box;
 }
 
@@ -87,8 +89,8 @@
 
 .description {
   @include fontText;
-  margin-top: 29px; /* отступ сверху от родительского блока */
-  margin-left: 763px; /* отступ слева от родительского блока */
+  margin-top: 40px; /* отступ сверху от родительского блока */
+  margin-left: 770px; /* отступ слева от родительского блока */
   word-wrap: break-word; /* или overflow-wrap: break-word; */
   max-width: 50%; /* ограничиваем максимальную ширину блока */
   box-sizing: border-box;

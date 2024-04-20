@@ -53,14 +53,17 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 280px;
-    margin-top: 150px;
-
+    gap: 28px;
+    width: 547px;
+    height: 471px;
+    padding: 40px;
+    top: 390px;
+    left: 40px;
+    background: rgba(255, 255, 255, 0.15);
     &__block {
       display: flex;
       flex-direction: column;
-      margin-left: 76.5px;
-      gap: 6px;
+      gap: 28px;
     }
     &__title {
       @include fontDescription;
@@ -68,7 +71,7 @@
       color: white;
     }
     &__name {
-      @include fontH2;
+      @include fontH1;
       font-size: 35px;
       text-transform: uppercase;
       color: white;
@@ -76,11 +79,6 @@
     &__inputs {
       display: flex;
       flex-direction: column;
-      padding-left: 76.5px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      // background-color: rgba(186, 127, 73, 0.3);
-      ;
       &_row {
         display: flex;
         gap: 12px;
@@ -88,11 +86,10 @@
     }
   }
 
-
   input {
     border: none;
     border-bottom: 0.5px solid white;
-    margin-bottom: 40px; 
+    margin-bottom: 30px; 
     background-color: transparent;
     color: white;
     &:focus {
@@ -105,7 +102,7 @@
   }
 
   .checkbox {
-    margin-bottom: 30px; 
+    margin-bottom: 20px; 
   }
 }
 

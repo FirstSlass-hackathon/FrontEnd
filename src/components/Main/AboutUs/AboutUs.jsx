@@ -10,14 +10,14 @@ export const AboutUs = () => {
     <div className={s.container}>
       <div className={s.aboutUs}>
         <div className={s.aboutUs__title}> 
-          <h1 className={s.title}>о компании</h1>
-          <h2 className={s.name}>
+          <div className={s.title}>о компании</div>
+          <div className={s.name}>
             <span className={s.highlight}>ЭКСКЛЮЗИВНЫЕ</span> <span>ПОЕЗДКИ</span>
             <br/>
             <span>ИНДИВИДУАЛЬНЫЙ ПОДХОД</span>
             <br/>
             <span>ДЛЯ САМЫХ</span> <span className={s.highlight}>ИСКУШЕННЫХ</span> <span>ТУРИСТОВ</span>
-          </h2>
+          </div>
         </div>
 
         <div className={s.aboutUs__main}>

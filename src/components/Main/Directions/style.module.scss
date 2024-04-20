@@ -19,6 +19,7 @@
   .title {
     @include fontDescription;
     box-sizing: border-box;
+    margin-bottom: 16px;
     
     &:hover {
       font-weight: bold; // изменяем шрифт на жирный при наведении на него курсора мыши
@@ -28,6 +29,7 @@
   .name {
     @include fontH1;
     box-sizing: border-box;
+    margin-bottom: 40px;
     
     .highlight {
       @include fontH1;
@@ -52,7 +54,7 @@
   flex-wrap: nowrap; /* Запрещаем перенос элементов на новую строку */
   justify-content: flex-start; /* Располагаем элементы в начале контейнера */
   align-items: center; /* Выравниваем элементы по центру по вертикали */
-  padding: 100px 0 100px 100px;
+  padding-left: 100px;
   gap: 48px;
   box-sizing: border-box;
 }

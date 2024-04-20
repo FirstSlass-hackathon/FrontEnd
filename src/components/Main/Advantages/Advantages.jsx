@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './style.module.scss';
 import Button from '../../ui/Button/Button';
-import cardAdvantages, { CardAdvantages } from '../../ui/Cards/CardAdv';
+import cardAdvantages from '../../ui/Cards/CardAdv';
 import {scrollToOrder} from '../Main';
 
 export const Advantages = () => {
@@ -11,12 +11,12 @@ export const Advantages = () => {
       <div className={s.advantages}>
         <div className={s.block}>
           <div className={s.text}>
-            <h2 className={s.title}>преимущества</h2>
-            <h1 className={s.name}>
+            <div className={s.title}>преимущества</div>
+            <div className={s.name}>
               <span>ПОЧЕМУ</span>
               <br/>
               <span className={s.highlight}>FIRST CLASS</span>
-            </h1>
+            </div>
             <p className={s.description}>
             Выбирая нашу компанию, вы&nbsp;можете быть
   уверены в&nbsp;том, что получите высочайший

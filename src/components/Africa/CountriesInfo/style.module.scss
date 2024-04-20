@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 100px 79px;
+  padding: 100px 80px;
   gap: 58px;
 }
 
@@ -21,11 +21,13 @@
 .title {
   @include fontDescription;
   box-sizing: border-box;
+  margin-bottom: 16px;
 }
 
 .name {
   @include fontH1;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 .highlight {
@@ -37,6 +39,7 @@
 .description {
   @include fontText;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 .countriesInfo__img_small {

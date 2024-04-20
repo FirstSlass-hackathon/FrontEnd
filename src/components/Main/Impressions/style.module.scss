@@ -32,6 +32,7 @@
   .name {
     @include fontH1;
     box-sizing: border-box;
+    margin-bottom: 40px;
     
     .highlight {
       @include fontH1;
@@ -49,11 +50,11 @@
 .title {
   @include fontDescription;
   box-sizing: border-box;
+  margin-bottom: 16px;
 }
 
 .cards {
   display: flex; /* Устанавливаем flex-контейнер */
-  margin-top: 60px;
   width: 1098px;
   height: 510px;
   box-sizing: border-box;

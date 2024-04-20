@@ -23,13 +23,8 @@
 	letter-spacing: 4%;
 }
 
-@mixin fontH22() {
-	@include font-face-playfair-display(36px, 500, 37px);
-	letter-spacing: 4%;
-}
-
 @mixin fontH3() {
-	@include font-face-playfair-display(16px, 400, 120%);
+	@include font-face-playfair-display(28px, 400, 120%);
 	letter-spacing: 4%;
 }
 

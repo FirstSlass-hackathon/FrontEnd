@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LanguageSelector } from '../ui/LanguageSelector/LanguageSelector';
 import cn from 'classnames';
 import s from './styles.module.scss';
 import phone from '../../assets/images/phone-line.svg';
@@ -71,6 +72,7 @@ export const Footer = () => {
                 <img src={tg} alt={'telegram'}/>
               </div>
             </div>
+            <LanguageSelector/>
             <div className={cn(s.footer__column, s.docs)}>
               <Link className={cn(s.link, s.link__politics)} to='/inprogress'>Политика конфиденциальности</Link>
               <Link className={cn(s.link, s.link__politics)} to='/inprogress'>Политика обработки персональных данных</Link>
