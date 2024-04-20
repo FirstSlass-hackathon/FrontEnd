@@ -14,10 +14,10 @@ export const AboutAfrica = () => {
   const handleMouseMove = (e) => {
     const { offsetX, offsetY, target } = e.nativeEvent;
     const { width, height } = target.getBoundingClientRect();
-  
+
     const xTilt = (-(offsetX - (width / 2)) / 3) / 3;
     const yTilt = ((offsetY - (height / 2)) / 3) / 3;
-  
+
     setTiltStyle({
       '--xTilt': `${xTilt}deg`,
       '--yTilt': `${yTilt}deg`
@@ -40,7 +40,7 @@ export const AboutAfrica = () => {
           пляжей&nbsp;&mdash; здесь каждый найдет что-то по&nbsp;своему вкусу.
           </p>
         </div>
-          
+
           {/*<Button className={s.button} onClick={scrollToOrder} text={'Оставить заявку'} colorScheme={'black'}/>*/}
       </div>
       <div className={s.secondColumn} onMouseMove={handleMouseMove}> {/* Второй ряд */}
@@ -51,11 +51,10 @@ export const AboutAfrica = () => {
         <div>
           <h2 className={s.title}>Африка</h2>
           <h1 className={s.name}>
-            <span className={s.highlight}>УНИКАЛЬНЫЕ</span>
+            <span className={s.highlight}>УНИКАЛЬНЫЕ </span>
+            <span>ТУРЫ</span>
             <br/>
-            <span>ТУРЫ ПО</span>
-            <br/>
-            <span>УДИВИТЕЛЬНЫМ</span>
+            <span>ПО УДИВИТЕЛЬНЫМ</span>
             <br/>
             <span>УГОЛКАМ АФРИКИ</span>
           </h1>
