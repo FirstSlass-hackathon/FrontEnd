@@ -8,7 +8,7 @@ import img3 from '../../../assets/images/africa_countries/todo_card3.jpg';
 export const CardToDo = ({title, travel, motoD, img, ...props}) => {
   return (
     <>
-      <div className={cn(s.component, s.size, s.tr)}>
+      <div className={cn(s.component, s.size__todo, s.tr)}>
           <img src={img} className={s.img} alt ={"img"}></img>
           <div className={s.info}>
             <div className={s.info__block}>

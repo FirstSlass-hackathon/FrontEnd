@@ -15,6 +15,10 @@
     width: 388px;
     height: 548px;
   }
+  &__todo {
+    width: 355px;
+    height: 500px;
+  }
 }
 .small {
   width: 299px;
@@ -133,13 +137,13 @@
       padding: 20px 0 5px 15px;
     }
     &_imp {
-      @include fontH3;
+      @include fontH6;
       color: $colorWhite;
       padding: 20px 0 0 20px;
       text-transform: uppercase;
     }
     &_text {
-      @include fontH3;
+      @include fontH6;
       color: $colorWhite;
       padding-left: 20px;
       text-transform: uppercase;
@@ -168,10 +172,11 @@
       @include fontH4;
       color: $colorWhite;
       padding-left: 15px;
+      text-transform: uppercase;
     }
   }
   &__imp {
-    max-width: 220px;
+    max-width: 230px;
   }
   &__moto {
     //display: none; /* По умолчанию скрываем блок с текстом moto */
