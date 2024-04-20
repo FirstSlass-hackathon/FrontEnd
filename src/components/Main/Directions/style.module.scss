@@ -58,3 +58,23 @@
   gap: 48px;
   box-sizing: border-box;
 }
+
+.card {
+  opacity: 0; /* Начальное состояние карточки */
+  transition: opacity 0.5s ease; /* Анимация появления */
+}
+
+.slideInRight {
+  animation: slideInRight 0.5s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%); // Начальное положение карточки справа за пределами экрана
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); // Конечное положение карточки
+  }
+}
