@@ -1,21 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import s from './style.module.scss';
-import africa from '../../../assets/images/continents/слоны.jpg';
+import africaVideo from '../../../assets/video/elephants_slider.mov'; // Путь к видео
 import europe from '../../../assets/images/continents/europe.jpg';
 import asia from '../../../assets/images/continents/asia.jpg';
 import america from '../../../assets/images/continents/america.jpg';
 import australia from '../../../assets/images/continents/australia.jpg';
 
 const continents = [
-  { name: 'АФРИКА', image: africa, link: '/africa' }, // Использование импортированного изображения
-  { name: 'ЕВРОПА', image: europe ,link: '/inprogress' },
+  { name: 'АФРИКА', media: africaVideo, link: '/africa' }, // Использование видео
+  { name: 'ЕВРОПА', image: europe, link: '/inprogress' },
   { name: 'АЗИЯ', image: asia, link: '/inprogress' },
-  { name: 'АМЕРИКА', image: america ,link: '/inprogress' },
-  { name: 'АВСТРАЛИЯ', image: australia ,link: '/inprogress' },
+  { name: 'АМЕРИКА', image: america, link: '/inprogress' },
+  { name: 'АВСТРАЛИЯ', image: australia, link: '/inprogress' },
 ];
 
 export const Continents = () => {
   const [current, setCurrent] = useState(0);
+  const videoRef = useRef(null);
 
   const nextSlide = () => {
     setCurrent(current === continents.length - 1 ? 0 : current + 1);
@@ -25,18 +26,56 @@ export const Continents = () => {
     setCurrent(current === 0 ? continents.length - 1 : current - 1);
   };
 
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5, // Определяет, насколько видимый должен быть целевой элемент, чтобы вызвать обратный вызов
+    };
+
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Если слайдер видим, запускаем видео
+          if (videoRef.current) {
+            videoRef.current.play();
+          }
+        } else {
+          // Если слайдер не видим, останавливаем видео
+          if (videoRef.current) {
+            videoRef.current.pause();
+          }
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(videoRef.current);
+
+    return () => {
+      observer.unobserve(videoRef.current);
+    };
+  }, [videoRef]);
+
   return (
     <div className={s.carousel}>
-      <img src={continents[current].image} alt={continents[current].name} className={s.image} />
+      {continents[current].media ? (
+        <video ref={videoRef} autoPlay muted className={s.video}>
+          <source src={continents[current].media} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        <img src={continents[current].image} alt={continents[current].name} className={s.image} />
+      )}
       <a href={continents[current].link} className={s.continentName}>
         {continents[current].name}
       </a>
       <div className={s.controls}>
         <button className={`${s.controlButton} ${s.left}`} onClick={prevSlide}>
-        ← {/* Замените символдля левой стрелки */}
+          ← {/* Замените символ для левой стрелки */}
         </button>
         <button className={`${s.controlButton} ${s.right}`} onClick={nextSlide}>
-        → {/* Замените символ для правой стрелки */}
+          → {/* Замените символ для правой стрелки */}
         </button>
       </div>
     </div>
