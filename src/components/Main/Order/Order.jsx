@@ -14,6 +14,7 @@ export const Order = () => {
   
   const [formData, setFormData] = useState(initialState);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); // Состояние для отображения модального окна
   
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -26,11 +27,20 @@ export const Order = () => {
       console.log(response.data);
       setFormData(initialState); // Очистка данных после успешной отправки
       setIsSubmitted(true);
+      handleModalOpen(); // Показываем модальное окно после успешной отправки
     } catch (error) {
       console.error(error);
     }
   };
 
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+  
   return (
     
     <div className={s.parallax}>
@@ -88,12 +98,21 @@ export const Order = () => {
                         </div>
                         <div className={s.checkbox}>
                           <Checkbox />
-                        </div>
+                          </div>
                         <Button className={s.order__btn} type="submit" text={'Оставить заявку'} colorScheme={'white'}/>
                       </form>
-
                 </div>      
               </div>
+        )}
+        {/* Модальное окно */}
+        {isModalOpen && (
+          <div className={s.modal}>
+            <div className={s.modalContent}>
+              <h3 className={s.modalTitle}>Ваша заявка принята</h3>
+              <p>Мы свяжемся с вами в ближайшее время.</p>
+              <button className={s.modalCloseBtn} onClick={handleModalClose}>Закрыть</button>
+            </div>
+          </div>
         )}
     </div>
   );

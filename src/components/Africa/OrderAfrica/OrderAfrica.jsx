@@ -14,6 +14,7 @@ export const OrderAfrica = () => {
   
   const [formData, setFormData] = useState(initialState);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); // Состояние для отображения модального окна
   
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -26,13 +27,21 @@ export const OrderAfrica = () => {
       console.log(response.data);
       setFormData(initialState); // Очистка данных после успешной отправки
       setIsSubmitted(true);   
+      handleModalOpen(); // Показываем модальное окно после успешной отправки
     } catch (error) {
       console.error(error);
     }
   };
 
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+  
   return (
-    
     <div className={s.container}>
         {isSubmitted ? ( // Показываем надпись, если форма отправлена
                 <div className={s.submittedMessage}>Спасибо за ваше обращение!</div>
@@ -89,7 +98,16 @@ export const OrderAfrica = () => {
                     </form>
             </div>  
           </div>
-        )}    
-    </div> 
-  );
+        )} 
+        {/* Модальное окно */}        {isModalOpen && (
+          <div className={s.modal}>
+          <div className={s.modalContent}>
+            <h3 className={s.modalTitle}>Спасибо за ваше обращение</h3>
+            <p>Наши специалисты свяжутся с вами в ближайшее время.</p>
+            <button className={s.modalCloseBtn} onClick={handleModalClose}>Закрыть</button>
+          </div>
+        </div>
+      )}
+  </div>
+);
 };
