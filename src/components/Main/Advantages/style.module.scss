@@ -4,7 +4,7 @@
 // Ваши стили...
 
 .container {
-  padding: 100px 80px 100px 0px;
+  padding: 80px 380px 80px 0px;
   display: flex;
   justify-content: center;
   background-color: $colorLight;
@@ -63,17 +63,17 @@
 
 .cards > div:nth-child(odd):hover {
   animation: moveFromTop 3s ease forwards; /* Анимация для четных элементов */
-  transform: translateY(10%); 
+  transform: translateY(10%);
 }
 
 .cards > div:nth-child(even):hover {
   animation: moveFromBottom 5s ease forwards; /* Анимация для нечетных элементов */
-  transform: translateY(10%); 
+  transform: translateY(10%);
 }
 
 @keyframes moveFromTop {
   0% {
-    transform: translateY(-10%); /* Начальное положение для движения сверху вниз */
+    transform: translateY(-20%); /* Начальное положение для движения сверху вниз */
   }
   100% {
     transform: translateY(0); /* Конечное положение - возвращаем в исходное */
@@ -82,7 +82,7 @@
 
 @keyframes moveFromBottom {
   0% {
-    transform: translateY(10%); /* Начальное положение для движения снизу вверх */
+    transform: translateY(20%); /* Начальное положение для движения снизу вверх */
   }
   100% {
     transform: translateY(0); /* Конечное положение - возвращаем в исходное */
