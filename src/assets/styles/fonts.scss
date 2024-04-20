@@ -29,7 +29,7 @@
 }
 
 @mixin fontH3() {
-	@include font-face-playfair-display(28px, 400, 120%);
+	@include font-face-playfair-display(16px, 400, 120%);
 	letter-spacing: 4%;
 }
 
@@ -46,6 +46,11 @@
 @mixin fontH6() {
 	@include font-face-playfair-display(16px, 500, 120%);
 	letter-spacing: 2%;
+}
+
+@mixin fontH7() {
+	@include font-face-playfair-display(28px, 500, 120%);
+	letter-spacing: 4%;
 }
 
 @mixin fontPrice() {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import s from './style.module.scss';
-import africa from '../../../assets/images/continents/africa.jpg';
+import africa from '../../../assets/images/continents/слоны.jpg';
 import europe from '../../../assets/images/continents/europe.jpg';
 import asia from '../../../assets/images/continents/asia.jpg';
 import america from '../../../assets/images/continents/america.jpg';

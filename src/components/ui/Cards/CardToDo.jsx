@@ -24,7 +24,7 @@ export const CardToDo = ({title, travel, motoD, img, ...props}) => {
 
 const titles = [
   {title: 'Ботсвана', travel: 'Поиск сокровищ', motoD: 'Найди золото!', img: img1},
-  {title: 'Гана', travel: 'Посещение заповедника', motoD: 'Единение с природой!', img: img2},
+  {title: 'Гана', travel: 'Посещение заповедника', motoD: 'Твоя природа!', img: img2},
   {title: 'Танзания', travel: 'Гора Килиманджаро', motoD: 'Выше облаков!', img: img3}
 ];
 

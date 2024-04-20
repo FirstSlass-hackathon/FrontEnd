@@ -25,7 +25,7 @@ export const NavBar = ({colorLink, line, ...props}) => {
       {location.pathname === '/' && (
         <>
           <div className={s.navbar__block}>
-            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'aboutus'} smooth={true} onClick={() => scrollToComponent('aboutus')}>О нас</ScrollLink>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'aboutus'} smooth={true} onClick={() => scrollToComponent('aboutus')}>О компании</ScrollLink>
             <img src={lineColor} alt={"line"}/>
           </div>
           <div className={s.navbar__block}>
@@ -33,11 +33,11 @@ export const NavBar = ({colorLink, line, ...props}) => {
             <img src={lineColor} alt={"line"}/>
           </div>
           <div className={s.navbar__block}>
-            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'travels'} smooth={true} onClick={() => scrollToComponent('travels')}>Виды путешествий</ScrollLink>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'travels'} smooth={true} onClick={() => scrollToComponent('travels')}>Стили отдыха</ScrollLink>
             <img src={lineColor} alt={"line"}/>
           </div>
           <div className={s.navbar__block}>
-            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'impressions'} smooth={true} onClick={() => scrollToComponent('impressions')}>Истории</ScrollLink>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'impressions'} smooth={true} onClick={() => scrollToComponent('impressions')}>Впечатления</ScrollLink>
             <img src={lineColor} alt={"line"}/>
           </div>
           <div className={s.navbar__block}>

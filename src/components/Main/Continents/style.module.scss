@@ -34,7 +34,7 @@
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+//   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
   border-radius: 10px;
   z-index: 3;
@@ -44,7 +44,7 @@
 
 .controls {
   position: absolute;
-  bottom: 120px;
+  bottom: 150px;
   display: flex;
   justify-content: space-between;
   width: 100%;

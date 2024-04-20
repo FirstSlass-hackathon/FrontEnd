@@ -158,7 +158,7 @@
     color: $colorWhite;
   }
   &__direction {
-    @include fontH3;
+    @include fontH7;
     width: 240px;
     color: $colorWhite;
     text-transform: uppercase;
@@ -195,9 +195,10 @@
   }
   &__motoD {
     //display: none; /* По умолчанию скрываем блок с текстом moto */
-    @include fontH4;
+    @include fontH2;
     color: $colorLight;
-    text-align: center;
+    text-align: start;
+    padding: 20px 0 60px 20px;
     margin-top: 280px;
     //margin-left: 10px;
     //margin-right: 10px;
