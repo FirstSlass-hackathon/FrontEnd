@@ -1,40 +1,32 @@
 .carousel {
   position: relative;
-  //width: 100%;
   overflow: hidden;
   display: flex;
-  //align-items: center;
-  //justify-content: center;
   max-width: 100%; /* адаптивная ширина */
   min-height: 742px; /* минимальная высота для содержимого */
-  // padding: 161px 100px;
-  // box-sizing: border-box;
-  // background-color: #FAF7F3;
-
 }
 
-//.slide {
-//  position: relative;
-//  width: 100%;
-//  height: 100%;
-//  text-align: center;
-//}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Масштабирование видео */
+}
 
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Масштабирование изображения */
-  //border-radius: 50%;
 }
 
 .continentName {
   position: absolute;
-  //display: flex;
   bottom: 150px;
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
-//   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
   border-radius: 10px;
   z-index: 3;
@@ -78,7 +70,7 @@
     height: auto;
   }
 
-.controls {
-  bottom: 10px;
-}
+  .controls {
+    bottom: 10px;
+  }
 }
