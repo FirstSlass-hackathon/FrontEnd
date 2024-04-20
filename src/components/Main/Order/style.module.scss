@@ -107,6 +107,10 @@
 }
 
 .submittedMessage {
-  @include fontH2;
-  
+  @include fontH3;
+  text-transform: uppercase;
+  width: 553px;
+  height: 279px;
+  top: 332px;
+  left: 444px;
 }

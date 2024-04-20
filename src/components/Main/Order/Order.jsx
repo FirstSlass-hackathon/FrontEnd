@@ -38,63 +38,63 @@ export const Order = () => {
       <div className={s.layer2}></div>
       <div className={s.layer3}></div>
       <div className={s.layer4}></div>
-      <div className={s.order}>
-        <div className={s.order__block}>
-          <div className={s.order__title}>мир в шаге от тебя</div>
-          <div className={s.order__name}>
-              начните путешествие
-              <br/>
-              на высочайшем уровне
-              <br/>
-              с first class
-          </div>
-        </div>
-        <div className={s.order__inputs}>
-          {isSubmitted ? ( // Показываем надпись, если форма отправлена
+      {isSubmitted ? ( // Показываем надпись, если форма отправлена
               <div className={s.submittedMessage}>Ваша заявка принята!</div>
             ) : (
-              <form onSubmit={handleSubmit}>
-                <div className={s.order__inputs_row}>
-                  <input
-                    type="text"
-                    placeholder="Имя"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                  />
-                  <input
-                    type="text"
-                    placeholder="Фамилия"
-                    name="fam"
-                    value={formData.fam}
-                    onChange={handleChange}
-                  />
+              <div className={s.order}>
+                <div className={s.order__block}>
+                  <div className={s.order__title}>мир в шаге от тебя</div>
+                  <div className={s.order__name}>
+                      начните путешествие
+                      <br/>
+                      на высочайшем уровне
+                      <br/>
+                      с first class
+                  </div>
                 </div>
-                <div className={s.order__inputs_row}>
-                  <input
-                    type="email"
-                    placeholder="E-mail"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Телефон"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                  />
-                </div>
-                <div className={s.checkbox}>
-                  <Checkbox />
-                </div>
-                <Button className={s.order__btn} type="submit" text={'Оставить заявку'} colorScheme={'white'}/>
-              </form>
-            )}
-        </div>      
-      </div>
+                <div className={s.order__inputs}>
+                      <form onSubmit={handleSubmit}>
+                        <div className={s.order__inputs_row}>
+                          <input
+                            type="text"
+                            placeholder="Имя"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                          />
+                          <input
+                            type="text"
+                            placeholder="Фамилия"
+                            name="fam"
+                            value={formData.fam}
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <div className={s.order__inputs_row}>
+                          <input
+                            type="email"
+                            placeholder="E-mail"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Телефон"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <div className={s.checkbox}>
+                          <Checkbox />
+                        </div>
+                        <Button className={s.order__btn} type="submit" text={'Оставить заявку'} colorScheme={'white'}/>
+                      </form>
+
+                </div>      
+              </div>
+        )}
     </div>
-    
   );
 };
