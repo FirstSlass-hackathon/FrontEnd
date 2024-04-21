@@ -13,18 +13,21 @@ import img9 from '../../../assets/images/homePage_cards/impressions_card31.jpg';
 import img10 from '../../../assets/images/homePage_cards/impressions_card32.jpg';
 import img11 from '../../../assets/images/homePage_cards/impressions_card33.jpg';
 import img12 from '../../../assets/images/homePage_cards/impressions_card34.jpg';
+import { useTranslation } from "react-i18next";
+
 
 const CardImpression = ({ ...props }) => {
+  const { t } = useTranslation();
   const [currentIndexArray, setCurrentIndexArray] = useState([0, 0, 0]); // Используем массив для хранения индексов текущих изображений для каждой карточки
 
   const [titles] = useState([
     {
-      title: 'Незабываемая поездка с восхождением',
+      title: t("cardImpr.titleEl"),
       text: ['на Эльбрус', 'на Эльбрус', 'на Эльбрус', 'на Эльбрус'],
       img: [img1, img2, img3, img4]
     },
     {
-      title: 'Шикарные отели',
+      title: t("cardImpr.textSing"),
       text: ['в Сингапуре', 'в Сингапуре', 'в Сингапуре', 'в Сингапуре'],
       img: [img5, img6, img7, img8]
     },
