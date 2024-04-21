@@ -28,14 +28,6 @@
       "offerAgreement": "Offer Agreement"
     },
 
-  "aboutAfrica": {
-    "title": "Africa",
-    "uniqueTours": "UNIQUE TOURS",
-    "toAmazingCorners": "TO AMAZING CORNERS OF AFRICA",
-    "description1": "Africa is a mysterious continent filled with wild beauty and amazing adventures.",
-    "description2": "From vast deserts to dense jungles, from majestic mountains to endless beaches — here, everyone will find something to their liking."
-  },
-
   "aboutUs": {
     "about_company": "about the company",
     "EXCLUSIVE": "EXCLUSIVE",
@@ -84,5 +76,31 @@
     "STORIES": "STORIES",
     "THAT": "THAT",
     "INSPIRE": "INSPIRE"
+  },
+
+  "aboutAfrica": {
+    "title": "Africa",
+    "uniqueTours": "UNIQUE TOURS",
+    "toAmazingCorners": "TO AMAZING CORNERS OF AFRICA",
+    "description1": "Africa is a mysterious continent filled with wild beauty and amazing adventures.",
+    "description2": "From vast deserts to dense jungles, from majestic mountains to endless beaches — here, everyone will find something to their liking."
+  },
+
+  "countries": {
+    "title": "Countries of Africa",
+    "AFRICA": "AFRICA IS ",
+    "DREAM": "A DREAM",
+    "TRAVELER": "FOR TRAVELERS,",
+    "EXPLORE": "EXPLORE",
+    "HER_UNRESTRICTED": "IT UNRESTRICTED!",
+    "description1": "Discover the amazing diversity of Africa - from exotic beaches to ancient pyramids!",
+    "description2": "Don't miss the opportunity to embark on an exciting journey through the mysterious Africa and discover its unique beauties and mysteries."
+  },
+
+  "amazing": {
+    "title": "such an amazing Africa",
+    "try": "Try Africa",
+    "Africa": "",
+    "taste": "taste"
   }
 }

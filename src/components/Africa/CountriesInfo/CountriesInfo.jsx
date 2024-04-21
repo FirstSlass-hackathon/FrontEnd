@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import s from './style.module.scss';
 import img1 from '../../../assets/images/africa_countries/africa_countries_photo_1.svg';
 import img2 from '../../../assets/images/africa_countries/africa_coutries_photo_2.png';
 
 export const CountriesInfo = () => {
+  const { t, i18n } = useTranslation();
   const [zoomStyle, setZoomStyle] = useState({});
 
   const handleMouseMove = (e) => {
@@ -19,30 +21,27 @@ export const CountriesInfo = () => {
   return (
     <div className={s.countriesInfo}>
       <div className={s.text}>
-        <div className={s.title}>страны Африки</div>
+        <div className={s.title}>{t('countries.title')}</div>
         <div className={s.name}>
-          <span>АФРИКА - </span>
-          <span className={s.highlight}>МЕЧТА</span>
+          <span>{t('countries.AFRICA')}</span>
+          <span className={s.highlight}>{t('countries.DREAM')}</span>
           <br/>
-          <span>ПУТЕШЕСТВЕННИКА,</span>
+          <span>{t('countries.TRAVELER')}</span>
           <br/>
-          <span className={s.highlight}>ИССЛЕДУЙТЕ </span>
-          <span>ЕЁ БЕЗ ОГРАНИЧЕНИЙ!</span>
+          <span className={s.highlight}>{t('countries.EXPLORE')} </span>
+          <span>{t('countries.HER_UNRESTRICTED')}</span>
         </div>
         <p className={s.description}>
-          Откройте для себя удивительное разнообразие Африки - 
-          от экзотических пляжей до древних пирамид!
-        <br/>
-        <br/>
-          Не упускайте возможность отправиться в увлекательное путешествие по 
-          загадочной Африке и открыть для себя её уникальные красоты и тайны.
+          {t('countries.description1')}
+          <br/>
+          <br/>
+          {t('countries.description2')}
         </p>
         <div className={s.countriesInfo__img_small}>
-        <div className={s.imgContainer} onMouseMove={handleMouseMove}>
-          <img className={`${s.imgZoom} ${s.img}`} src={img1} alt={'desert'} style={zoomStyle}/>
+          <div className={s.imgContainer} onMouseMove={handleMouseMove}>
+            <img className={`${s.imgZoom} ${s.img}`} src={img1} alt={'desert'} style={zoomStyle}/>
           </div>
         </div>
-
       </div>
       
       <div className={s.countriesInfo__img}>

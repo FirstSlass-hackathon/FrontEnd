@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import s from './style.module.scss';
 import poster from '../../../assets/images/africa_countries/amazingAfrica_1.jpg';
 import element1 from '../../../assets/images/africa_countries/amazingAfrica_2.jpg';
@@ -7,6 +8,7 @@ import element3 from '../../../assets/images/africa_countries/amazingAfrica_4.jp
 import element4 from '../../../assets/images/africa_countries/amazingAfrica_5.jpg';
 
 export const Amazing = () => {
+  const { t } = useTranslation();
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
@@ -17,11 +19,11 @@ export const Amazing = () => {
     <div className={s.container} onMouseMove={handleMouseMove}>
       <div className={s.amazing}>
         <div className={s.amazing__title}>
-          <span className={s.amazing__text}>такая удивительная Африка</span>
+          <span className={s.amazing__text}>{t('amazing.title')}</span>
           <div className={s.amazing__name}>
-            <span>Попробуйте</span>
-            <br/>
-            <span>Африку</span> <span className={s.highlight}>на вкус</span>
+            <span>{t('amazing.try')}</span>
+            <br />
+            <span>{t('amazing.Africa')}</span> <span className={s.highlight}>{t('amazing.taste')}</span>
           </div>
         </div>
         <div className={s.amazing__photo}>
