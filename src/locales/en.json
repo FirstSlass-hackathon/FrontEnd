@@ -134,7 +134,7 @@
   },  
 
   "countriesAfrica": {
-    "title": "Countries of Africa",
+    "title": "countries of Africa",
     "AFRICA": "AFRICA IS ",
     "DREAM": "A DREAM",
     "TRAVELER": "FOR TRAVELERS,",
@@ -153,9 +153,9 @@
 
   "todo": {
     "what_to_do": "what to do",
-    "discover": "Discover",
-    "your": "your",
-    "africa": "Africa",
+    "discover": "",
+    "your": "Discover",
+    "africa": "",
     "your_africa": "your Africa",
     "botswana": "Botswana",
     "treasure_hunt": "Treasure Hunt",
