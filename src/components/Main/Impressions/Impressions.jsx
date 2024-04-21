@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import s from './style.module.scss';
 import CardImpression from '../../ui/Cards/CardImpression'; // Исправленный импорт
+import { useTranslation } from 'react-i18next';
 
 export const Impressions = () => {
+  const { t } = useTranslation();
   const cardsRef = useRef(null);
 
   useEffect(() => {
@@ -34,11 +36,11 @@ export const Impressions = () => {
       <div className={s.impression}>
         <div className={s.block}>
           <div className={s.text}>
-            <div className={s.title}>впечатления</div>
+            <div className={s.title}>{t("impressions.impressions")}</div>
             <div className={s.name}>
-              <span>ИСТОРИИ,</span>
+              <span>{t("impressions.STORIES")},</span>
               <br/>
-              <span>КОТОРЫЕ</span> <span className={s.highlight}>ВДОХНОВЛЯЮТ</span>
+              <span>{t("impressions.THAT")}</span> <span className={s.highlight}>{t("impressions.INSPIRE")}</span>
             </div>
           </div>
           <div ref={cardsRef} className={s.cards}>

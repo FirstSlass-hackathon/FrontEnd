@@ -3,32 +3,27 @@ import s from './style.module.scss';
 import Button from '../../ui/Button/Button';
 import cardAdvantages from '../../ui/Cards/CardAdv';
 import {scrollToOrder} from '../Main';
+import { useTranslation } from 'react-i18next';
 
 export const Advantages = () => {
+  const { t } = useTranslation();
 
   return (
     <div className={s.container}>
       <div className={s.advantages}>
         <div className={s.block}>
           <div className={s.text}>
-            <div className={s.title}>преимущества</div>
+            <div className={s.title}>{t("advantages.advantages")}</div>
             <div className={s.name}>
-              <span>ПОЧЕМУ</span>
+              <span>{t("advantages.WHY")}</span>
               <br/>
-              <span className={s.highlight}>FIRST CLASS</span>
+              <span className={s.highlight}>{t("advantages.FIRST_CLASS")}</span>
             </div>
             <p className={s.description}>
-            Выбирая нашу компанию, вы&nbsp;можете быть
-  уверены в&nbsp;том, что получите высочайший
-  уровень обслуживания и&nbsp;незабываемые
-  впечатления от&nbsp;вашего путешествия или
-  мероприятия.
+            {t("advantages.descr1")}
               <br/>
               <br/>
-              Мы&nbsp;создадим для вас идеальные условия
-  для отдыха и&nbsp;развлечений, оставив при этом
-  пространство для вашей индивидуальности
-  и&nbsp;уникальности.
+              {t("advantages.descr2")}
             </p>
           </div>
           <Button className={s.button} onClick={scrollToOrder} text={'Оставить заявку'} colorScheme={'black'}/>

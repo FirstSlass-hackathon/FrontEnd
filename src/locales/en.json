@@ -1,4 +1,12 @@
 {
+    "header": {
+      "about_company": "About the company",
+      "directions": "Directions",
+      "styles": "Styles of recration",
+      "impressions": "Impressions",
+      "Up": "Up"
+    },
+
     "footer": {
       "contacts": "Our contacts",
       "available": "We are available 24/7",
@@ -61,5 +69,20 @@
     "FIND": "FIND",
     "TRIP": "A TRIP",
     "taste": "TO SUITE YOUR TASTE"
+  },
+
+  "advantages": {
+    "advantages": "advantages",
+    "WHY": "WHY",
+    "FIRST_CLASS": "FIRST CLASS",
+    "descr1": "By choosing our company, you can be sure that you will receive the highest level of service and an unforgettable experience from your trip or event.",
+    "descr2": "We will create ideal conditions for relaxation and entertainment for you, while leaving space for your individuality and uniqueness."
+  },
+
+  "impressions": {
+    "impressions": "impressions",
+    "STORIES": "STORIES",
+    "THAT": "THAT",
+    "INSPIRE": "INSPIRE"
   }
 }
