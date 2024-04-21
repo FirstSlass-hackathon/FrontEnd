@@ -4,7 +4,8 @@
     "directions": "Directions",
     "styles": "Styles of recration",
     "impressions": "Impressions",
-    "Up": "Up"
+    "Up": "Up",
+    "Main": "Main"
   },
 
   "footer": {
@@ -76,7 +77,28 @@
     "impressions": "impressions",
     "STORIES": "STORIES",
     "THAT": "THAT",
-    "INSPIRE": "INSPIRE"
+    "INSPIRE": "INSPIRE",
+    "card1": {
+      "title": "Unforgettable climbing trip",
+      "text1": "to Elbrus",
+      "text2": "to Elbrus",
+      "text3": "to Elbrus",
+      "text4": "to Elbrus"
+    },
+    "card2": {
+      "title": "Luxury hotels",
+      "text1": "in Singapore",
+      "text2": "in Singapore",
+      "text3": "in Singapore",
+      "text4": "in Singapore"
+    },
+    "card3": {
+      "title": "Tibetan paradise",
+      "text1": "paradise",
+      "text2": "paradise",
+      "text3": "paradise",
+      "text4": "paradise"
+    }
   },
 
   "order": {

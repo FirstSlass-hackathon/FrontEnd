@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
 import s from './style.module.scss';
 import img1 from '../../../assets/images/homePage_cards/impressions_card11.jpg';
@@ -16,21 +17,22 @@ import img12 from '../../../assets/images/homePage_cards/impressions_card34.jpg'
 
 const CardImpression = ({ ...props }) => {
   const [currentIndexArray, setCurrentIndexArray] = useState([0, 0, 0]); // Используем массив для хранения индексов текущих изображений для каждой карточки
+  const { t } = useTranslation();
 
   const [titles] = useState([
     {
-      title: 'Незабываемая поездка с восхождением',
-      text: ['на Эльбрус', 'на Эльбрус', 'на Эльбрус', 'на Эльбрус'],
+      title: 'impressions.card1.title',
+      text: ['impressions.card1.text1', 'impressions.card1.text2', 'impressions.card1.text3', 'impressions.card1.text4'],
       img: [img1, img2, img3, img4]
     },
     {
-      title: 'Шикарные отели',
-      text: ['в Сингапуре', 'в Сингапуре', 'в Сингапуре', 'в Сингапуре'],
+      title: 'impressions.card2.title',
+      text: ['impressions.card2.text1', 'impressions.card2.text2', 'impressions.card2.text3', 'impressions.card2.text4'],
       img: [img5, img6, img7, img8]
     },
     {
-      title: 'Тибетский',
-      text: ['рай', 'рай', 'рай', 'рай'],
+      title: 'impressions.card3.title',
+      text: ['impressions.card3.text1', 'impressions.card3.text2', 'impressions.card3.text3', 'impressions.card3.text4'],
       img: [img9, img10, img11, img12]
     }
   ]);
@@ -50,8 +52,8 @@ const CardImpression = ({ ...props }) => {
         <div key={index} className={cn(s.component, s.size, s.imp)} onClick={() => handleClick(index)}>
           <img src={item.img[currentIndexArray[index]]} className={s.img} alt="img" />
           <div className={cn(s.info, s.info__imp)}>
-            <div className={s.info__title_imp}>{item.title}</div>
-            <div className={s.info__title_text}>{item.text[currentIndexArray[index]]}</div>
+            <div className={s.info__title_imp}>{t(item.title)}</div>
+            <div className={s.info__title_text}>{t(item.text[currentIndexArray[index]])}</div>
           </div>
         </div>
       ))}
