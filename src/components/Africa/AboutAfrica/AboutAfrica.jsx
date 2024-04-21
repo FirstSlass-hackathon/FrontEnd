@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import s from './style.module.scss';
 import image1 from '../../../assets/images/africa_countries/AboutAfrica_pyramid.jpg';
 import image2 from '../../../assets/images/africa_countries/AboutAfrica_man.jpg';
 import image3 from '../../../assets/images/africa_countries/AboutAfrica_looking_woman.jpg';
 import image4 from '../../../assets/images/africa_countries/AboutAfrica_trees.jpg';
 
-
 export const AboutAfrica = () => {
+  const { t } = useTranslation();
+
   const [tiltStyle, setTiltStyle] = useState({});
 
   const handleMouseMove = (e) => {
@@ -24,35 +26,25 @@ export const AboutAfrica = () => {
 
   return (
     <div className={s.aboutAfrica}>
-      <div className={s.firstColumn}> {/* Первый ряд */}
-      <div className={`${s.pyramidImage} ${s.imageContainer}`} onMouseMove={handleMouseMove}>
-        <img src={image1} alt={'photo1'} style={tiltStyle} />
-      </div>
+      <div className={s.firstColumn}>
+        <div className={`${s.pyramidImage} ${s.imageContainer}`} onMouseMove={handleMouseMove}>
+          <img src={image1} alt={'photo1'} style={tiltStyle} />
+        </div>
         <div className={s.description}>
-          <p>Африка&nbsp;&mdash; это загадочный континент, наполненный дикой
-          красотой и&nbsp;удивительными приключениями.
-          </p>
-          <p>
-          От&nbsp;бескрайних пустынь
-          до&nbsp;густых джунглей, от&nbsp;величественных гор до&nbsp;бескрайних
-          пляжей&nbsp;&mdash; здесь каждый найдет что-то по&nbsp;своему вкусу.
-          </p>
+          <p>{t('aboutAfrica.description1')}</p>
+          <p>{t('aboutAfrica.description2')}</p>
         </div>
       </div>
-      <div className={s.secondColumn} onMouseMove={handleMouseMove}> {/* Второй ряд */}
+      <div className={s.secondColumn} onMouseMove={handleMouseMove}>
         <img className={s.manImage} src={image2} alt={'photo2'} style={tiltStyle} />
         <img className={s.womanImage} src={image3} alt={'photo3'} style={tiltStyle} />
       </div>
-      <div className={s.text}> {/* Третий ряд */}
+      <div className={s.text}>
         <div>
-          <div className={s.title}>Африка</div>
+          <div className={s.title}>{t('aboutAfrica.title')}</div>
           <div className={s.name}>
-            <span className={s.highlight}>УНИКАЛЬНЫЕ </span>
-            <span>ТУРЫ</span>
-            <br/>
-            <span>ПО УДИВИТЕЛЬНЫМ</span>
-            <br/>
-            <span>УГОЛКАМ АФРИКИ</span>
+            <span className={s.highlight}>{t('aboutAfrica.uniqueTours')}</span>
+            <span><br />{t('aboutAfrica.toAmazingCorners')}</span>
           </div>
         </div>
         <div className={`${s.treesImage} ${s.imageContainer}`} onMouseMove={handleMouseMove}>
@@ -61,4 +53,4 @@ export const AboutAfrica = () => {
       </div>
     </div>
   );
-}
+};

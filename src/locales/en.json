@@ -18,5 +18,13 @@
       "privacyPolicy": "Privacy Policy",
       "personalDataProcessingPolicy": "Personal Data Processing Policy",
       "offerAgreement": "Offer Agreement"
-    }
+    },
+
+  "aboutAfrica": {
+    "title": "Africa",
+    "uniqueTours": "UNIQUE TOURS",
+    "toAmazingCorners": "TO AMAZING CORNERS OF AFRICA",
+    "description1": "Africa is a mysterious continent filled with wild beauty and amazing adventures.",
+    "description2": "From vast deserts to dense jungles, from majestic mountains to endless beaches — here, everyone will find something to their liking."
+  }
 }
