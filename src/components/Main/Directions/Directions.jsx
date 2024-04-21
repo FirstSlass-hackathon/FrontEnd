@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import s from './style.module.scss'; // Импортируем стили
 import cardDirections from '../../ui/Cards/CardDirection';
+import { useTranslation } from 'react-i18next';
 
 export const Directions = () => {
   const cardsRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,17 +34,17 @@ export const Directions = () => {
   return (
     <div className={s.directions}>
       <div className={s.text}>
-        <div className={s.title}>направления</div>
+        <div className={s.title}>{t("directions.directions")}</div>
         <div className={s.name}>
-          <span>ЛОВИТЕ</span>
+          <span>{t("directions.CATCH")}</span>
           <br />
-          <span className={s.highlight}>ВПЕЧАТЛЕНИЯ</span>
+          <span className={s.highlight}>{t("directions.IMPRESSIONS")}</span>
         </div>
         <p className={s.description}>
-          Ваши желания ничем не&nbsp;ограничены. Вы&nbsp;ограничены только собственной фантазией.
+          {t("directions.description")}
           <br />
           <br />
-          Наша компания имеет безграничные возможности!
+          {t("directions.posibilities")}
         </p>
       </div>
       <div ref={cardsRef} className={s.cards}>
