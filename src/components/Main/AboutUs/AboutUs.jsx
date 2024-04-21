@@ -3,14 +3,19 @@ import React from "react";
 import s from './style.module.scss';
 import kacheliImage from '../../../assets/images/swing.jpg';
 import twix from '../../../assets/images/twix.jpg';
+import { useTranslation } from "react-i18next";
+import i18n from "../../../i18n";
 
 
 export const AboutUs = () => {
+
+  const { t, i18n } = useTranslation();
+
   return (
     <div className={s.container}>
       <div className={s.aboutUs}>
         <div className={s.aboutUs__title}> 
-          <div className={s.title}>о компании</div>
+          <div className={s.title}>{t("about_company")}</div>
           <div className={s.name}>
             <span className={s.highlight}>ЭКСКЛЮЗИВНЫЕ</span> <span>ПОЕЗДКИ</span>
             <br/>
