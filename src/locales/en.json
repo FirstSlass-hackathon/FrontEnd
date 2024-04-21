@@ -102,5 +102,26 @@
     "try": "Try Africa",
     "Africa": "",
     "taste": "taste"
-  }
+  },
+
+  "cardcountrieslist": {
+    "Ghana": "Ghana",
+    "GhanaDesc": "Here you can visit numerous reserves with elephants, antelopes, monkeys, and other exotic animals, visit the ruins of the Cape Coast and Elmina castles, which are UNESCO World Heritage Sites.",
+    "Namibia": "Namibia",
+    "NamibiaDesc": "Here is the oldest desert on earth — the Namib, the legendary Skeleton Coast, numerous national parks, the location where the largest meteorite, Hoba, fell, the second largest after the Grand Canyon, and much more.",
+    "Botswana": "Botswana",
+    "BotswanaDesc": "One of the popular tourist attractions, along with safaris in the Kalahari Desert and visits to national parks, has been the search for ancient treasures hidden from colonizers in the caves of Gchwihaba since the 1930s.",
+    "Uganda": "Uganda",
+    "UgandaDesc": "Here you will be able to experience a real African adventure by going on safaris to national parks, climbing the summit of East Africa - Mount Kilimanjaro, exploring mysterious caves and gorges, and enjoying local traditions and culinary delights.",
+    "Kenya": "Kenya",
+    "KenyaDesc": "The land of the Maasai tribe and the hallmark of real African nature, it is very beautiful, friendly, and touristy developed. Mount Kenya is the second-highest on the continent after Kilimanjaro. Throughout the country, you can observe flocks of migrating birds.",
+    "CapeVerde": "Cape Verde",
+    "CapeVerdeDesc": "The islands have picturesque landscapes: extinct volcanoes, mountain ranges, where you can go trekking, blooming meadows, where you can just take a walk. But the main feature of Cape Verde is the ocean — it is used to its full potential: starting from beaches with black volcanic sand, continuing with dives to shipwreck sites, and ending with windsurfing.",
+    "Tanzania": "Tanzania",
+    "TanzaniaDesc": "Zanzibar Island is a resort where the beautiful Stone Town, founded by the Arabs in the 9th century, is located. Tours for spices start from here, during which you can cut cinnamon and try unfamiliar spices. The famous Serengeti National Park, which covers a huge area and is home to more than three million large wild animals.",
+    "Madagascar": "Madagascar",
+    "MadagascarDesc": "There are many nature reserves and protected areas on the island. The largest reserve is Tsingy de Bemaraha, which, like many others, is included in the UNESCO World Heritage List. The country is rich in beautiful beaches.",
+    "Zimbabwe": "Zimbabwe",
+    "ZimbabweDesc": "Zimbabwe has a very well-functioning nature conservation structure and there are unusually many animals even for Africa, so in some places, hunting is allowed."
+  }  
 }
