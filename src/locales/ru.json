@@ -1,0 +1,22 @@
+{
+    "footer": {
+      "contacts": "Наши контакты",
+      "available": "Мы на связи 24 часа",
+      "directions": "Направления",
+      "africa": "Африка",
+      "asia": "Азия",
+      "australia": "Австралия",
+      "europe": "Европа",
+      "america": "Америка",
+      "holidayTypes": "Виды отдыха",
+      "beachHoliday": "Пляжный отдых",
+      "kitesurfing": "Кайтсерфинг",
+      "diving": "Дайвинг",
+      "yachting": "Яхтинг",
+      "skiing": "Горные лыжи",
+      "socialMedia": "Мы в социальных сетях",
+      "privacyPolicy": "Политика конфиденциальности",
+      "personalDataProcessingPolicy": "Политика обработки персональных данных",
+      "offerAgreement": "Договор оферта"
+    }
+}

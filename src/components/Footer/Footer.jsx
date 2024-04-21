@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { LanguageSelector } from '../ui/LanguageSelector/LanguageSelector';
+import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
 import s from './styles.module.scss';
 import phone from '../../assets/images/phone-line.svg';
@@ -15,14 +16,14 @@ import inst from '../../assets/images/social/инст.svg';
 
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={s.footer}>
       <section className={s.footer__up}>
         <div className={s.footer__up_textBlock}>
-          <div className={s.footer__up__title}>Наши
-            <br/>
-            контакты</div>
-          <div className={s.footer__up__name}>Мы на связи 24 часа</div>
+          <div className={s.footer__up__title}>{t('footer.contacts')}</div>
+          <div className={s.footer__up__name}>{t('footer.available')}</div>
         </div>
         
         <div className={s.footer__up_contacts}>
@@ -40,30 +41,30 @@ export const Footer = () => {
         <img className={s.footer__logo} src={logo} alt={'logo'}/>
         <div className={s.footer__columns}>
           <div className={s.footer__column}>
-            <div className={s.footer__down__title}>Направления</div>
+            <div className={s.footer__down__title}>{t('footer.directions')}</div>
             <div className={s.footer__column_links}>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/africa'>африка</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>азия</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>австралия</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>европа</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>америка</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/africa'>{t('footer.africa')}</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>{t('footer.asia')}</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>{t('footer.australia')}</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>{t('footer.europe')}</Link>
+              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>{t('footer.america')}</Link>
             </div>
           </div>
 
           <div className={s.footer__column}>
-            <div className={s.footer__down__title}>Виды отдыха</div>
+            <div className={s.footer__down__title}>{t('footer.holidayTypes')}</div>
             <div className={s.footer__column_links}>
-              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>Пляжный отдых</Link>
-              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>Кайтсерфинг</Link>
-              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>Дайвинг</Link>
-              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>Яхтинг</Link>
-              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>Горные лыжи</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>{t('footer.beachHoliday')}</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>{t('footer.kitesurfing')}</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>{t('footer.diving')}</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>{t('footer.yachting')}</Link>
+              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>{t('footer.skiing')}</Link>
             </div>
           </div>
 
           <div className={s.footer__column}>
             <div className={s.footer__column_socialMedia}>
-              <div className={s.footer__down__title}>Мы в социальных сетях</div>
+              <div className={s.footer__down__title}>{t('footer.socialMedia')}</div>
               <div className={s.socialMedia}>
                 <img src={inst} alt={'instagram'}/>
                 <img src={youtube} alt={'youtube'}/>
@@ -72,11 +73,11 @@ export const Footer = () => {
                 <img src={tg} alt={'telegram'}/>
               </div>
             </div>
-            <LanguageSelector/>
+            <LanguageSelector />
             <div className={cn(s.footer__column, s.docs)}>
-              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>Политика конфиденциальности</Link>
-              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>Политика обработки персональных данных</Link>
-              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>Договор оферта</Link>
+              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>{t('footer.privacyPolicy')}</Link>
+              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>{t('footer.personalDataProcessingPolicy')}</Link>
+              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>{t('footer.offerAgreement')}</Link>
             </div>
           </div>
         </div>
