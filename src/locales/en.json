@@ -123,5 +123,25 @@
     "MadagascarDesc": "There are many nature reserves and protected areas on the island. The largest reserve is Tsingy de Bemaraha, which, like many others, is included in the UNESCO World Heritage List. The country is rich in beautiful beaches.",
     "Zimbabwe": "Zimbabwe",
     "ZimbabweDesc": "Zimbabwe has a very well-functioning nature conservation structure and there are unusually many animals even for Africa, so in some places, hunting is allowed."
-  }  
+  },
+
+  "carddirection": {
+    "directions": "Directions",
+    "CATCH": "CATCH",
+    "IMPRESSIONS": "IMPRESSIONS",
+    "description": "Discover new horizons with our tours!",
+    "posibilities": "Choose a direction and go on an exciting journey.",
+    "America": "America",
+    "date1": "3-5 days",
+    "PowellLakeGlenCanyon": "Powell Lake Glen Canyon",
+    "PowellLakeGlenCanyonDesc": "Incredible canyons and natural landscapes, unlike anything on Earth. The lake is located in the Glen Canyon National Recreation Area on the border of Utah and Arizona.",
+    "Indonesia": "Indonesia",
+    "date2": "2-3 days",
+    "weekendInBali": "weekend in Bali",
+    "weekendInBaliDesc": "Spend an unforgettable weekend on the resort island of Bali! Here you will find white sandy beaches, warm sea, exquisite cuisine, and luxurious SPA procedures.",
+    "Malaysia": "Malaysia",
+    "date3": "7-12 days",
+    "KualaLumpurBorneo": "Kuala Lumpur, Borneo",
+    "KualaLumpurBorneoDesc": "On the island of Borneo, you will relax on delightful beaches. Immerse yourself in mesmerizing nature and meet exotic animals such as orangutans."
+  }
 }
