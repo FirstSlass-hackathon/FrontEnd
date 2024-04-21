@@ -58,9 +58,9 @@
 
   "travels": {
     "types": "types of recration",
-    "FIND": "FIND",
-    "TRIP": "A TRIP",
-    "taste": "TO SUITE YOUR TASTE"
+    "FIND": "FIND A TRIP",
+    "TRIP": "TO SUITE ",
+    "taste": "YOUR TASTE"
   },
 
   "advantages": {
@@ -143,5 +143,15 @@
     "date3": "7-12 days",
     "KualaLumpurBorneo": "Kuala Lumpur, Borneo",
     "KualaLumpurBorneoDesc": "On the island of Borneo, you will relax on delightful beaches. Immerse yourself in mesmerizing nature and meet exotic animals such as orangutans."
+  },
+
+  "cardtravel": {
+    "types": "Types of Recreation",
+    "kiteSurfing": "Kite Surfing",
+    "FEEL_THE_FREEDOM_WITH_KITESURFING": "FEEL THE FREEDOM WITH KITESURFING!",
+    "skiing": "Skiing",
+    "CONQUER_THE_PEAKS_WITH_US": "CONQUER THE PEAKS WITH US!",
+    "islandRetreat": "Island Retreat",
+    "DIVE_INTO_A_TROPICAL_PARADISE": "DIVE INTO A TROPICAL PARADISE"
   }
 }
