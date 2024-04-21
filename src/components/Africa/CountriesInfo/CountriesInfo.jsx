@@ -21,21 +21,21 @@ export const CountriesInfo = () => {
   return (
     <div className={s.countriesInfo}>
       <div className={s.text}>
-        <div className={s.title}>{t('countries.title')}</div>
+        <div className={s.title}>{t('countriesAfrica.title')}</div>
         <div className={s.name}>
-          <span>{t('countries.AFRICA')}</span>
-          <span className={s.highlight}>{t('countries.DREAM')}</span>
+          <span>{t('countriesAfrica.AFRICA')}</span>
+          <span className={s.highlight}>{t('countriesAfrica.DREAM')}</span>
           <br/>
-          <span>{t('countries.TRAVELER')}</span>
+          <span>{t('countriesAfrica.TRAVELER')}</span>
           <br/>
-          <span className={s.highlight}>{t('countries.EXPLORE')} </span>
-          <span>{t('countries.HER_UNRESTRICTED')}</span>
+          <span className={s.highlight}>{t('countriesAfrica.EXPLORE')} </span>
+          <span>{t('countriesAfrica.HER_UNRESTRICTED')}</span>
         </div>
         <p className={s.description}>
-          {t('countries.description1')}
+          {t('countriesAfrica.description1')}
           <br/>
           <br/>
-          {t('countries.description2')}
+          {t('countriesAfrica.description2')}
         </p>
         <div className={s.countriesInfo__img_small}>
           <div className={s.imgContainer} onMouseMove={handleMouseMove}>

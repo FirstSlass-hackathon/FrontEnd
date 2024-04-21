@@ -13,8 +13,6 @@ import vk from '../../assets/images/social/вк.svg';
 import whatsapp from '../../assets/images/social/whatsapp.svg';
 import inst from '../../assets/images/social/инст.svg';
 
-
-
 export const Footer = () => {
   const { t } = useTranslation();
 

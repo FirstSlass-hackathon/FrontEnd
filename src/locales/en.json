@@ -1,32 +1,32 @@
 {
-    "header": {
-      "about_company": "About the company",
-      "directions": "Directions",
-      "styles": "Styles of recration",
-      "impressions": "Impressions",
-      "Up": "Up"
-    },
+  "header": {
+    "about_company": "About the company",
+    "directions": "Directions",
+    "styles": "Styles of recration",
+    "impressions": "Impressions",
+    "Up": "Up"
+  },
 
-    "footer": {
-      "contacts": "Our contacts",
-      "available": "We are available 24/7",
-      "directions": "Destinations",
-      "africa": "Africa",
-      "asia": "Asia",
-      "australia": "Australia",
-      "europe": "Europe",
-      "america": "America",
-      "holidayTypes": "Types of Holidays",
-      "beachHoliday": "Beach Holiday",
-      "kitesurfing": "Kitesurfing",
-      "diving": "Diving",
-      "yachting": "Yachting",
-      "skiing": "Skiing",
-      "socialMedia": "Follow us on social media",
-      "privacyPolicy": "Privacy Policy",
-      "personalDataProcessingPolicy": "Personal Data Processing Policy",
-      "offerAgreement": "Offer Agreement"
-    },
+  "footer": {
+    "contacts": "Our contacts",
+    "available": "We are available 24/7",
+    "directions": "Destinations",
+    "africa": "Africa",
+    "asia": "Asia",
+    "australia": "Australia",
+    "europe": "Europe",
+    "america": "America",
+    "holidayTypes": "Types of Holidays",
+    "beachHoliday": "Beach Holiday",
+    "kitesurfing": "Kitesurfing",
+    "diving": "Diving",
+    "yachting": "Yachting",
+    "skiing": "Skiing",
+    "socialMedia": "Follow us on social media",
+    "privacyPolicy": "Privacy Policy",
+    "personalDataProcessingPolicy": "Personal Data Processing Policy",
+    "offerAgreement": "Offer Agreement"
+  },
 
   "aboutUs": {
     "about_company": "about the company",
@@ -49,11 +49,12 @@
   },
 
   "continents": {
-    "Africa": "Africa",
-    "Europe": "Europe",
-    "Asia": "Asia",
-    "America": "America",
-    "Australia": "Australia"
+    "africa": "AFRICA",
+    "europe": "EUROPE",
+    "asia": "ASIA",
+    "america": "AMERICA",
+    "australia": "AUSTRALIA",
+    "video_not_supported": "Your browser does not support the video."
   },
 
   "travels": {
@@ -86,7 +87,7 @@
     "description2": "From vast deserts to dense jungles, from majestic mountains to endless beaches — here, everyone will find something to their liking."
   },
 
-  "countries": {
+  "countriesAfrica": {
     "title": "Countries of Africa",
     "AFRICA": "AFRICA IS ",
     "DREAM": "A DREAM",
