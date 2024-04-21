@@ -79,6 +79,21 @@
     "INSPIRE": "INSPIRE"
   },
 
+  "order": {
+    "start_journey": "world at your step",
+    "begin_travel": "begin your journey at the highest level\nwith first class",
+    "name": "Name",
+    "surname": "Surname",
+    "email": "Email",
+    "phone": "Phone",
+    "submit_button": "Submit Application",
+    "submitted_message": "Your request has been submitted!",
+    "modal_title": "Your request has been submitted",
+    "modal_message": "We will contact you shortly.",
+    "close_button": "Close",
+    "data_processing_agreement": "I agree to the processing of personal data"
+  },
+
   "aboutAfrica": {
     "title": "Africa",
     "uniqueTours": "UNIQUE TOURS",
@@ -86,6 +101,15 @@
     "description1": "Africa is a mysterious continent filled with wild beauty and amazing adventures.",
     "description2": "From vast deserts to dense jungles, from majestic mountains to endless beaches — here, everyone will find something to their liking."
   },
+
+  "impressionsList": {
+    "review1": "First Class is just a find for a tourist who is already difficult to surprise. The company organizes such tours that it is impossible even to imagine. These impressions will remain forever.",
+    "author1": "KRISTINA, MOSCOW",
+    "review2": "We spent an unforgettable week in Africa, relaxing on a secluded island and enjoying the luxurious service. It was a truly exclusive journey that we will remember for the rest of our lives!",
+    "author2": "ANTON, ST. PETERSBURG",
+    "review3": "Vacation in Africa turned out to be a real discovery for us! We visited mysterious tribal settlements, tried local cuisine, and immersed ourselves in the world of traditions and customs of this mysterious continent.",
+    "author3": "KIRILL, MOSCOW"
+  },  
 
   "countriesAfrica": {
     "title": "Countries of Africa",
@@ -103,6 +127,23 @@
     "try": "Try Africa",
     "Africa": "",
     "taste": "taste"
+  },
+
+  "todo": {
+    "what_to_do": "what to do",
+    "discover": "Discover",
+    "your": "your",
+    "africa": "Africa",
+    "your_africa": "your Africa",
+    "botswana": "Botswana",
+    "treasure_hunt": "Treasure Hunt",
+    "find_gold": "Find gold!",
+    "ghana": "Ghana",
+    "visit_reserve": "Visit reserve",
+    "your_nature": "Your nature!",
+    "tanzania": "Tanzania",
+    "kilimanjaro": "Kilimanjaro",
+    "above_clouds": "Above the clouds!"
   },
 
   "cardcountrieslist": {
