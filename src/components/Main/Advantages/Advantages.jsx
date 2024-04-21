@@ -26,7 +26,7 @@ export const Advantages = () => {
               {t("advantages.descr2")}
             </p>
           </div>
-          <Button className={s.button} onClick={scrollToOrder} text={'Оставить заявку'} colorScheme={'black'}/>
+          <Button className={s.button} onClick={scrollToOrder} text={t("order.submit_button")} colorScheme={'black'}/>
         </div>
         
         <div className={s.cards}>

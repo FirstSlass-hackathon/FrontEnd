@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Button } from "../ui/Button/Button";
@@ -17,6 +18,7 @@ export const Header = () => {
   const [colorLink, setColorLink] = useState('');
   const [line, setLine] = useState('');
   const [colorLogo, setColorLogo] = useState('');
+  const { t } = useTranslation();
 
   // Обновляем цвет бэкграунда в зависимости от текущего пути
   useEffect(() => {
@@ -45,7 +47,7 @@ export const Header = () => {
         <NavBar colorLink={colorLink} line={line} currentPath={location.pathname}/>
         <div className={s.utilsContainer}>
         {/* <LanguageSelector/> */}
-        <Button text={'Оставить заявку'} onClick={scrollToOrder} colorScheme={colorScheme}/>
+        <Button text={t("order.submit_button")} onClick={scrollToOrder} colorScheme={colorScheme}/>
         </div>
       </div>
     </div>

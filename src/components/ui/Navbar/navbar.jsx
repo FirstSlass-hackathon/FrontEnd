@@ -52,11 +52,11 @@ export const NavBar = ({colorLink, line, ...props}) => {
       {location.pathname === '/africa' && (
         <>
           <div className={s.navbar__block}>
-            <RouterLink style={{ color: textColor }} className={s.link__nav} to={'/'}>Главная</RouterLink>
+            <RouterLink style={{ color: textColor }} className={s.link__nav} to={'/'}>{t("header.Main")}</RouterLink>
             <img src={lineColor} alt={"line"}/>
           </div>
           <div className={s.navbar__block}>
-            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'mainHero'} smooth={true} onClick={() => scrollToComponent('mainHero')}>Наверх</ScrollLink>
+            <ScrollLink style={{ color: textColor }} className={s.link__nav} to={'mainHero'} smooth={true} onClick={() => scrollToComponent('mainHero')}>{t("header.Up")}</ScrollLink>
           </div>
         </>
       )}
