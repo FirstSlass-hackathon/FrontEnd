@@ -17,25 +17,20 @@ export const AboutUs = () => {
         <div className={s.aboutUs__title}> 
           <div className={s.title}>{t("about_company")}</div>
           <div className={s.name}>
-            <span className={s.highlight}>ЭКСКЛЮЗИВНЫЕ</span> <span>ПОЕЗДКИ</span>
+            <span className={s.highlight}>{t("EXCLUSIVE")}</span> <span>{t("TRIPS")}</span>
             <br/>
-            <span>ИНДИВИДУАЛЬНЫЙ ПОДХОД</span>
+            <span>{t("INDIVIDUAL_APPROACH")}</span>
             <br/>
-            <span>ДЛЯ САМЫХ</span> <span className={s.highlight}>ИСКУШЕННЫХ</span> <span>ТУРИСТОВ</span>
+            <span>{t("FOR_THE_MOST")}</span> <span className={s.highlight}>{t("SOPHISTICATED")}</span> <span>{t("TOURISTS")}</span>
           </div>
         </div>
 
         <div className={s.aboutUs__main}>
           <p className={s.description}>
-          First Class предлагает роскошные и&nbsp;неповторимые путешествия
-    по&nbsp;всему миру. Мы&nbsp;специализируемся на&nbsp;организации индивидуальных туров для самых
-    взыскательных клиентов.
+          {t("aboutUs_descr1")}
             <br/>
             <br/>
-            Мы&nbsp;предлагаем широкий спектр услуг, включая организацию проживания в&nbsp;роскошных
-    отелях, бронирование частных самолетов и&nbsp;яхт, организацию эксклюзивных экскурсий
-    и&nbsp;встреч со&nbsp;знаменитостями, а&nbsp;также оказание персональной помощи
-    во&nbsp;время путешествия.
+          {t("aboutUs_descr2")}
           </p>
           {/* <Button onClick={goToLink} text={'О нас'}/> */}
         </div>
