@@ -6,7 +6,6 @@ import twix from '../../../assets/images/twix.jpg';
 import { useTranslation } from "react-i18next";
 
 export const AboutUs = () => {
-
   const { t } = useTranslation();
 
   return (
@@ -19,7 +18,7 @@ export const AboutUs = () => {
             <br/>
             <span>{t("aboutUs.INDIVIDUAL_APPROACH")}</span>
             <br/>
-            <span>{t("aboutUs.FOR_THE_MOST")}</span> <span className={s.highlight}>{t("aboutUs.SOPHISTICATED")}</span> <span>{t("TOURISTS")}</span>
+            <span>{t("aboutUs.FOR_THE_MOST")}</span> <span className={s.highlight}>{t("aboutUs.SOPHISTICATED")}</span> <span>{t("aboutUs.TOURISTS")}</span>
           </div>
         </div>
 

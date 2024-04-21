@@ -46,5 +46,20 @@
     "IMPRESSIONS": "IMPRESSIONS",
     "description": "Your desires are not limited by anything. You are limited only by your own imagination.", 
     "posibilities": "Our company has limitless posibilities"
+  },
+
+  "continents": {
+    "Africa": "Africa",
+    "Europe": "Europe",
+    "Asia": "Asia",
+    "America": "America",
+    "Australia": "Australia"
+  },
+
+  "travels": {
+    "types": "types of recration",
+    "FIND": "FIND",
+    "TRIP": "A TRIP",
+    "taste": "TO SUITE YOUR TASTE"
   }
 }
