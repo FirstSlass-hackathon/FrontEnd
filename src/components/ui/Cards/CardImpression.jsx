@@ -16,8 +16,8 @@ import img11 from '../../../assets/images/homePage_cards/impressions_card33.jpg'
 import img12 from '../../../assets/images/homePage_cards/impressions_card34.jpg';
 
 const CardImpression = ({ ...props }) => {
-  const [currentIndexArray, setCurrentIndexArray] = useState([0, 0, 0]); // Используем массив для хранения индексов текущих изображений для каждой карточки
   const { t } = useTranslation();
+  const [currentIndexArray, setCurrentIndexArray] = useState([0, 0, 0]); // Используем массив для хранения индексов текущих изображений для каждой карточки
 
   const [titles] = useState([
     {
