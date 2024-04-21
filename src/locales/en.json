@@ -224,14 +224,5 @@
     "privateTours": "Private helicopter and yacht tours",
     "vipTours": "VIP transfers and private jets",
     "topService": "Luxury hotels and villas with the highest level of service"
-  },
-
-  "cardImpr": {
-    "titleEl": "An unforgettable trip with climbing",
-    "textEl": "to Elbrus",
-    "titleSing": "Luxury hotels",
-    "textSing": "in Singapore",
-    "titleTib": "Tibet",
-    "textTib": "paradise"
   }
 }
