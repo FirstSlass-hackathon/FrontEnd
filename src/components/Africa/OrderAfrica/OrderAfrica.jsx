@@ -3,6 +3,7 @@ import axios from "axios";
 import s from './style.module.scss';
 import { Checkbox } from '../../ui/Checkboxes/Checkbox';
 import { Button } from '../../ui/Button/Button';
+import { useTranslation } from 'react-i18next';
 
 export const OrderAfrica = () => {
   const initialState = {
@@ -15,6 +16,7 @@ export const OrderAfrica = () => {
   const [formData, setFormData] = useState(initialState);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); // Состояние для отображения модального окна
+  const { t } = useTranslation();
   
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -44,17 +46,13 @@ export const OrderAfrica = () => {
   return (
     <div className={s.container}>
         {isSubmitted ? ( // Показываем надпись, если форма отправлена
-                <div className={s.submittedMessage}>Спасибо за ваше обращение!</div>
+                <div className={s.submittedMessage}>{t("order.submitted_message")}</div>
               ) : (
           <div className={s.order}>
             <div className={s.order__block}>
-              <div className={s.order__title}>мир в шаге от тебя</div>
+              <div className={s.order__title}>{t("order.start_journey")}</div>
               <div className={s.order__name}>
-                  начните путешествие
-                  <br/>
-                  на высочайшем уровне
-                  <br/>
-                  с first class
+                {t("order.begin_travel")}
               </div>
             </div>
             <div className={s.order__inputs}>
@@ -62,14 +60,14 @@ export const OrderAfrica = () => {
                       <div className={s.order__inputs_row}>
                         <input
                           type="text"
-                          placeholder="Имя"
+                          placeholder={t("order.name")}
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
                         />
                         <input
                           type="text"
-                          placeholder="Фамилия"
+                          placeholder={t("order.surname")}
                           name="fam"
                           value={formData.fam}
                           onChange={handleChange}
@@ -78,14 +76,14 @@ export const OrderAfrica = () => {
                       <div className={s.order__inputs_row}>
                         <input
                           type="email"
-                          placeholder="E-mail"
+                          placeholder={t("order.email")}
                           name="email"
                           value={formData.email}
                           onChange={handleChange}
                         />
                         <input
                           type="tel"
-                          placeholder="Телефон"
+                          placeholder={t("order.phone")}
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
@@ -94,7 +92,7 @@ export const OrderAfrica = () => {
                       <div className={s.checkbox}>
                         <Checkbox />
                       </div>
-                      <Button className={s.order__btn} type="submit" text={'Оставить заявку'} colorScheme={'white'}/>
+                      <Button className={s.order__btn} type="submit" text={t("order.submit_button")} colorScheme={'white'}/>
                     </form>
             </div>  
           </div>
@@ -102,9 +100,9 @@ export const OrderAfrica = () => {
         {/* Модальное окно */}        {isModalOpen && (
           <div className={s.modal}>
           <div className={s.modalContent}>
-            <h3 className={s.modalTitle}>Спасибо за ваше обращение</h3>
-            <p>Наши специалисты свяжутся с вами в ближайшее время.</p>
-            <button className={s.modalCloseBtn} onClick={handleModalClose}>Закрыть</button>
+            <h3 className={s.modalTitle}>{t("order.modal_title")}</h3>
+              <p>{t("order.modal_message")}</p>
+            <button className={s.modalCloseBtn} onClick={handleModalClose}>{t("order.close_button")}</button>
           </div>
         </div>
       )}

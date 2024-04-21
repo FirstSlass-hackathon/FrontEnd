@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 // import s from './Checkbox.module.scss';
 
 // Это пример, необходимо исправить под наши параметры
 
 export const Checkbox = () => {
+  const { t } = useTranslation();
   const [checked, setChecked] = useState(false);
 
   const toggleCheckbox = () => {
@@ -29,8 +31,7 @@ export const Checkbox = () => {
           marginRight: '16px', // Увеличиваем отступ между плейсхолдером и текстом
         }}
       />
-      <span style={{ color: 'white', fontSize: '12px' }}>Я соглашаюсь на обработку информации 
-      о персональных данных</span>
+      <span style={{ color: 'white', fontSize: '12px' }}>{t("order.data_processing_agreement")}</span>
     </div>
   );
 };
