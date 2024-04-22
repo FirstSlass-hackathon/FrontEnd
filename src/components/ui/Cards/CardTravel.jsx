@@ -18,7 +18,7 @@ export const CardTravel = ({title, travel, moto, price, img, ...props}) => {
               <div className={s.info__title_tr}>{t(title)}</div>
               <div className={s.info__travel_tr}>{t(travel)}</div>
               <div className={s.info__moto}>{t(moto)}</div>
-              <div className={s.info__price}>{price}</div>
+              <div className={s.info__price}>{t(price)}</div>
             </div>
           </div>
       </div>
@@ -27,9 +27,9 @@ export const CardTravel = ({title, travel, moto, price, img, ...props}) => {
 }
 
 const titles = [
-  {title: 'cardtravel.types', travel: 'cardtravel.kiteSurfing', moto: 'cardtravel.FEEL_THE_FREEDOM_WITH_KITESURFING', price: 'от 6750$', img: img1},
-  {title: 'cardtravel.types', travel: 'cardtravel.skiing', moto: 'cardtravel.CONQUER_THE_PEAKS_WITH_US', price: 'от 6750$', img: img2},
-  {title: 'cardtravel.types', travel: 'cardtravel.islandRetreat', moto: 'cardtravel.DIVE_INTO_A_TROPICAL_PARADISE', price: 'от 6750$', img: img3}
+  {title: 'travels.types', travel: 'travels.card1.title', moto: 'travels.card1.text', price: 'travels.card1.price', img: img1},
+  {title: 'travels.types', travel: 'travels.card2.title', moto: 'travels.card2.text', price: 'travels.card2.price', img: img2},
+  {title: 'travels.types', travel: 'travels.card3.title', moto: 'travels.card3.text', price: 'travels.card2.price', img: img3}
 ];
 
 const cardTravels = titles.map((item, index) => (

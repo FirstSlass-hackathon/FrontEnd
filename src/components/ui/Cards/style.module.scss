@@ -194,7 +194,7 @@
     @include fontPrice;
     color: $colorLight;
     margin-top: 120px;
-    margin-left: 180px;
+    margin-left: 170px;
     transition: opacity 0.6s ease-in-out; /* Плавное появление текста */
     opacity: 0; /* Начальная прозрачность */
     &__dir {
