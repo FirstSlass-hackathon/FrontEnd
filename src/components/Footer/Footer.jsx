@@ -41,22 +41,22 @@ export const Footer = () => {
           <div className={s.footer__column}>
             <div className={s.footer__down__title}>{t('footer.directions')}</div>
             <div className={s.footer__column_links}>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/africa'>{t('footer.africa')}</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>{t('footer.asia')}</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>{t('footer.australia')}</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>{t('footer.europe')}</Link>
-              <Link className={cn(s.link, s.link__main, s.upper)} to='/inprogress'>{t('footer.america')}</Link>
+              <a className={cn(s.link, s.link__main, s.upper)} href='/africa'>{t('footer.africa')}</a>
+              <a className={cn(s.link, s.link__main, s.upper)} href='/inprogress'>{t('footer.asia')}</a>
+              <a className={cn(s.link, s.link__main, s.upper)} href='/inprogress'>{t('footer.australia')}</a>
+              <a className={cn(s.link, s.link__main, s.upper)} href='/inprogress'>{t('footer.europe')}</a>
+              <a className={cn(s.link, s.link__main, s.upper)} href='/inprogress'>{t('footer.america')}</a>
             </div>
           </div>
 
           <div className={s.footer__column}>
             <div className={s.footer__down__title}>{t('footer.holidayTypes')}</div>
             <div className={s.footer__column_links}>
-              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>{t('footer.beachHoliday')}</Link>
-              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>{t('footer.kitesurfing')}</Link>
-              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>{t('footer.diving')}</Link>
-              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>{t('footer.yachting')}</Link>
-              <Link className={cn(s.link, s.link__tr)} to='/inprogress'>{t('footer.skiing')}</Link>
+              <a className={cn(s.link, s.link__tr)} href='/inprogress'>{t('footer.beachHoliday')}</a>
+              <a className={cn(s.link, s.link__tr)} href='/inprogress'>{t('footer.kitesurfing')}</a>
+              <a className={cn(s.link, s.link__tr)} href='/inprogress'>{t('footer.diving')}</a>
+              <a className={cn(s.link, s.link__tr)} href='/inprogress'>{t('footer.yachting')}</a>
+              <a className={cn(s.link, s.link__tr)} href='/inprogress'>{t('footer.skiing')}</a>
             </div>
           </div>
 
@@ -73,9 +73,9 @@ export const Footer = () => {
             </div>
             <LanguageSelector />
             <div className={cn(s.footer__column, s.docs)}>
-              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>{t('footer.privacyPolicy')}</Link>
-              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>{t('footer.personalDataProcessingPolicy')}</Link>
-              <Link className={cn(s.link, s.link__politics)} to='/inprogress'>{t('footer.offerAgreement')}</Link>
+              <a className={cn(s.link, s.link__politics)} href='/inprogress'>{t('footer.privacyPolicy')}</a>
+              <a className={cn(s.link, s.link__politics)} href='/inprogress'>{t('footer.personalDataProcessingPolicy')}</a>
+              <a className={cn(s.link, s.link__politics)} href='/inprogress'>{t('footer.offerAgreement')}</a>
             </div>
           </div>
         </div>
