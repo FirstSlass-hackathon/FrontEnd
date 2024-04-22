@@ -56,7 +56,7 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0; /* Позиционируем псевдоэлемент внизу родительского элемента */
+  bottom: 20; /* Позиционируем псевдоэлемент внизу родительского элемента */
   width: 100%;
   height: 0; /* Начальная высота 0 */
   background-color: rgba(0, 0, 0, 0.6); /* Задаем цвет затемнения */
@@ -106,22 +106,24 @@
 }
 
 .tr {
-  transition: transform 0.8s ease; // добавляем плавное изменение размера при наведении
+  transition: transform 0.4s ease; // добавляем плавное изменение размера при наведении
 }
 
 .tr:hover {
-  transform: scale(1.5); // увеличиваем размер карточки при наведении на 10%
+  transform: scale(1.1); // увеличиваем размер карточки при наведении на 10%
 }
 
 .tr .info__motoD {
+  @include fontH7;
   opacity: 0;
   transition: opacity 0.8s ease; // плавное изменение прозрачности
+  text-transform: uppercase;
+
 }
 
 .tr:hover .info__motoD {
   opacity: 1; // показываем текст при наведении
 }
-
 .info {
   position: absolute;
   top: 1%;
@@ -194,7 +196,7 @@
     @include fontPrice;
     color: $colorLight;
     margin-top: 120px;
-    margin-left: 170px;
+    margin-left: 180px;
     transition: opacity 0.6s ease-in-out; /* Плавное появление текста */
     opacity: 0; /* Начальная прозрачность */
     &__dir {
