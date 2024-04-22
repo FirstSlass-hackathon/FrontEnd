@@ -4,15 +4,17 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  gap: 10px;
+  gap: 20px;
   &__block {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
   }
 }
 
 .link__nav {
-  @include fontH4;
+  @include fontTextMenu;
+  text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
   color: $colorDark;

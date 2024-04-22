@@ -58,6 +58,11 @@
 	letter-spacing: 0%;
 }
 
+@mixin fontTextMenu() {
+	@include font-face-montserrat(14px, 400, 130%);
+	letter-spacing: 0%;
+}
+
 @mixin fontDescription() {
 	@include font-face-montserrat(20px, 400, 120%);
 	letter-spacing: -0.02em;
