@@ -21,17 +21,18 @@
 }
 
 .inprogress{
-  width:200px;
-  height:200px;
+  width:400px;
+  height:400px;
   background:transparent;
    .label{
       display:block;
       position:relative;
-      width:200px;
-      height:200px;
+      width:400px;
+      height:400px;
       background:transparent;
       text-align:center;
-      line-height:200px;
+      line-height:400px;
+      font-size: 24px;
       &:before {
         content:"";
         opacity:0;
@@ -41,8 +42,8 @@
   .span {
     display:block;
     position:absolute;
-    width:200px;
-    height:200px;
+    width:400px;
+    height:400px;
     background:transparent;
     border-radius:100%;
     
