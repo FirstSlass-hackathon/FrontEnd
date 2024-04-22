@@ -5,7 +5,6 @@ import { AboutUs } from "../Main/AboutUs";
 import { Directions } from "../Main/Directions";
 import { Continents } from "../Main/Continents";
 import { Travels } from "../Main/Travels";
-//import { Founder } from "../Main/Founder";
 import { Advantages } from "../Main/Advantages";
 import { Impressions } from '../Main/Impressions';
 import { Order } from '../Main/Order';
@@ -44,9 +43,6 @@ export const Main = () => {
           <Travels/>
         </Element>
 
-{/*        <section className={s.main__section}>
-          <Founder/>
-        </section>*/}
         <section className={s.main__section}>
           <Advantages/>
         </section>

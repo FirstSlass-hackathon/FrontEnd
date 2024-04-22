@@ -27,9 +27,9 @@ export const CardTravel = ({title, travel, moto, price, img, ...props}) => {
 }
 
 const titles = [
-  {title: 'cardtravel.types', travel: 'cardtravel.kiteSurfing', moto: 'cardtravel.FEEL_THE_FREEDOM_WITH_KITESURFING', price: '6750$', img: img1},
-  {title: 'cardtravel.types', travel: 'cardtravel.skiing', moto: 'cardtravel.CONQUER_THE_PEAKS_WITH_US', price: '6750$', img: img2},
-  {title: 'cardtravel.types', travel: 'cardtravel.islandRetreat', moto: 'cardtravel.DIVE_INTO_A_TROPICAL_PARADISE', price: '6750$', img: img3}
+  {title: 'cardtravel.types', travel: 'cardtravel.kiteSurfing', moto: 'cardtravel.FEEL_THE_FREEDOM_WITH_KITESURFING', price: 'от 6750$', img: img1},
+  {title: 'cardtravel.types', travel: 'cardtravel.skiing', moto: 'cardtravel.CONQUER_THE_PEAKS_WITH_US', price: 'от 6750$', img: img2},
+  {title: 'cardtravel.types', travel: 'cardtravel.islandRetreat', moto: 'cardtravel.DIVE_INTO_A_TROPICAL_PARADISE', price: 'от 6750$', img: img3}
 ];
 
 const cardTravels = titles.map((item, index) => (
