@@ -71,7 +71,7 @@
   opacity: 1; /* Показываем текст при наведении */
 }
 
-.dir:hover .info__price {
+.dir:hover .info__price__dir {
   opacity: 1; /* Показываем текст при наведении */
 }
 
@@ -193,10 +193,18 @@
     //display: none; /* По умолчанию скрываем блок с текстом moto */
     @include fontPrice;
     color: $colorLight;
-    margin-top: 100px;
-    margin-left: 200px;
+    margin-top: 120px;
+    margin-left: 180px;
     transition: opacity 0.6s ease-in-out; /* Плавное появление текста */
     opacity: 0; /* Начальная прозрачность */
+    &__dir {
+      @include fontPrice;
+      color: $colorLight;
+      margin-top: 60px;
+      margin-left: 180px;
+      transition: opacity 0.6s ease-in-out; /* Плавное появление текста */
+      opacity: 0; /* Начальная прозрачность */
+    }
   }
   &__motoD {
     //display: none; /* По умолчанию скрываем блок с текстом moto */
