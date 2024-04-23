@@ -21,7 +21,7 @@
     &__title {
       @include fontH3;
       text-transform: uppercase;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
     &__name {
       @include fontPrice;

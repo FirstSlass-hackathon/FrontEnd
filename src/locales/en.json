@@ -9,7 +9,8 @@
   },
 
   "footer": {
-    "contacts": "Our contacts",
+    "contacts_1": "Our",
+    "contacts_2": "contacts",
     "available": "We are available 24/7",
     "directions": "Destinations",
     "africa": "Africa",

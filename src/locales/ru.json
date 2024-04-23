@@ -9,7 +9,8 @@
   },
 
   "footer": {
-    "contacts": "Наши контакты",
+    "contacts_1": "Наши",
+    "contacts_2": "контакты",
     "available": "Мы на связи 24 часа",
     "directions": "Направления",
     "africa": "Африка",

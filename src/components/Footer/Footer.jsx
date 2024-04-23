@@ -20,7 +20,8 @@ export const Footer = () => {
     <div className={s.footer}>
       <section className={s.footer__up}>
         <div className={s.footer__up_textBlock}>
-          <div className={s.footer__up__title}>{t('footer.contacts')}</div>
+          <div className={s.footer__up__title}>{t('footer.contacts_1')}</div>
+          <div className={s.footer__up__title}>{t('footer.contacts_2')}</div>
           <div className={s.footer__up__name}>{t('footer.available')}</div>
         </div>
         
