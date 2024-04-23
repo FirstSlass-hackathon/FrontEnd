@@ -6,7 +6,6 @@
   height: 759px;
   padding: 100px 200px;
   display: flex;
-  justify-content: center;
 }
 
 .aboutUs {
@@ -64,7 +63,7 @@
 }
 
 .image1:hover, .image2:hover {
-  transform: scale(1.2); /* увеличиваем масштаб при наведении */
+  transform: scale(1.2) translate(-15px, 15px); /* увеличиваем масштаб при наведении */
   z-index: 2; /* увеличиваем z-index для поднятия изображения над другими элементами */
 }
 
