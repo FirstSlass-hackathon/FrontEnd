@@ -12,23 +12,23 @@ export const OrderAfrica = () => {
     email: "",
     phone: ""
   };
-  
+
   const [formData, setFormData] = useState(initialState);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); // Состояние для отображения модального окна
   const { t } = useTranslation();
-  
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://127.0.0.1:8000/submitData/", formData);
+      const response = await axios.post("http://andreygriko.pythonanywhere.com/submitData/", formData);
       console.log(response.data);
       setFormData(initialState); // Очистка данных после успешной отправки
-      setIsSubmitted(true);   
+      setIsSubmitted(true);
       handleModalOpen(); // Показываем модальное окно после успешной отправки
     } catch (error) {
       console.error(error);
@@ -42,7 +42,7 @@ export const OrderAfrica = () => {
   const handleModalClose = () => {
     setIsModalOpen(false);
   };
-  
+
   return (
     <div className={s.container}>
         {isSubmitted ? ( // Показываем надпись, если форма отправлена
@@ -94,9 +94,9 @@ export const OrderAfrica = () => {
                       </div>
                       <Button className={s.order__btn} type="submit" text={t("order.submit_button")} colorScheme={'white'}/>
                     </form>
-            </div>  
+            </div>
           </div>
-        )} 
+        )}
         {/* Модальное окно */}        {isModalOpen && (
           <div className={s.modal}>
           <div className={s.modalContent}>
