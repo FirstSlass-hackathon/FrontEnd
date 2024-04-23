@@ -12,7 +12,7 @@ export const Order = () => {
     email: "",
     phone: ""
   };
-  
+
   const [formData, setFormData] = useState(initialState);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); // Состояние для отображения модального окна
@@ -21,11 +21,11 @@ export const Order = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://127.0.0.1:8000/submitData/", formData);
+      const response = await axios.post("http://andreygriko.pythonanywhere.com/submitData/", formData);
       console.log(response.data);
       setFormData(initialState); // Очистка данных после успешной отправки
       setIsSubmitted(true);
@@ -42,9 +42,9 @@ export const Order = () => {
   const handleModalClose = () => {
     setIsModalOpen(false);
   };
-  
+
   return (
-    
+
     <div className={s.parallax}>
       <div className={s.layer1}></div>
       <div className={s.layer2}></div>
@@ -99,7 +99,7 @@ export const Order = () => {
                           </div>
                         <Button className={s.order__btn} type="submit" text={t("order.submit_button")} colorScheme={'white'}/>
                       </form>
-                </div>      
+                </div>
               </div>
         )}
         {/* Модальное окно */}
