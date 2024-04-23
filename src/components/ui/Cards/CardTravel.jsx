@@ -11,7 +11,7 @@ export const CardTravel = ({title, travel, moto, price, img, ...props}) => {
 
   return (
     <>
-      <div className={cn(s.component, s.size1, s.str)}>
+      <div className={cn(s.component, s.size__str, s.str)}>
           <img src={img} className={s.img} alt={"img"}></img>
           <div className={s.info}>
             <div className={s.info__block}>

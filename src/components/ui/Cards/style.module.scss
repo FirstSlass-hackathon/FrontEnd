@@ -19,6 +19,10 @@
     width: 355px;
     height: 500px;
   }
+  &__str {
+    width: 355px;
+    height: 500px;
+  }
 }
 .small {
   width: 299px;
@@ -184,7 +188,7 @@
     //display: none; /* По умолчанию скрываем блок с текстом moto */
     @include fontH7;
     color: $colorLight;
-    margin-top: 150px;
+    margin-top: 180px;
     margin-left: 20px;
     margin-right: 30px;
     font-size: 28px;
@@ -195,7 +199,7 @@
     //display: none; /* По умолчанию скрываем блок с текстом moto */
     @include fontPrice;
     color: $colorLight;
-    margin-top: 120px;
+    margin-top: 100px;
     margin-left: 180px;
     transition: opacity 0.6s ease-in-out; /* Плавное появление текста */
     opacity: 0; /* Начальная прозрачность */
@@ -265,8 +269,3 @@
     font-size: 1em;
   }
 }
-
-
-// .imp {
-//   width: 220px;
-// }
