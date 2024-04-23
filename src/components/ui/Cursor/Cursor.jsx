@@ -6,11 +6,19 @@ const Cursor = () => {
 
   useEffect(() => {
     const updatePosition = (e) => {
-      setPosition({ x: e.pageX, y: e.pageY });
+      const cursor2Radius = 55; // Радиус большего курсора
+  
+      // Ограничиваем координату X так, чтобы курсор не выходил за правую границу экрана
+      let newX = Math.min(e.pageX, window.innerWidth - cursor2Radius);
+  
+      // Координата Y может свободно двигаться без ограничений
+      let newY = e.pageY;
+  
+      setPosition({ x: newX, y: newY });
     };
-
+  
     document.addEventListener('mousemove', updatePosition);
-
+  
     return () => {
       document.removeEventListener('mousemove', updatePosition);
     };
