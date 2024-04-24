@@ -22,15 +22,24 @@ export const OrderAfrica = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+
+    // Проверяем все поля на заполненность
+    const newFormData = { ...formData, [e.target.name]: e.target.value };
+    const allFieldsFilled = newFormData.name.trim() && newFormData.fam.trim() && newFormData.email.trim() && newFormData.phone.trim();
+    
+    // Устанавливаем или снимаем флаг ошибки в зависимости от заполненности полей
+    setErrorModalOpen(!allFieldsFilled);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!formData.name.trim() || !formData.fam.trim() || !formData.email.trim() || !formData.phone.trim()) {
-      setErrorModalOpen(true); // Открываем модальное окно ошибки
-      return;
-  }
+    // Проверяем заполненность полей перед отправкой
+    const allFieldsFilled = formData.name.trim() && formData.fam.trim() && formData.email.trim() && formData.phone.trim();
+    if (!allFieldsFilled) {
+        setErrorModalOpen(true);
+        return;
+    }
 
     try {
       const response = await axios.post("https://andreygriko.pythonanywhere.com/submitData/", formData);
@@ -38,6 +47,7 @@ export const OrderAfrica = () => {
       setFormData(initialState); // Очистка данных после успешной отправки
       setIsSubmitted(true);
       handleModalOpen(); // Показываем модальное окно после успешной отправки
+      setErrorModalOpen(false); // Скрываем сообщение об ошибке после успешной отправки
     } catch (error) {
       console.error(error);
     }
