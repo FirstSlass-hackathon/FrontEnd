@@ -57,28 +57,10 @@
   margin-top: 40px;
 }
 
-.controls {
-  // margin-top: 30px;
-  // text-align: left;
-}
-
 .controlButton {
   background-color: transparent;
-  //border: 2px solid #fff;
-  font-size: 60px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
   cursor: pointer; /* Включаем курсор */
-  color: rgba(0, 0, 0, 0.5);
   margin-left: 400px;
-  //display: flex;
-  //align-items: center;
-  //justify-content: center;
-  //margin-top: auto; /* Размещаем кнопку внизу блока */
-  //font-family: 'Название вашего нового шрифта', sans-serif; /* Изменяем шрифт */
-  //content: '\2190'; /* Юникод символ для стрелки влево */
-  //z-index: 2;
 }
 
 .right {

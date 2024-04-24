@@ -47,10 +47,7 @@ export const ImpressionsList = () => {
             <div className={`${s.signature} ${fadeOut ? s.fadeOut : ''}`}>{t(impressionsList[current].author)}</div>
           </div>
           <div className={s.controls}>
-            <button className={`${s.controlButton} ${s.right}`} onClick={nextSlide}>
-              {"\u2192"} {/* Unicode символ для правой стрелки */}
-            </button>
-            {/* <img src={arrow} className={`${s.controlButton} ${s.right}`} onClick={nextSlide} alt={'стрелка'}/> */}
+            <img src={arrow} className={`${s.controlButton} ${s.right}`} onClick={nextSlide} alt={'стрелка'}/>
           </div>
         </div>
       </div>
