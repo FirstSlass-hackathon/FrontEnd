@@ -26,7 +26,7 @@ export const Order = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://andreygriko.pythonanywhere.com/submitData/", formData);
+      const response = await axios.post("https://andreygriko.pythonanywhere.com/submitData/", formData);
       console.log(response.data);
       setFormData(initialState); // Очистка данных после успешной отправки
       setIsSubmitted(true);
