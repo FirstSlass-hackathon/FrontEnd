@@ -161,3 +161,18 @@
     padding: 0 10px;
   }
 }
+
+.errorModal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; // Убедитесь, что модальное окно находится поверх других элементов
+}
+
+.errorModal__title {
+  padding-top: 10px;
+  padding-left: 200px;
+  @include fontText;
+  color: rgb(243, 35, 35);
+}

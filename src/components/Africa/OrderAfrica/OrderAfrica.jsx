@@ -17,6 +17,7 @@ export const OrderAfrica = () => {
   const [formData, setFormData] = useState(initialState);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); // Состояние для отображения модального окна
+  const [errorModalOpen, setErrorModalOpen] = useState(false); // Новое состояние для ошибок
   const { t } = useTranslation();
 
   const handleChange = (e) => {
@@ -25,6 +26,12 @@ export const OrderAfrica = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!formData.name.trim() || !formData.fam.trim() || !formData.email.trim() || !formData.phone.trim()) {
+      setErrorModalOpen(true); // Открываем модальное окно ошибки
+      return;
+  }
+
     try {
       const response = await axios.post("https://andreygriko.pythonanywhere.com/submitData/", formData);
       console.log(response.data);
@@ -95,6 +102,11 @@ export const OrderAfrica = () => {
                         <Checkbox />
                       </div>
                       <Button className={s.order__btn} type="submit" text={t("order.submit_button")} colorScheme={'white'}/>
+                      {errorModalOpen && (
+                        <div className={s.errorModal}>
+                            <div className={s.errorModal__title}>{t("order.error_title")}</div>
+                        </div>
+                      )}
                     </form>
             </div>
           </div>
@@ -109,8 +121,8 @@ export const OrderAfrica = () => {
                 <div className={s.modal__text}>{t("order.modal_message")}</div>
                 <div className={s.modal__moto}>{t("order.modal_moto")}</div>
             </div>
-        </div>
-      )}
+          </div>
+        )}
   </div>
 );
 };

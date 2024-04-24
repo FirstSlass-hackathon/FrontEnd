@@ -21,7 +21,7 @@
     padding: 40px;
     top: 80px;
     left: 80px;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(90, 89, 88, 0.25);
     backdrop-filter: blur(15px); /* Размытие */
     -webkit-backdrop-filter: blur(15px);
     &__block {
@@ -32,13 +32,13 @@
     &__title {
       @include fontDescription;
       font-size: 25px;
-      color: white;
+      color: $colorWhite;
     }
     &__name {
       @include fontH1;
       font-size: 35px;
       text-transform: uppercase;
-      color: white;
+      color: $colorWhite;
     }
     &__inputs {
       display: flex;
@@ -53,15 +53,15 @@
 
   input {
     border: none;
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid $colorWhite;
     margin-bottom: 30px; 
     background-color: transparent;
-    color: white;
+    color: $colorWhite;
     &:focus {
       outline: none;
     }
     &::placeholder {
-      color: white;
+      color: $colorWhite;
       font-size: 75%;
     }
   }
@@ -86,7 +86,7 @@
   top: 40%;
   left: 35%;
   // transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.25);
+  background: rgba(90, 89, 88, 0.25);
   backdrop-filter: blur(15px); /* Размытие */
   -webkit-backdrop-filter: blur(15px);
   width: 553px;
@@ -123,4 +123,19 @@
     margin-bottom: 40px;
     padding: 0 10px;
   }
+}
+
+.errorModal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; // Убедитесь, что модальное окно находится поверх других элементов
+}
+
+.errorModal__title {
+  padding-top: 10px;
+  padding-left: 200px;
+  @include fontText;
+  color: rgb(243, 35, 35);
 }
