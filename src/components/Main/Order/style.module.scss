@@ -55,7 +55,7 @@
     flex-direction: column;
     gap: 28px;
     width: 547px;
-    height: 471px;
+    height: 497px;
     padding: 40px;
     top: 381px;
     left: 80px;
@@ -171,8 +171,8 @@
 }
 
 .errorModal__title {
-  padding-top: 10px;
-  padding-left: 200px;
-  @include fontText;
-  color: rgb(243, 35, 35);
+  padding-top: 20px;
+  @include fontTextMenu;
+  font-size: 14px;
+  color: rgba(236, 12, 12, 1);
 }

@@ -125,6 +125,7 @@ export const Order = () => {
                           </div>
                         )}
                       </form>
+                      <div className={s.order__empty}></div>
                 </div>
               </div>
         )}

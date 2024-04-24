@@ -120,6 +120,7 @@ export const OrderAfrica = () => {
                         </div>
                       )}
                     </form>
+                    <div className={s.order__empty}></div>
             </div>
           </div>
         )}
@@ -135,6 +136,6 @@ export const OrderAfrica = () => {
             </div>
           </div>
         )}
-  </div>
-);
+    </div>
+  );
 };
