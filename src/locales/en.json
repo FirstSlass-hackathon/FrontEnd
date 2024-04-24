@@ -125,7 +125,7 @@
     "email": "Email",
     "phone": "Phone",
     "submit_button": "Submit Application",
-    "submitted_message": "Your request has been submitted!",
+    "submitted_message": "",
     "modal_title": "Your request has been submitted",
     "modal_message": "We will contact you shortly.",
     "close_button": "Close",

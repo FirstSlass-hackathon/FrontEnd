@@ -125,7 +125,7 @@
     "email": "E-mail",
     "phone": "Телефон",
     "submit_button": "Оставить заявку",
-    "submitted_message": "Ваша заявка принята!",
+    "submitted_message": "",
     "modal_title": "Ваша заявка принята",
     "modal_message": "Мы свяжемся с вами в ближайшее время.",
     "close_button": "Закрыть",
