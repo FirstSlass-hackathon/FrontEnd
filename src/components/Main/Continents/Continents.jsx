@@ -6,6 +6,8 @@ import europe from '../../../assets/images/continents/europe.jpg';
 import asia from '../../../assets/images/continents/asia.jpg';
 import america from '../../../assets/images/continents/america.jpg';
 import australia from '../../../assets/images/continents/australia.jpg';
+import arrowR from '../../../assets/images/arrow_right.png';
+import arrowL from '../../../assets/images/arrow_left.png';
 
 const continents = [
   { name: 'continents.africa', media: africaVideo, link: '/africa' }, // Использование видео
@@ -73,12 +75,8 @@ export const Continents = () => {
         {t(continents[current].name)}
       </a>
       <div className={s.controls}>
-        <button className={`${s.controlButton} ${s.left}`} onClick={prevSlide}>
-          ← {/* Замените символ для левой стрелки */}
-        </button>
-        <button className={`${s.controlButton} ${s.right}`} onClick={nextSlide}>
-          → {/* Замените символ для правой стрелки */}
-        </button>
+        <img src={arrowL} className={`${s.controlButton} ${s.left}`} onClick={prevSlide} alt={'стрелка влево'}/>
+        <img src={arrowR} className={`${s.controlButton} ${s.right}`} onClick={nextSlide} alt={'стрелка вправо'}/>
       </div>
     </div>
   );

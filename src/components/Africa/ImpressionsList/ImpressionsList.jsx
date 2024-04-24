@@ -5,6 +5,7 @@ import lion from '../../../assets/images/lion.jpg'; // Импортируем и
 import sunset from '../../../assets/images/sunset.jpg';
 import man from '../../../assets/images/man.jpg';
 import icon from '../../../assets/images/“.png';
+import arrow from '../../../assets/images/Arrow.png';
 
 const review1 = 'impressionsList.review1';
 const review2 = 'impressionsList.review2';
@@ -46,9 +47,7 @@ export const ImpressionsList = () => {
             <div className={`${s.signature} ${fadeOut ? s.fadeOut : ''}`}>{t(impressionsList[current].author)}</div>
           </div>
           <div className={s.controls}>
-            <button className={`${s.controlButton} ${s.right}`} onClick={nextSlide}>
-              {"\u2192"} {/* Unicode символ для правой стрелки */}
-            </button>
+            <img src={arrow} className={`${s.controlButton} ${s.right}`} onClick={nextSlide} alt={'стрелка'}/>
           </div>
         </div>
       </div>
