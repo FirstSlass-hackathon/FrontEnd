@@ -131,7 +131,7 @@
     "modal_moto": "We wish you a nice holiday",
     "close_button": "Close",
     "data_processing_agreement": "I agree to the processing of personal data",
-    "error_title": "All fields must be filled in"
+    "error_title": "* All fields must be filled in"
   },
 
   "aboutAfrica": {

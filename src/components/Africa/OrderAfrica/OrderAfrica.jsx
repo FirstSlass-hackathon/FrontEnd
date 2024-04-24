@@ -50,6 +50,8 @@ export const OrderAfrica = () => {
   const handleModalClose = () => {
     setIsModalOpen(false);
     setIsSubmitted(false);
+    setErrorModalOpen(false);  // Скрываем любые сообщения об ошибке
+    setFormData(initialState);  // Сброс данных формы
   };
 
   return (
