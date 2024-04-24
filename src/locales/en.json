@@ -127,7 +127,8 @@
     "submit_button": "Submit Application",
     "submitted_message": "",
     "modal_title": "Your request has been submitted",
-    "modal_message": "We will contact you shortly.",
+    "modal_message": "Our experts will contact you shortly",
+    "modal_moto": "We wish you a nice holiday",
     "close_button": "Close",
     "data_processing_agreement": "I agree to the processing of personal data"
   },

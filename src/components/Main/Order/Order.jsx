@@ -4,6 +4,7 @@ import s from './style.module.scss';
 import { Checkbox } from '../../ui/Checkboxes/Checkbox';
 import { Button } from '../../ui/Button/Button';
 import { useTranslation } from 'react-i18next';
+import close from '../../../assets/images/close.png';
 
 export const Order = () => {
   const initialState = {
@@ -41,6 +42,7 @@ export const Order = () => {
 
   const handleModalClose = () => {
     setIsModalOpen(false);
+    setIsSubmitted(false);
   };
 
   return (
@@ -50,7 +52,7 @@ export const Order = () => {
       <div className={s.layer2}></div>
       <div className={s.layer3}></div>
       <div className={s.layer4}></div>
-      {isSubmitted ? ( // Показываем надпись, если форма отправлена
+      {isSubmitted ? ( // Форма исчезает, если заявка отправлена
               <div className={s.submittedMessage}>{t("order.submitted_message")}</div>
             ) : (
               <div className={s.order}>
@@ -105,12 +107,15 @@ export const Order = () => {
         {/* Модальное окно */}
         {isModalOpen && (
           <div className={s.modal}>
-            <div className={s.modalContent}>
-              <h3 className={s.modalTitle}>{t("order.modal_title")}</h3>
-              <p>{t("order.modal_message")}</p>
-              <button className={s.modalCloseBtn} onClick={handleModalClose}>{t("order.close_button")}</button>
-            </div>
+          <div className={s.modal__img}>
+            <img src={close} alt={'close button'} onClick={handleModalClose}/>
           </div>
+          <div className={s.modal__content}>
+            <div className={s.modal__title}>{t("order.modal_title")}</div>
+              <div className={s.modal__text}>{t("order.modal_message")}</div>
+              <div className={s.modal__moto}>{t("order.modal_moto")}</div>
+          </div>
+      </div>
         )}
     </div>
   );
