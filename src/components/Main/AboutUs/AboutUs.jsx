@@ -1,8 +1,8 @@
 import React from "react";
-// import Button from "../../ui/Button/Button";
-import s from './style.module.scss';
+import s from './style.module.scss'; // Подключаем ваши стили
 import kacheliImage from '../../../assets/images/swing.jpg';
 import twix from '../../../assets/images/twix.jpg';
+import bgprint from '../../../assets/images/bgprint.png';
 import { useTranslation } from "react-i18next";
 
 export const AboutUs = () => {
@@ -10,6 +10,7 @@ export const AboutUs = () => {
 
   return (
     <div className={s.container}>
+      
       <div className={s.aboutUs}>
         <div className={s.aboutUs__title}> 
           <div className={s.title}>{t("aboutUs.about_company")}</div>
@@ -24,7 +25,7 @@ export const AboutUs = () => {
 
         <div className={s.aboutUs__main}>
           <p className={s.description}>
-          {t("aboutUs.descr1")}
+            {t("aboutUs.descr1")}
             <br/>
             <br/>
             {t("aboutUs.descr2")}
@@ -36,6 +37,7 @@ export const AboutUs = () => {
           <div className={s.imageContainer}>
             <img className={s.image1} src={kacheliImage} alt="Качели" />
             <img className={s.image2} src={twix} alt="Сладкая парочка" />
+            <img className={s.Print_Image} src={bgprint} alt="Print_Image" />
           </div>
         </div>
       </div>

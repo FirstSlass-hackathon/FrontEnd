@@ -6,33 +6,45 @@
   height: 759px;
   padding: 100px 200px;
   display: flex;
+  position: relative; /* добавлено для позиционирования относительно контейнера */
+
+}
+.Print_Image {
+  position: absolute;
+  bottom: -450px; /* Перемещаем изображение на 500px вниз */
+  right: -450px; /* Перемещаем изображение на 500px влево */
+  width: 1000px; /* Укажите ширину вашего изображения */
+  height: 1100px; /* Укажите высоту вашего изображения */
 }
 
 .aboutUs {
   @include fontDescription;
-  // max-width: 100%; /* адаптивная ширина */
   min-height: 540px; /* минимальная высота для содержимого */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  &__title {
-    width: 800px;
-    height: 166px;
-    margin-left: 496px;
-  }
-  &__main {
+}
 
-  }
-  &__block {
+.aboutUs__title {
+  width: 800px;
+  height: 166px;
+  margin-left: 496px;
+  box-sizing: border-box;
+}
 
-  }
+.aboutUs__main {
+  /* ваши стили для .aboutUs__main */
+}
+
+.aboutUs__block {
+  /* ваши стили для .aboutUs__block */
 }
 
 .title {
   @include fontDescription;
-  box-sizing: border-box;
   margin-top: 8px;
   margin-bottom: 16px;
+  box-sizing: border-box;
 }
 
 .name {
@@ -46,9 +58,6 @@
 }
 
 .imageContainer {
-  // position: absolute; /* абсолютное позиционирование */
-  // top: 930px; /* начало отсчета по вертикали */
-  // left: 80px; /* начало отсчета по горизонтали */
   display: flex;
   justify-content: space-between;
   margin-top: 143px;
@@ -70,8 +79,6 @@
 .image1 {
   max-width: 436px; /* задаем ширину фото */
   height: 440px; /* задаем высоту фото */
-  // left: 80px; /* позиция по оси X */
-  // top: 157px; /* позиция по оси Y */
   top: -550px;
   z-index: 0; /* чтобы первая картинка находилась над второй */
 }
@@ -79,8 +86,6 @@
 .image2 {
   max-width: 480px; /* задаем ширину фото */
   height: 339px; /* задаем высоту фото */
-  // left: 298px; /* позиция по оси X */
-  // top: 377px; /* позиция по оси Y */
   top: -345px;
   left: -580px;
   z-index: 1; /* чтобы вторая картинка находилась под первой */
@@ -94,5 +99,3 @@
   max-width: 50%; /* ограничиваем максимальную ширину блока */
   box-sizing: border-box;
 }
-
-
