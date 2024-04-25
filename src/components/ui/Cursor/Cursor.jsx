@@ -25,10 +25,10 @@ const Cursor = () => {
   }, []);
 
   return (
-    <>
+    <div className={s.cursorContainer}>
       <div className={s.cursor1} style={{ top: position.y - 15, left: position.x - 15 }}></div>
       <div className={s.cursor2} style={{ top: position.y - 30, left: position.x - 32 }}></div>
-    </>
+    </div>
   );
 };
 
