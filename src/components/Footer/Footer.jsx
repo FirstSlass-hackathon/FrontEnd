@@ -39,6 +39,15 @@ export const Footer = () => {
       <section className={s.footer__down}>
         <img className={s.footer__logo} src={logo} alt={'logo'}/>
         <div className={s.footer__columns}>
+          {/* <div className={s.footer__column}>
+            <div className={s.footer__down__title}>{t('footer.contacts_1')} {t('footer.contacts_2')}</div>
+            <div className={cn(s.link, s.link__main, s.upper)}>{t('footer.available')}</div>
+            <div className={s.footer__up_contacts}>
+              <Link className={s.footer__link} to='/'>+7 (999) 555 66 77</Link>
+              <Link className={s.footer__link} to='/'>info@firstclass.com</Link>
+            </div>
+          </div> */}
+
           <div className={s.footer__column}>
             <div className={s.footer__down__title}>{t('footer.directions')}</div>
             <div className={s.footer__column_links}>
