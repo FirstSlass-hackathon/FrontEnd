@@ -2,66 +2,80 @@
 @import '../../../assets/styles/variables.scss';
 
 .container {
+  position: relative;
   padding: 100px 80px;
   display: flex;
   justify-content: center;
-}
 
-.amazing {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  &__title {
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
+  .amazing {
+    position: relative;
+    overflow: hidden;
+    
+    &__title {
+      padding-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    &__text {
+      @include fontDescription;
+      color: $colorDark;
+      padding-bottom: 16px;
+    }
+    
+    &__name {
+      @include fontH1;
+      color: $colorDark;
+      text-transform: uppercase;
+    }
+    
+    &__photo {
+      display: flex;
+      flex-direction: row;
+      gap: 36px;
+    }
+    
+    &__poster {
+      /* стили для постера, если необходимо */
+    }
+    
+    &__block {
+      width: 634px;
+      height: 556px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px;
+      position: relative; /* Установим позицию для создания кругляшка */
+    }
   }
-  &__text {
-    @include fontDescription;
-    color: $colorDark;
-    padding-bottom: 16px;
-  }
-  &__name {
+
+  .highlight {
     @include fontH1;
-    color: $colorDark;
     text-transform: uppercase;
+    color: $colorBold;
+    box-sizing: border-box;
   }
-  &__photo {
-    display: flex;
-    flex-direction: row;
-    gap: 36px;
-  }
-  &__poster {
 
+  .zoomContainer {
+    overflow: hidden; /* Скрытие контента за пределами контейнера */
+    width: 100%; /* Ширина контейнера равна размеру изображения */
+    height: 100%; /* Высота контейнера равна размеру изображения */
+    position: relative; /* Позиционируем, чтобы дочерние элементы могли использовать абсолютное позиционирование */
   }
-  &__block {
-    width: 634px;
-    height: 556px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 36px;
-    position: relative; /* Установим позицию для создания кругляшка */
+
+  .zoomContainer img {
+    transition: transform 0.5s ease-in-out; /* Плавный переход при изменении масштаба */
+  }
+
+  .zoomContainer:hover img {
+    transform: scale(1.4); /* Увеличение масштаба при наведении */
   }
 }
 
-.highlight {
-  @include fontH1;
-  text-transform: uppercase;
-  color: $colorBold;
-  box-sizing: border-box;
-}
-
-.zoomContainer {
-  overflow: hidden; /* Скрытие контента за пределами контейнера */
-  width: 100%; /* Ширина контейнера равна размеру изображения */
-  height: 100%; /* Высота контейнера равна размеру изображения */
-  position: relative; /* Позиционируем, чтобы дочерние элементы могли использовать абсолютное позиционирование */
-}
-
-.zoomContainer img {
-  transition: transform 0.5s ease-in-out; /* Плавный переход при изменении масштаба */
-}
-
-.zoomContainer:hover img {
-  transform: scale(1.4); /* Увеличение масштаба при наведении */
+.bgprint {
+  position: absolute;
+  bottom: 0;
+  left: 500px;
+  width: 100%; /* Сделаем фоновое изображение растягивающимся на всю ширину блока */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
 }

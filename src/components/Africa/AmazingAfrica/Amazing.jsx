@@ -6,6 +6,7 @@ import element1 from '../../../assets/images/africa_countries/amazingAfrica_2.jp
 import element2 from '../../../assets/images/africa_countries/amazingAfrica_3.jpg';
 import element3 from '../../../assets/images/africa_countries/amazingAfrica_4.jpg';
 import element4 from '../../../assets/images/africa_countries/amazingAfrica_5.jpg';
+import bgprint_4 from '../../../assets/images/bgprint_3.png'; // Добавляем путь к фоновому изображению
 
 export const Amazing = () => {
   const { t } = useTranslation();
@@ -47,6 +48,7 @@ export const Amazing = () => {
             </div>
           </div>
         </div>
+        <img src={bgprint_4} alt="background print" className={s.bgprint} /> {/* Добавляем фоновое изображение */}
       </div>
       <div className={s.customCursor} style={{ left: cursorPos.x, top: cursorPos.y }}></div>
     </div>

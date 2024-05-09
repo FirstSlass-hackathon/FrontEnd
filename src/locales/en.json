@@ -38,8 +38,8 @@
     "FOR_THE_MOST": "FOR THE MOST",
     "SOPHISTICATED": "SOPHISTICATED",
     "TOURISTS": "TOURISTS",
-    "descr1": "First Class offers luxurious and unique travel experiences around the world. We specialize in organizing individual tours for the most discerning clients.",
-    "descr2": "We offer a wide range of services, including luxury hotel accommodations, private jet and yacht bookings, exclusive excursions and celebrity meet-and-greets, and personalized travel assistance."
+    "descr1": "First Class presents an unparalleled realm of opulent and one-of-a-kind voyages spanning the expanse of the globe. With a dedicated focus on curating bespoke tours tailored to the most discerning of clientele, we transcend the ordinary to craft extraordinary experiences.",
+    "descr2": "We offer a wide range of services, including arranging luxury hotel accommodations, private jets and yachts booking, organizing exclusive excursions and celebrity meet-and-greets, and providing personalized travel assistance."
   },
 
   "directions": {
@@ -139,7 +139,7 @@
     "uniqueTours": "UNIQUE TOURS",
     "toAmazingCorners": "TO AMAZING CORNERS OF AFRICA",
     "description1": "Africa is a mysterious continent filled with wild beauty and amazing adventures.",
-    "description2": "From vast deserts to dense jungles, from majestic mountains to endless beaches — here, everyone will find something to their liking."
+    "description2": "From vast deserts to dense jungles, from majestic mountains to endless beaches - here, everyone will find something to their liking."
   },
 
   "impressionsList": {
@@ -149,7 +149,7 @@
     "author2": "ANTON, ST. PETERSBURG",
     "review3": "Vacation in Africa turned out to be a real discovery for us! We visited mysterious tribal settlements, tried local cuisine, and immersed ourselves in the world of traditions and customs of this mysterious continent.",
     "author3": "KIRILL, MOSCOW"
-  },  
+  },
 
   "countriesAfrica": {
     "title": "countries of Africa",
@@ -158,8 +158,8 @@
     "TRAVELER": "FOR TRAVELERS,",
     "EXPLORE": "EXPLORE",
     "HER_UNRESTRICTED": "IT UNRESTRICTED!",
-    "description1": "Discover the amazing diversity of Africa - from exotic beaches to ancient pyramids!",
-    "description2": "Don't miss the opportunity to embark on an exciting journey through the mysterious Africa and discover its unique beauties and mysteries."
+    "description1": "Discover the amazing diversity and unique charm of Africa - from exotic beaches to ancient pyramids!",
+    "description2": "Don't miss the opportunity to embark on a fascinating journey through the mysterious continent of Africa and discover its unique beauties and secrets."
   },
 
   "amazing": {

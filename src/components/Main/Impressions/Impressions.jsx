@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import s from './style.module.scss';
 import CardImpression from '../../ui/Cards/CardImpression'; // Исправленный импорт
 import { useTranslation } from 'react-i18next';
+import bgImage_2 from '../../../assets/images/bgprint_3.png'; // Импортируем изображение
 
 export const Impressions = () => {
   const { t } = useTranslation();
@@ -48,8 +49,14 @@ export const Impressions = () => {
           </div>
         </div>
       </div>
+      {/* Добавляем контейнер для фонового изображения */}
+      <div className={s.backgroundContainer}>
+        <img src={bgImage_2} className={s.backgroundImage} alt="Background Image" />
+      </div>
     </div>
   );
 };
 
 export default Impressions;
+
+

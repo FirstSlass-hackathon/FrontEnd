@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import s from './style.module.scss';
 import cardTravels from '../../ui/Cards/CardTravel';
 import { useTranslation } from 'react-i18next';
+import bgImage from '../../../assets/images/bgprint_2.png'; // Импортируем изображение
 
 export const Travels = () => {
   const cardsRef = useRef(null);
@@ -43,12 +44,14 @@ export const Travels = () => {
         </div>
         <div ref={cardsRef} className={s.cards}>
           {cardTravels.map((card, index) => (
-              <div key={index} className={s.card}>
-                {card}
-              </div>
-            ))}
+            <div key={index} className={s.card}>
+              {card}
+            </div>
+          ))}
         </div>
       </div>
+      {/* Добавляем изображение в задний план */}
+      <img src={bgImage} className={s.backgroundImage} alt="Background" />
     </div>
   );
 }

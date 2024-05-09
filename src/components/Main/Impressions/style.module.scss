@@ -1,9 +1,8 @@
-// style.module.scss
-
 @use '../../../assets/styles/styles.scss' as *;
 @import '../../../assets/styles/variables.scss';
 
 .container {
+  position: relative; /* Добавляем относительное позиционирование */
   display: flex;
   justify-content: center;
 }
@@ -87,4 +86,21 @@
   &.visible {
     opacity: 1;
   }
+}
+
+.backgroundContainer {
+  position: absolute; /* Используем абсолютное позиционирование */
+  bottom: 0;
+  right: 0;
+  z-index: -1;width: 100%; /* Добавлено для растяжения изображения на всю ширину */
+  height: 100%; /* Добавлено для растяжения изображения на всю высоту */
+  overflow: hidden; /* Добавлено, чтобы изображение не выходило за пределы контейнера */
+}
+
+.backgroundImage {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  transform: translateX(600px); /* Используем transform для смещения на 60px влево */
+
 }
