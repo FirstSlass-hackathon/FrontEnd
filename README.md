@@ -1,5 +1,7 @@
 # First Class
 
+**Live Demo:** [https://firstclassteam3.vercel.app/](https://firstclassteam3.vercel.app/)
+
 **Status:** MVP v1  
 **Hackathon Project — SkillFactory Spring 2024** 🏕️
 
